@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASF 관리시스템</title>
+  <link rel="stylesheet" href="../common/css/default.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <a href="#">
+          <h1 class="hd_logo"><img src="../common/images/hd_logo.png" alt="헤더 로고"> <span> 환경보전협회</span></h1>
+        </a>
+        <div class="nav_wrap">
+          <nav>
+            <ul>
+              <li><a href="#" class="active">ASF 관리</a></li>
+              <li><a href="#">민원 관리</a></li>
+              <li><a href="#">통계 관리</a></li>
+            </ul>
+          </nav>
+          <div class="util">
+            <a href="#">반갑습니다. 김길동님!
+              <button>
+                <span class="hide">메뉴보기</span></button>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="adm_menu">
+      <div class="container">
+        <ul>
+          <li><a href="#" class="on"><div></div></a>울타리 관리</li>
+          <li><a href="#"><div><!-- 아이콘 수정 후 추가 예정 --></div></a>순찰 계획 관리</li>
+          <li><a href="#"><div></div></a>순찰 일지 관리</li>
+          <li><a href="#"><div></div></a>유지보수 작업 관리</li>
+          <li><a href="#"><div></div></a>민원 일지 관리 </li>
+          <li><a href="#"><div></div></a>순찰 일지 통계</li>
+          <li><a href="#"><div></div></a>유지보수 작업 통계</li>
+          <li><a href="#"><div></div></a>민원 일지 통계</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fence_adm">
+      <div class="container">
+        <h2>울타리 관리</h2>
+        <div class="form_wrap search_wrap add_wrap">
+          <form action="" class="add_form">
+            <ul>
+             <li>
+              <label for="fence_num">관리 번호 <span>*</span></label>
+                <input type="text" name="num" id="fence_num" placeholder="관리 번호를 입력해 주세요.">
+            </li>
+             <li>
+              <label for="main_select">구역 선택 <span>*</span></label>
+                <select name="section_list" id="main_select">
+                  <option value="" disabled selected>서울 남산 구역</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+             </li>
+             <li>
+              <label for="main_select">타입 선택 <span>*</span></label>
+                <select name="type_list" id="main_select">
+                  <option value="" disabled selected>A 타입 울타리</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+             </li>
+             <li>
+              <label for="fence_name">명칭 입력 <span>*</span></label>
+                <input type="text" name="name" id="fence_name" placeholder="명칭을 입력해 주세요.">
+             </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="add_map">
+      <div class="container">
+        <!-- api로 지도 추가 예정 -->
+        <div class="map">
+          
+        </div>
+       <div class="btn_wrap">
+         <button class="coordi"><span>좌표그리기</span></button>
+         <button class="register"><span>등록</span></button>
+       </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
+        <p>Copyright © 2023 ASF. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../common/js/jquery-3.6.2.min.js"></script>
+  <script src="../common/js/publish.js"></script>
+</body>
+
+</html>
