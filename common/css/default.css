@@ -451,16 +451,10 @@ header .container .nav_wrap .util a button {
 }
 .adm_menu_wrap .container ul {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 48px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(129px, 1fr));
+  grid-gap: 10px;
 }
 .adm_menu_wrap .container ul li {
   text-align: center;
@@ -479,7 +473,7 @@ header .container .nav_wrap .util a button {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 16px;
-  margin-bottom: 20px;
+  margin: auto auto 20px;
 }
 .adm_menu_wrap .container ul li a:hover {
   border: 2px solid #6DA2FF;
