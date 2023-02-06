@@ -4,7 +4,6 @@
 
   }
 
-  max-width: 1920px;
   height: 100vh;
 
   .info_wrap {
@@ -75,7 +74,7 @@
     .login {
       width: 100%;
       max-width: 400px;
-      padding-bottom: 22%;
+      padding-bottom: 15%;
 
       p {
         font-size: 40px;
@@ -136,6 +135,8 @@
             }
 
             &[type="button"] {
+              border: 1px solid transparent ;
+
               cursor: pointer;
               background: #016ff3;
               margin-top: 24px;
@@ -185,3 +186,4 @@
     }
   }
 }
+

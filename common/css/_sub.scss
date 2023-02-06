@@ -121,7 +121,7 @@
 
               &:nth-child(3) {
                 flex: 0 1 49%;
-                margin-left: 20px;
+                margin-left: 2%;
               }
 
               label {
@@ -154,7 +154,7 @@
   }
 }
 
-.fence_list {
+.fence_list_wrap {
   background: #ECEFF2;
 
   .container {

@@ -27,6 +27,7 @@ header {
       font-size: 14px;
       font-weight: 600;
       color: #fff;
+      min-width: 178px;
       img{
         margin-right: 24px;
       }
@@ -38,11 +39,26 @@ header {
 .nav_wrap{
   display: flex;
   align-items: center;
+  height: 100%;
   nav {
     padding: 0 40px;
+    height: 100%;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: #000;
+      opacity: .1;
+    }
+
       ul {
         display: flex;
         align-items: center;
+        height: 100%;
         li{
           a{
             font-weight: 600;
@@ -69,6 +85,7 @@ header {
       }
     }
     .util{
+      margin-left: 40px;
       a{
         display: flex;
         align-items: center;
@@ -92,7 +109,7 @@ header {
   }
 }
 // 관리 메뉴
-.adm_menu {
+.adm_menu_wrap {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
 
   .container {
@@ -154,5 +171,12 @@ footer {
     p {
       opacity: .5;
     }
+  }
+}
+
+
+@include maxWidth(1260px){
+  .container{
+    padding:0 30px;
   }
 }

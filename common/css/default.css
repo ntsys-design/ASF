@@ -359,6 +359,7 @@ header .container h1 {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
+  min-width: 178px;
 }
 header .container h1 img {
   margin-right: 24px;
@@ -373,9 +374,22 @@ header .container .nav_wrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 header .container .nav_wrap nav {
   padding: 0 40px;
+  height: 100%;
+  position: relative;
+}
+header .container .nav_wrap nav:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #000;
+  opacity: 0.1;
 }
 header .container .nav_wrap nav ul {
   display: -webkit-box;
@@ -384,6 +398,7 @@ header .container .nav_wrap nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 header .container .nav_wrap nav ul li a {
   font-weight: 600;
@@ -406,6 +421,9 @@ header .container .nav_wrap nav ul li a.active:after {
           transform: translateX(-50%);
   bottom: 7px;
 }
+header .container .nav_wrap .util {
+  margin-left: 40px;
+}
 header .container .nav_wrap .util a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,11 +445,11 @@ header .container .nav_wrap .util a button {
   background: url(../images/down.png);
 }
 
-.adm_menu {
+.adm_menu_wrap {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
 }
-.adm_menu .container ul {
+.adm_menu_wrap .container ul {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,10 +462,10 @@ header .container .nav_wrap .util a button {
           justify-content: space-between;
   padding: 48px 0;
 }
-.adm_menu .container ul li {
+.adm_menu_wrap .container ul li {
   text-align: center;
 }
-.adm_menu .container ul li a {
+.adm_menu_wrap .container ul li a {
   width: 129px;
   height: 129px;
   border: 2px solid #EBEEF0;
@@ -463,13 +481,13 @@ header .container .nav_wrap .util a button {
   border-radius: 16px;
   margin-bottom: 20px;
 }
-.adm_menu .container ul li a:hover {
+.adm_menu_wrap .container ul li a:hover {
   border: 2px solid #6DA2FF;
 }
-.adm_menu .container ul li a.on {
+.adm_menu_wrap .container ul li a.on {
   border: 2px solid #6DA2FF;
 }
-.adm_menu .container ul li a div {
+.adm_menu_wrap .container ul li a div {
   width: 64px;
   height: 64px;
   background: #eee;
@@ -498,8 +516,12 @@ footer .container p {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 1260px) {
+  .container {
+    padding: 0 30px;
+  }
+}
 .wrapper {
-  max-width: 1920px;
   height: 100vh;
 }
 .wrapper.main {
@@ -579,7 +601,7 @@ footer .container p {
 .wrapper .input_wrap .login {
   width: 100%;
   max-width: 400px;
-  padding-bottom: 22%;
+  padding-bottom: 15%;
 }
 .wrapper .input_wrap .login p {
   font-size: 40px;
@@ -658,6 +680,7 @@ footer .container p {
   border-top: 1px solid #016FF3;
 }
 .wrapper .input_wrap .login .loginform_wrap form input[type=button] {
+  border: 1px solid transparent;
   cursor: pointer;
   background: #016ff3;
   margin-top: 24px;
@@ -830,7 +853,7 @@ footer .container p {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 49%;
           flex: 0 1 49%;
-  margin-left: 20px;
+  margin-left: 2%;
 }
 .fence_adm .container .form_wrap.add_wrap form.add_form ul li label {
   min-width: 90px;
@@ -851,17 +874,17 @@ footer .container p {
   background: url(../images/search_down.png) no-repeat 95% center;
 }
 
-.fence_list {
+.fence_list_wrap {
   background: #ECEFF2;
 }
-.fence_list .container {
+.fence_list_wrap .container {
   position: relative;
 }
-.fence_list .container > ul {
+.fence_list_wrap .container > ul {
   text-align: center;
   padding: 56px 0 48px;
 }
-.fence_list .container > ul > li {
+.fence_list_wrap .container > ul > li {
   background: #fff;
   height: 80px;
   font-size: 16px;
@@ -870,10 +893,10 @@ footer .container p {
   margin-bottom: 16px;
   border: 2px solid transparent;
 }
-.fence_list .container > ul > li:nth-child(n+2):hover {
+.fence_list_wrap .container > ul > li:nth-child(n+2):hover {
   border: 2px solid #4661DC;
 }
-.fence_list .container > ul > li > ul {
+.fence_list_wrap .container > ul > li > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -883,28 +906,28 @@ footer .container p {
   height: 80px;
   width: 100%;
 }
-.fence_list .container > ul > li > ul li {
+.fence_list_wrap .container > ul > li > ul li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   color: #55626F;
 }
-.fence_list .container > ul > li > ul li:first-child {
+.fence_list_wrap .container > ul > li > ul li:first-child {
   color: #4661DC;
 }
-.fence_list .container > ul > li > ul li:nth-child(4) {
+.fence_list_wrap .container > ul > li > ul li:nth-child(4) {
   color: #17A400;
 }
-.fence_list .container > ul > li:first-child {
+.fence_list_wrap .container > ul > li:first-child {
   background: #6F8294;
 }
-.fence_list .container > ul > li:first-child ul li {
+.fence_list_wrap .container > ul > li:first-child ul li {
   color: #fff;
 }
-.fence_list .container > ul > li:last-child {
+.fence_list_wrap .container > ul > li:last-child {
   margin-bottom: 0;
 }
-.fence_list .container .pagination {
+.fence_list_wrap .container .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,7 +942,7 @@ footer .container p {
   width: 100%;
   height: 32px;
 }
-.fence_list .container .pagination > a {
+.fence_list_wrap .container .pagination > a {
   width: 11px;
   height: 11px;
   display: inline-block;
@@ -928,26 +951,26 @@ footer .container p {
       flex-shrink: 0;
   opacity: 0.2;
 }
-.fence_list .container .pagination > a.first_page {
+.fence_list_wrap .container .pagination > a.first_page {
   background: url(../images/btn_first_page.png) no-repeat center center/contain;
   margin-right: 33px;
 }
-.fence_list .container .pagination > a.prev_page {
+.fence_list_wrap .container .pagination > a.prev_page {
   background: url(../images/btn_prev_page.png) no-repeat center center/contain;
   margin-right: 30px;
 }
-.fence_list .container .pagination > a.next_page {
+.fence_list_wrap .container .pagination > a.next_page {
   background: url(../images/btn_next_page.png) no-repeat center center/contain;
   margin-left: 30px;
 }
-.fence_list .container .pagination > a.last_page {
+.fence_list_wrap .container .pagination > a.last_page {
   background: url(../images/btn_last_page.png) no-repeat center center/contain;
   margin-left: 33px;
 }
-.fence_list .container .pagination > a.on {
+.fence_list_wrap .container .pagination > a.on {
   opacity: 1;
 }
-.fence_list .container .pagination ul {
+.fence_list_wrap .container .pagination ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,17 +980,17 @@ footer .container p {
       -ms-flex-align: center;
           align-items: center;
 }
-.fence_list .container .pagination ul > li {
+.fence_list_wrap .container .pagination ul > li {
   margin-right: 16px;
   width: 32px;
   height: 32px;
   background: #fff;
   border-radius: 50%;
 }
-.fence_list .container .pagination ul > li:last-child {
+.fence_list_wrap .container .pagination ul > li:last-child {
   margin-right: 0;
 }
-.fence_list .container .pagination ul > li a {
+.fence_list_wrap .container .pagination ul > li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,15 +1004,15 @@ footer .container p {
           align-items: center;
   font-size: 14px;
 }
-.fence_list .container .pagination ul > li a.active {
+.fence_list_wrap .container .pagination ul > li a.active {
   color: #fff;
   background: #4661DC;
   border-radius: 50%;
 }
-.fence_list .container .pagination ul > li:last-child {
+.fence_list_wrap .container .pagination ul > li:last-child {
   margin-right: 0;
 }
-.fence_list .container button.register {
+.fence_list_wrap .container button.register {
   position: absolute;
   right: 0;
   bottom: -10px;
@@ -999,7 +1022,7 @@ footer .container p {
   border-radius: 4px;
   font-weight: 500;
 }
-.fence_list .container button.register span {
+.fence_list_wrap .container button.register span {
   font-size: 18px;
   color: #fff;
   display: -webkit-box;
@@ -1012,7 +1035,7 @@ footer .container p {
       -ms-flex-align: center;
           align-items: center;
 }
-.fence_list .container button.register span:before {
+.fence_list_wrap .container button.register span:before {
   display: inline-block;
   content: "";
   width: 24px;

@@ -18,7 +18,7 @@
         </a>
         <div class="nav_wrap">
           <nav>
-            <ul>
+            <ul class="gnb">
               <li><a href="#" class="active">ASF 관리</a></li>
               <li><a href="#">민원 관리</a></li>
               <li><a href="#">통계 관리</a></li>
@@ -34,17 +34,33 @@
         </div>
       </div>
     </header>
-    <div class="adm_menu">
+    <div class="adm_menu_wrap">
       <div class="container">
-        <ul>
-          <li><a href="#" class="on"><div></div></a>울타리 관리</li>
-          <li><a href="#"><div><!-- 아이콘 수정 후 추가 예정 --></div></a>순찰 계획 관리</li>
-          <li><a href="#"><div></div></a>순찰 일지 관리</li>
-          <li><a href="#"><div></div></a>유지보수 작업 관리</li>
-          <li><a href="#"><div></div></a>민원 일지 관리 </li>
-          <li><a href="#"><div></div></a>순찰 일지 통계</li>
-          <li><a href="#"><div></div></a>유지보수 작업 통계</li>
-          <li><a href="#"><div></div></a>민원 일지 통계</li>
+        <ul class="adm_menu">
+          <li><a href="#" class="on">
+              <div></div>
+            </a>울타리 관리</li>
+          <li><a href="#">
+              <div><!-- 아이콘 수정 후 추가 예정 --></div>
+            </a>순찰 계획 관리</li>
+          <li><a href="#">
+              <div></div>
+            </a>순찰 일지 관리</li>
+          <li><a href="#">
+              <div></div>
+            </a>유지보수 작업 관리</li>
+          <li><a href="#">
+              <div></div>
+            </a>민원 일지 관리 </li>
+          <li><a href="#">
+              <div></div>
+            </a>순찰 일지 통계</li>
+          <li><a href="#">
+              <div></div>
+            </a>유지보수 작업 통계</li>
+          <li><a href="#">
+              <div></div>
+            </a>민원 일지 통계</li>
         </ul>
       </div>
     </div>
@@ -54,32 +70,32 @@
         <div class="form_wrap search_wrap add_wrap">
           <form action="" class="add_form">
             <ul>
-             <li>
-              <label for="fence_num">관리 번호 <span>*</span></label>
+              <li>
+                <label for="fence_num">관리 번호 <span>*</span></label>
                 <input type="text" name="num" id="fence_num" placeholder="관리 번호를 입력해 주세요.">
-            </li>
-             <li>
-              <label for="main_select">구역 선택 <span>*</span></label>
+              </li>
+              <li>
+                <label for="main_select">구역 선택 <span>*</span></label>
                 <select name="section_list" id="main_select">
                   <option value="" disabled selected>서울 남산 구역</option>
                   <option value=""></option>
                   <option value=""></option>
                   <option value=""></option>
                 </select>
-             </li>
-             <li>
-              <label for="main_select">타입 선택 <span>*</span></label>
+              </li>
+              <li>
+                <label for="main_select">타입 선택 <span>*</span></label>
                 <select name="type_list" id="main_select">
                   <option value="" disabled selected>A 타입 울타리</option>
                   <option value=""></option>
                   <option value=""></option>
                   <option value=""></option>
                 </select>
-             </li>
-             <li>
-              <label for="fence_name">명칭 입력 <span>*</span></label>
+              </li>
+              <li>
+                <label for="fence_name">명칭 입력 <span>*</span></label>
                 <input type="text" name="name" id="fence_name" placeholder="명칭을 입력해 주세요.">
-             </li>
+              </li>
             </ul>
           </form>
         </div>
@@ -89,12 +105,12 @@
       <div class="container">
         <!-- api로 지도 추가 예정 -->
         <div class="map">
-          
+
         </div>
-       <div class="btn_wrap">
-         <button class="coordi"><span>좌표그리기</span></button>
-         <button class="register"><span>등록</span></button>
-       </div>
+        <div class="btn_wrap">
+          <button class="coordi"><span>좌표그리기</span></button>
+          <button class="register"><span>등록</span></button>
+        </div>
       </div>
     </div>
     <footer>
