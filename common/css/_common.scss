@@ -197,3 +197,22 @@ footer {
     padding: 0 30px;
   }
 }
+
+@include maxWidth(1080px) {
+  header{
+    .container{
+      .nav_wrap{
+        nav{
+          ul{
+            display: none;
+            
+          }
+          &:after
+            {
+              display: none;
+            }
+        }
+      }
+    }
+  }
+}

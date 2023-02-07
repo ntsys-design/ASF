@@ -515,6 +515,14 @@ footer .container p {
     padding: 0 30px;
   }
 }
+@media screen and (max-width: 1080px) {
+  header .container .nav_wrap nav ul {
+    display: none;
+  }
+  header .container .nav_wrap nav:after {
+    display: none;
+  }
+}
 .wrapper {
   height: 100vh;
 }
