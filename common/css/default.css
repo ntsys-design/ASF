@@ -356,7 +356,7 @@ header .container {
           justify-content: space-between;
 }
 header .container h1 {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 600;
   color: #fff;
   min-width: 178px;
@@ -561,13 +561,13 @@ footer .container p {
   line-height: 150%;
 }
 .wrapper .info_wrap > div h2 {
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 150%;
   color: #fff;
   margin-bottom: 6px;
 }
 .wrapper .info_wrap > div p {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #fff;
   word-break: keep-all;
@@ -606,7 +606,7 @@ footer .container p {
   padding-bottom: 15%;
 }
 .wrapper .input_wrap .login p {
-  font-size: 40px;
+  font-size: 2.5em;
   margin-bottom: 32px;
   line-height: 150%;
 }
@@ -669,12 +669,14 @@ footer .container p {
 .wrapper .input_wrap .login .loginform_wrap form input[type=text]:focus {
   background: url(../images/email_ico_on.png) no-repeat;
   background-position: 16px center;
+  z-index: 5;
 }
 .wrapper .input_wrap .login .loginform_wrap form input[type=password] {
-  border-top: none;
+  margin-top: -1px;
   background: url(../images/password_ico.png) no-repeat;
   background-position: 16px center;
   border-radius: 0 0 4px 4px;
+  border-top: 1px solid transparent;
 }
 .wrapper .input_wrap .login .loginform_wrap form input[type=password]:focus {
   background: url(../images/password_ico_on.png) no-repeat;
@@ -713,7 +715,7 @@ footer .container p {
 .wrapper .input_wrap h3 {
   margin-top: 40px;
   text-align: right;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
   color: #1D1F35;
   opacity: 0.6;
@@ -721,7 +723,7 @@ footer .container p {
 
 .fence_adm .container h2 {
   padding: 48px 0;
-  font-size: 32px;
+  font-size: 2em;
   color: #26336D;
 }
 .fence_adm .container .form_wrap.search_wrap form ul {
@@ -750,7 +752,7 @@ footer .container p {
 }
 .fence_adm .container .form_wrap.search_wrap form ul li label {
   min-width: 35px;
-  font-size: 20px;
+  font-size: 1.25em;
   margin-right: 24px;
 }
 .fence_adm .container .form_wrap.search_wrap form ul li select {
@@ -760,7 +762,7 @@ footer .container p {
   border-radius: 4px;
   height: 56px;
   background: url(../images/search_down.png) no-repeat 91% center;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 .fence_adm .container .form_wrap.search_wrap form ul li select:focus {
   outline: none;
@@ -773,7 +775,7 @@ footer .container p {
   color: #000;
   border: none;
   height: 100%;
-  font-size: 20px;
+  font-size: 1.25em;
   border: 2px solid transparent;
 }
 .fence_adm .container .form_wrap.search_wrap form ul li input[type=text]:focus {
@@ -782,23 +784,23 @@ footer .container p {
 }
 .fence_adm .container .form_wrap.search_wrap form ul li input[type=text]::-webkit-input-placeholder {
   color: #484B51;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 .fence_adm .container .form_wrap.search_wrap form ul li input[type=text]::-moz-placeholder {
   color: #484B51;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 .fence_adm .container .form_wrap.search_wrap form ul li input[type=text]:-ms-input-placeholder {
   color: #484B51;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 .fence_adm .container .form_wrap.search_wrap form ul li input[type=text]::-ms-input-placeholder {
   color: #484B51;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 .fence_adm .container .form_wrap.search_wrap form ul li input[type=text]::placeholder {
   color: #484B51;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 .fence_adm .container .form_wrap.search_wrap form ul li:not(:last-child) {
   -webkit-box-flex: 0;
@@ -889,7 +891,7 @@ footer .container p {
 .fence_list_wrap .container > ul > li {
   background: #fff;
   height: 80px;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
   border-radius: 4px;
   margin-bottom: 16px;
@@ -1004,7 +1006,7 @@ footer .container p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .fence_list_wrap .container .pagination ul > li a.active {
   color: #fff;
@@ -1025,7 +1027,7 @@ footer .container p {
   font-weight: 500;
 }
 .fence_list_wrap .container button.register span {
-  font-size: 18px;
+  font-size: 1.125em;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1077,7 +1079,7 @@ footer .container p {
   background: #00C29E;
 }
 .add_map .container .btn_wrap button span {
-  font-size: 18px;
+  font-size: 1.125em;
   color: #fff;
 }
 .add_map .container .btn_wrap button.register {

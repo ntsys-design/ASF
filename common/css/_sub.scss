@@ -2,7 +2,7 @@
   .container {
     h2 {
       padding: 48px 0;
-      font-size: 32px;
+      font-size: 2em;
       color: #26336D;
     }
 
@@ -23,7 +23,7 @@
 
               label {
                 min-width: 35px;
-                font-size: 20px;
+                font-size: 1.25em;
                 margin-right: 24px;
               }
 
@@ -34,7 +34,7 @@
                 border-radius: 4px;
                 height: 56px;
                 background: url(../images/search_down.png)no-repeat 91% center;
-                font-size: 18px;
+                font-size: 1.125em;
 
                 &:focus {
                   outline: none;
@@ -50,7 +50,7 @@
                 color: #000;
                 border: none;
                 height: 100%;
-                font-size: 20px;
+                font-size: 1.25em;
                 border: 2px solid transparent;
 
                 &:focus {
@@ -60,7 +60,7 @@
 
                 &::placeholder {
                   color: #484B51;
-                  font-size: 18px;
+                  font-size: 0.9em;
                 }
               }
 
@@ -167,7 +167,7 @@
       >li {
         background: #fff;
         height: 80px;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 600;
         border-radius: 4px;
         margin-bottom: 16px;
@@ -290,7 +290,7 @@
             height: 100%;
             justify-content: center;
             align-items: center;
-            font-size: 14px;
+            font-size: 0.875em;
 
             &.active {
               color: #fff;
@@ -317,7 +317,7 @@
       font-weight: 500;
 
       span {
-        font-size: 18px;
+        font-size: 1.125em;
         color: #fff;
         display: flex;
         justify-content: center;
@@ -364,7 +364,7 @@
         background: #00C29E;
 
         span {
-          font-size: 18px;
+          font-size: 1.125em;
           color: #fff;
         }
 
