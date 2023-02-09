@@ -67,52 +67,79 @@
     <div class="fence_adm">
       <div class="container">
         <h2>울타리 관리</h2>
-        <div class="form_wrap regi_wrap">
-          <form action="" class="regi_form">
-            <ul>
-              <li>
-                <label for="fence_num">관리 번호 <span>*</span></label>
-                <input type="text" name="fence_num" id="fence_num" placeholder="관리 번호를 입력해 주세요.">
-              </li>
-              <li class="wid_50">
-                <label for="area_select">구역 선택 <span>*</span></label>
-                <select name="area_select" id="area_select">
-                  <option value="" disabled selected>서울 남산 구역</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
-              </li>
-              <li class="wid_50">
-                <label for="type_select">타입 선택 <span>*</span></label>
-                <select name="type_select" id="type_select">
-                  <option value="" disabled selected>A 타입 울타리</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
-              </li>
-              <li>
-                <label for="fence_name">명칭 입력 <span>*</span></label>
-                <input type="text" name="fence_name" id="fence_name" placeholder="명칭을 입력해 주세요.">
-              </li>
-            </ul>
-          </form>
-        </div>
+<div class="fencemap_wrap">
+  <div class="fence_map"></div>
+          <div class="form_wrap fence_modify">
+            <form action="" class="fence_det">
+              <ul>
+                <li>
+                  <h3>관리 번호 <span>*</span></h3>
+                  <span>서울-10-59</span>
+                </li>
+                <li>
+                  <h3>구역 선택 <span>*</span></h3>
+                  <span>****구역</span>
+                </li>
+                <li>
+                  <h3>타입 선택 <span>*</span></h3>
+                  <span>**울타리</span>
+                </li>
+                <li>
+                  <h3>명칭 입력 <span>*</span></h3>
+                  <span>*** ASF 울타리</span>
+                </li>
+              </ul>
+            </form>
+            <div class="coordinate">
+              <h3>좌표 관리</h3>
+              <table border="1" >
+                <thead>
+                  <tr>
+                    <th>정렬 순서</th>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>주소</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1번</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>ㅇㅇㅇ</td>
+                  </tr>
+                  <tr>
+                    <td>1번</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>ㅇㅇㅇ</td>
+                  </tr>
+                  <tr>
+                    <td>1번</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>ㅇㅇㅇ</td>
+                  </tr>
+                  <tr>
+                    <td>1번</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>ㅇㅇㅇ</td>
+                  </tr>
+                  <tr>
+                    <td>1번</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>ㅇㅇㅇ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+</div>
       </div>
     </div>
-    <div class="add_map">
-      <div class="container">
-        <!-- api로 지도 추가 예정 -->
-        <div class="map">
-
-        </div>
-        <div class="btn_wrap">
-          <button class="coordi_btn"><span>좌표그리기</span></button>
-          <button class="register_btn"><span>등록</span></button>
-        </div>
-      </div>
-    </div>
+    
     <footer>
       <div class="container">
         <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>

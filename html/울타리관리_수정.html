@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASF 관리시스템</title>
+  <link rel="stylesheet" href="../common/css/default.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <a href="#">
+          <h1 class="hd_logo"><img src="../common/images/hd_logo.png" alt="헤더 로고"> <span> 환경보전협회</span></h1>
+        </a>
+        <div class="nav_wrap">
+          <nav>
+            <ul class="gnb">
+              <li><a href="#" class="active">ASF 관리</a></li>
+              <li><a href="#">민원 관리</a></li>
+              <li><a href="#">통계 관리</a></li>
+            </ul>
+          </nav>
+          <div class="util">
+            <a href="#">반갑습니다. 김길동님!
+              <button>
+                <span class="hide">메뉴보기</span></button>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="adm_menu_wrap">
+      <div class="container">
+        <ul class="adm_menu">
+          <li><a href="#" class="on">
+              <div></div>
+            </a>울타리 관리</li>
+          <li><a href="#">
+              <div><!-- 아이콘 수정 후 추가 예정 --></div>
+            </a>순찰 계획 관리</li>
+          <li><a href="#">
+              <div></div>
+            </a>순찰 일지 관리</li>
+          <li><a href="#">
+              <div></div>
+            </a>유지보수 작업 관리</li>
+          <li><a href="#">
+              <div></div>
+            </a>민원 일지 관리 </li>
+          <li><a href="#">
+              <div></div>
+            </a>순찰 일지 통계</li>
+          <li><a href="#">
+              <div></div>
+            </a>유지보수 작업 통계</li>
+          <li><a href="#">
+              <div></div>
+            </a>민원 일지 통계</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fence_adm">
+      <div class="container">
+        <h2>울타리 관리</h2>
+        <div class="fencemap_wrap">
+          <div class="fence_map"></div>
+          <div class="form_wrap fence_modify">
+            <form action="" class="add_form">
+              <ul>
+                <li>
+                  <label for="fence_num">관리 번호 <span>*</span></label>
+                  <input type="text" name="fence_num" id="fence_num" placeholder="관리 번호를 입력해 주세요.">
+                </li>
+                <li>
+                  <label for="area_select">구역 선택 <span>*</span></label>
+                  <select name="area_select" id="area_select">
+                    <option value="" disabled selected>서울 남산 구역</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </li>
+                <li>
+                  <label for="type_select">타입 선택 <span>*</span></label>
+                  <select name="type_select" id="type_select">
+                    <option value="" disabled selected>A 타입 울타리</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </li>
+                <li>
+                  <label for="fence_name">명칭 입력 <span>*</span></label>
+                  <input type="text" name="fence_name" id="fence_name" placeholder="명칭을 입력해 주세요.">
+                </li>
+              </ul>
+            </form>
+            <div class="coordinate">
+              <h3>좌표 관리</h3>
+              <table border="1">
+                <thead>
+                  <tr>
+                    <th>정렬 순서</th>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>주소</th>
+                    <th>삭제여부</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><label for="array" class="hide">정렬순서 </label>
+                      <input type="text" name="array" id="array" placeholder="1">번
+                    </td>
+                    <td><label for="X" class="hide">X </label>
+                      <input type="text" name="X" id="X" placeholder="3">
+                    </td>
+                    <td><label for="Y" class="hide">Y </label>
+                      <input type="text" name="Y" id="Y" placeholder="3">
+                    </td>
+                    <td><label for="adress" class="hide">주소 </label>
+                      <input type="text" name="adress" id="adress" placeholder="000000">
+                    </td>
+                    <td><button class="remove_btn">삭제</button></td>
+                  </tr>
+                  <tr>
+                    <td><label for="array" class="hide">정렬순서 </label>
+                      <input type="text" name="array" id="array" placeholder="1">번
+                    </td>
+                    <td><label for="X" class="hide">X </label>
+                      <input type="text" name="X" id="X" placeholder="3">
+                    </td>
+                    <td><label for="Y" class="hide">Y </label>
+                      <input type="text" name="Y" id="Y" placeholder="3">
+                    </td>
+                    <td><label for="adress" class="hide">주소 </label>
+                      <input type="text" name="adress" id="adress" placeholder="000000">
+                    </td>
+                    <td><button class="remove_btn">삭제</button></td>
+                  </tr>
+                  <tr>
+                    <td><label for="array" class="hide">정렬순서 </label>
+                      <input type="text" name="array" id="array" placeholder="1">번
+                    </td>
+                    <td><label for="X" class="hide">X </label>
+                      <input type="text" name="X" id="X" placeholder="3">
+                    </td>
+                    <td><label for="Y" class="hide">Y </label>
+                      <input type="text" name="Y" id="Y" placeholder="3">
+                    </td>
+                    <td><label for="adress" class="hide">주소 </label>
+                      <input type="text" name="adress" id="adress" placeholder="000000">
+                    </td>
+                    <td><button class="remove_btn">삭제</button></td>
+                  </tr>
+                  <tr>
+                    <td><label for="array" class="hide">정렬순서 </label>
+                      <input type="text" name="array" id="array" placeholder="1">번
+                    </td>
+                    <td><label for="X" class="hide">X </label>
+                      <input type="text" name="X" id="X" placeholder="3">
+                    </td>
+                    <td><label for="Y" class="hide">Y </label>
+                      <input type="text" name="Y" id="Y" placeholder="3">
+                    </td>
+                    <td><label for="adress" class="hide">주소 </label>
+                      <input type="text" name="adress" id="adress" placeholder="000000">
+                    </td>
+                    <td><button class="remove_btn">삭제</button></td>
+                  </tr>
+                  <tr>
+                    <td><label for="array" class="hide">정렬순서 </label>
+                      <input type="text" name="array" id="array" placeholder="1">번
+                    </td>
+                    <td><label for="X" class="hide">X </label>
+                      <input type="text" name="X" id="X" placeholder="3">
+                    </td>
+                    <td><label for="Y" class="hide">Y </label>
+                      <input type="text" name="Y" id="Y" placeholder="3">
+                    </td>
+                    <td><label for="adress" class="hide">주소 </label>
+                      <input type="text" name="adress" id="adress" placeholder="000000">
+                    </td>
+                    <td><button class="remove_btn">삭제</button></td>
+                  </tr>
+                 
+
+                </tbody>
+              </table>
+
+              <ul class="mo_re">
+                <li><button>수정</button></li>
+                <li><button>삭제</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
+        <p>Copyright © 2023 ASF. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../common/js/jquery-3.6.2.min.js"></script>
+  <script src="../common/js/publish.js"></script>
+</body>
+
+</html>
