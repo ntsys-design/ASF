@@ -11,7 +11,11 @@ body {
   margin: auto;
   height: 100%;
 }
-
+table{
+  border:1;
+  text-align: left;
+}
+textarea{resize: none; background:#f3f6fb; border-radius: 4px;padding: 10px;}
 // header
 
 header {

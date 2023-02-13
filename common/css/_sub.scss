@@ -5,9 +5,35 @@
       font-size: 2em;
       color: #26336D;
     }
+    h3{
+      padding-bottom: 20px;
+      font-size: 1.3em;
+      color: #26336D;
+    }
 
 
 
+  }
+}
+//순찰일지관리_등록 탭메뉴
+.tab_menu{
+  margin-bottom: 20px;
+  display: flex;
+  li{margin-right: 10px;
+    &:last-child{margin-right: 0;}
+    flex:1;
+    text-align: center;
+    
+    a{
+      padding: 10px;
+      background: #f2f3f8;
+    }
+    &.on{
+      a{
+        background: #4661DC;
+      }
+
+    }
   }
 }
 
@@ -89,7 +115,7 @@
 
         }
 
-        .search_bar {
+         @at-root .search_bar {
 
           height: 56px;
           width: 89%;
@@ -120,8 +146,8 @@
 
 
 
-  &.regi_wrap {
-    form.regi_form {
+  &.com_wrap {
+    form.com_form {
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -149,13 +175,16 @@
             background: #F3F6FB;
             margin-right: 0;
             border-radius: 4px;
-            width: calc(100% - 90px);
           }
 
           select {
-            width: calc(100% - 90px);
             background: url(../images/search_down.png) no-repeat 95% center;
           }
+        }
+      }
+      &.det_form{
+        label{
+          min-width: 170px;
         }
       }
     }
@@ -314,7 +343,7 @@
       }
     }
 
-    button.register_btn {
+     button.register_btn {
       position: absolute;
       right: 0;
       bottom: -10px;
@@ -351,18 +380,19 @@
   .container {
     padding-top: 56px;
 
-    .map {
+    @at-root .map {
       width: 100%;
       height: 658px;
       background: #6F8294;
 
     }
 
-    .btn_wrap {
+    @at-root .btn_wrap {
       margin-top: 40px;
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      margin-bottom: 30px;
 
       button {
         width: 136px;
@@ -376,7 +406,7 @@
           color: #fff;
         }
 
-        &.register {
+        &.register_btn {
           background: #4661DC;
           margin-left: 16px;
 
@@ -396,12 +426,31 @@
             }
           }
         }
+        &:last-child{
+          margin-left: 16px;
 
+        }
       }
     }
   }
 }
+.btn_container{
+  display: flex; justify-content: space-between;
+  align-items: center;
+  
+    button.remove_btn {
+      width: 136px;
+      height: 58px;
+      border-radius: 4px;
+      font-weight: 500;
+      background: #eb5449;
 
+      span {
+        font-size: 1.125em;
+        color: #fff;
+      }
+  }
+}
 // 울타리관리_수정
 
 .fencemap_wrap {
@@ -446,5 +495,78 @@
       display: flex;
     }
 
+  }
+}
+
+.modal_box {
+  width: 100%;
+  height: 100vh;
+  // background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9999;
+
+  .modal_contents {
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+
+    .close {
+      position: absolute;
+      right: 0;
+    }
+ul{
+  li{
+    &:first-child{
+      flex: 0 1 29%;
+    }
+    &:last-child{
+      flex: 0 1 70%;
+    }
+  }
+}
+  }
+
+}
+
+.ptr_log{
+  table{
+    border: 1;
+    
+      .tb_input_wrap{
+        display: flex;
+        input{
+          width: 100px;
+        }
+      }
+    
+  }
+
+  &.photomount{
+    ul{
+      li{
+        ul{
+          display: flex;
+          li{
+            flex: 1;
+            &:last-child{
+              flex: 0 1 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.name_list{
+    table{
+      text-align: center;
+    }
   }
 }

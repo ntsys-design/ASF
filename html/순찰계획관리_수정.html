@@ -66,7 +66,7 @@
     </div>
     <div class="contents">
       <div class="container">
-        <h2>순찰 계획 관리</h2>
+        <h2>순찰 계획 관리 </h2>
         <div class="form_wrap com_wrap">
           <h3>순찰 계획 및 순찰 담당자</h3>
           <form action="" class="com_form">
@@ -88,8 +88,12 @@
                 <div class="search_bar">
                   <input type="text" name="patroller" id="patroller" placeholder="
                   ">
-                  <button class="search_btn ptr_sch_btn"></button>
+                  <button  class="search_btn"></button>
                 </div>
+              </li>
+              <li class="wid_50" >
+                <label for="patroller">순찰 선정</label>
+                <input type="text" name="patroller" id="patroller" placeholder="미 선정" disabled>
               </li>
 
               <li class="wid_50">
@@ -112,13 +116,12 @@
           <h3>순찰 울타리 구간 선택</h3>
           <form action="" class="com_form">
             <ul>
-
               <li class="wid_50">
                 <label for="fence_num">관리 번호 <span>*</span></label>
                 <div class="search_bar">
                   <input type="text" name="fence_num" id="fence_num" placeholder="
                   ">
-                  <button class="search_btn fcnum_sch_btn"></button>
+                  <button  class="search_btn"></button>
                 </div>
               </li>
               <li>
@@ -134,17 +137,21 @@
             </ul>
           </form>
 
-
+          
 
         </div>
         <div class="map">
 
-        </div>
-        <div class="btn_wrap">
-          <button onclick="location.href='순찰계획관리_목록.html'"><span>취소</span></button>
-          <button class="register_btn" onclick="location.href='순찰계획관리_목록.html'"><span>등록</span></button>
-        </div>
+          </div>
+          <div class="btn_container">
+            <button class="remove_btn"><span>삭제</span></button>
+            <div class="btn_wrap">
+              <button class="cancel_btn" onclick="location.href='순찰계획관리_목록.html'"><span>취소</span></button></li>
+              <button class="modify_btn" onclick="location.href='순찰계획관리_목록.html'"><span> 수정</span></button></li>
+            </div>
+          </div>
       </div>
+      .
     </div>
 
     <footer>
@@ -154,68 +161,6 @@
       </div>
     </footer>
 
-    <div class="modal_box ptr_modal_box">
-      <div class="modal_contents">
-        <h3>담당자 검색</h3><button class="close">❌</button>
-        <h4>담당자 검색</h4>
-        <div class="form_wrap">
-          <form action="" class="search_form">
-            <ul>
-              <li>
-                
-                <select name="ptr_select" id="ptr_select">
-                  <option value="" disabled selected>전체</option>
-                  <option value="">담당 회사</option>
-                  <option value="">담당자</option>
-                  <option value=""></option>
-                </select>
-              </li>
-              
-              <li>
-                <div class="search_bar">
-                  <input type="text" name="search" id="ptr _search" placeholder="검색어를 입력하세요.">
-                  <button class="search_btn"></button>
-                </div>
-              </li>
-
-            </ul>
-          </form>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="modal_box fcnum_modal_box" >
-      <div class="modal_contents">
-        <h3>울타리 검색</h3><button class="close">❌</button>
-        <h4>을타리 검색</h4>
-        <div class="form_wrap">
-          <form action="" class="search_form">
-            <ul>
-              <li>
-                
-                <select name="pat_select" id="pat_select">
-                  <option value="" disabled selected>전체</option>
-                  <option value="">관리 번호</option>
-                  <option value="">권역</option>
-                  <option value="">타입</option>
-                  <option value="">시설물 그룹 명</option>
-                </select>
-              </li>
-              
-              <li>
-                <div class="search_bar">
-                  <input type="text" name="search" id="fence _search" placeholder="검색어를 입력하세요.">
-                  <button class="search_btn"></button>
-                </div>
-              </li>
-
-            </ul>
-          </form>
-          
-        </div>
-      </div>
-    </div>
   </div>
 
   <script src="../common/js/jquery-3.6.2.min.js"></script>

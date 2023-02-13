@@ -48,7 +48,7 @@
             </a>순찰 일지 관리</li>
           <li><a href="#">
               <div></div>
-            </a>통계 화면 공통(구역별)</li>
+            </a>순찰 일지 통계</li>
           <li><a href="#">
               <div></div>
             </a>유지보수 작업 관리 </li>
@@ -77,15 +77,34 @@
                   <td>서울-10-59</td>
                 </tr>
                 <tr>
-                  <th>구역 선택 <span>*</span></th>
-                  <td>구역</td>
+                  <th>권역 선택 <span>*</span></th>
+                  <td>권역</td>
                 </tr>
                 <tr>
-                  <th>명칭 입력 <span>*</span></th>
+                  <th>시설물 그룹 명 입력 <span>*</span></th>
                   <td>울타리</td>
                 </tr>
               </tbody>
             </table>
+            <div class="form_wrap com_wrap">
+              <form action="" class="det_form com_form">
+                <ul>
+                  <li>
+                    <label for="patrol_plan">관리 번호 <span>*</span></label>
+                    <input type="text" name="patrol_plan" id="patrol_plan" placeholder="서울-10-59" readonly>
+                  </li>
+                  <li>
+                    <label for="company">권역 선택 <span>*</span></label>
+                    <input type="text" name="company" id="company" placeholder="***권역" readonly>
+                  </li>
+                  <li>
+                    <label for="part">시설물 그룹 명 입력 <span>*</span></label>
+                    <input type="text" name="part" id="part" placeholder="*** ASF 울타리" readonly >
+                  </li>
+              
+                </ul>
+              </form>
+            </div>
           
         </div>
       </div>
@@ -97,7 +116,7 @@
 
         </div>
         <div class="btn_wrap">
-          <button class="list_btn"><span>목록</span></button>
+          <button class="list_btn" onclick="location.href='시설물정보_목록.html'"><span>목록</span></button>
         </div>
       </div>
     </div>

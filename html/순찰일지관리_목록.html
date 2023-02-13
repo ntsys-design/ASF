@@ -66,32 +66,28 @@
     </div>
     <div class="contents">
       <div class="container">
-        <h2>시설물 정보</h2>
+        <h2>순찰 일지 관리</h2>
         <div class="form_wrap">
           <form action="" class="search_form">
             <ul>
               <li>
-                <label for="area_select">구역</label>
-                <select name="area_select" id="area_select">
-                  <option value="" disabled selected>서울 남산 구역</option>
+                <label for="pat_company" ></label>
+                <select name="pat_company" id="pat_company">
+                  <option value="" disabled selected>순찰 회사 명</option>
                   <option value=""></option>
                   <option value=""></option>
                   <option value=""></option>
                 </select>
               </li>
               <li>
-                <label for="type_select">타입</label>
-                <select name="type_select" id="type_select">
-                  <option value="" disabled selected>A 타입 울타리</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
+                <label for="period" >기간 </label>
+                <input type="text" name="period" id="period" placeholder="2022. 08. 10"> ~
+                <input type="text" name="period" id="period" placeholder="2022. 08. 10">
               </li>
               <li>
-                <label for="fence _search">검색</label>
+                <label for="fence _search" >검색</label>
                 <div class="search_bar">
-                  <input type="text" name="fence _search" id="fence _search" placeholder="검색어를 입력하세요.">
+                  <input type="text" name="search" id="fence _search" placeholder="검색어를 입력하세요.">
                   <button  class="search_btn"></button>
                 </div>
               </li>
@@ -103,116 +99,151 @@
     </div>
     <div class="fence_list_wrap">
       <div class="container">
-        
         <ul class="fence_list">
           <li>
             <ul>
-              <li>관리 번호</li>
-              <li>구역</li>
-              <li>타입</li>
-              <li>명칭</li>
+              <li>No</li>
+              <li>시설물 그룹 명</li>
+              <li>순찰 일지 명</li>
+              <li>등록자</li>
               <li>등록일</li>
+              <li>순찰자</li>
+              <li>순찰 완료</li>
+              <li>공사 서정</li>
+              <li>공사 담당자</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>10</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>임시 저장</li>
+              <li>-</li>
+              <li>-</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>9</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>임시 저장</li>
+              <li>-</li>
+              <li>-</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>8</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>완료</li>
+              <li>선정</li>
+              <li>홍길동</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>7</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>완료</li>
+              <li>-</li>
+              <li>-</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>6</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>완료</li>
+              <li>선정</li>
+              <li>유길동 외 1명</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>5</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>완료</li>
+              <li>-</li>
+              <li>-</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>4</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>임시 저장</li>
+              <li>-</li>
+              <li>-</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>3</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>완료</li>
+              <li>미 선정</li>
+              <li>-</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>2</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>완료</li>
+              <li>미 선정</li>
+              <li>-</li>
             </ul>
           </li>
           <li>
             <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
+              <li>1</li>
+              <li>....</li>
+              <li>ASF 울타리 순찰</li>
+              <li>~~팀</li>
               <li>2019. 02. 13</li>
+              <li>홍길동</li>
+              <li>완료</li>
+              <li>-</li>
+              <li>-</li>
             </ul>
           </li>
-          <li>
-            <ul>
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>무슨울타리</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
+          
         </ul>
         <div class="pagination_wrap">
           <div class="pagination">
@@ -229,7 +260,7 @@
             <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
 
           </div>
-          <!-- <button class="register_btn" onclick="location.href='울타리관리_등록.html'"><span>등록</span></button> -->
+          <button class="register_btn" onclick="location.href='순찰일지관리_등록.html'"><span>등록</span></button>
         </div>
       </div>
     </div>
