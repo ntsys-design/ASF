@@ -1,5 +1,6 @@
 .contents {
   .container {
+
     h2 {
       padding: 48px 0;
       font-size: 2em;
@@ -14,6 +15,8 @@
       font-weight: 500;
     }
 
+    
+
 
 
 
@@ -27,27 +30,30 @@ textarea{resize: none; background:#f3f6fb; border-radius: 4px;padding: 20px;}
 
 //순찰일지관리_등록 탭메뉴
 .tab_menu {
-  margin-bottom: 20px;
+  margin-bottom: 64px;
   display: flex;
+  border-bottom: 1px solid #DDE1E4;
 
   li {
-    margin-right: 10px;
+    margin-right: 32px;
 
     &:last-child {
       margin-right: 0;
     }
 
-    flex:1;
     text-align: center;
 
     a {
-      padding: 10px;
-      background: #f2f3f8;
+      font-weight: 500;
+      font-size: 1.375em;
+      padding:0 24px 24px;
+      color: #696E76;
     }
 
     &.on {
+      border-bottom: 4px solid #4661DC;
       a {
-        background: #4661DC;
+        color: #4661DC;
       }
 
     }
@@ -302,6 +308,7 @@ textarea{resize: none; background:#f3f6fb; border-radius: 4px;padding: 20px;}
             &.text_area {
               height: 200px;
               align-items: flex-start;
+              margin-bottom: 0;
 
               label {
                 padding-top: 10px;
@@ -573,7 +580,7 @@ textarea{resize: none; background:#f3f6fb; border-radius: 4px;padding: 20px;}
         height: 58px;
         border-radius: 4px;
         font-weight: 500;
-        background: #00C29E;
+        background: #4661DC;
 
         span {
           font-size: 1.125em;
@@ -738,7 +745,18 @@ textarea{resize: none; background:#f3f6fb; border-radius: 4px;padding: 20px;}
 
 }
 
-.ptr_log {
+.ptr_log_wrap{
+  .ptr_log {
+  display: none;
+  &:first-child{
+    display: block;
+  }
+  .regi_map{
+    .container{
+      padding: 56px 0;
+      margin-bottom: 56px;
+    }
+  }
   table {
     border: 1;
 
@@ -775,4 +793,9 @@ textarea{resize: none; background:#f3f6fb; border-radius: 4px;padding: 20px;}
       text-align: center;
     }
   }
+
+  .ptr_nt_btn{
+    background: #ECEFF2;
+  }
+}
 }
