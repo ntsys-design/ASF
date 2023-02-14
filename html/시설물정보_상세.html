@@ -17,13 +17,13 @@
           <h1 class="hd_logo"><img src="../common/images/hd_logo.png" alt="헤더 로고"> <span> 환경보전협회</span></h1>
         </a>
         <div class="nav_wrap">
-          <nav>
+          <!-- <nav>
             <ul class="gnb">
               <li><a href="#" class="active">ASF 관리</a></li>
               <li><a href="#">민원 관리</a></li>
               <li><a href="#">통계 관리</a></li>
             </ul>
-          </nav>
+          </nav> -->
           <div class="util">
             <a href="#">반갑습니다. 김길동님!
               <button>
@@ -34,30 +34,30 @@
         </div>
       </div>
     </header>
-    <div class="adm_menu_wrap">
+    <div class="lnb_wrap">
       <div class="container">
-        <ul class="adm_menu">
-          <li><a href="#" class="on">
+        <ul class="lnb">
+          <li><a href="./시설물정보_목록.html" class="on">
               <div><!-- 아이콘 수정 후 추가 예정 --></div>
             </a>시설물 정보</li>
-          <li><a href="#">
+          <li><a href="./순찰계획관리_목록.html">
               <div></div>
             </a>순찰 계획 관리</li>
-          <li><a href="#">
+          <li><a href="./순찰일지관리_목록.html">
               <div></div>
             </a>순찰 일지 관리</li>
+          <li><a href="#">
+              <div></div>
+            </a>유지보수 작업 관리</li>
+          <li><a href="#">
+              <div></div>
+            </a>민원 일지 관리</li>
           <li><a href="#">
               <div></div>
             </a>순찰 일지 통계</li>
           <li><a href="#">
               <div></div>
-            </a>유지보수 작업 관리 </li>
-          <li><a href="#">
-              <div></div>
             </a>유지보수 작업 통계</li>
-          <li><a href="#">
-              <div></div>
-            </a>민원 일지 관리</li>
           <li><a href="#">
               <div></div>
             </a>민원 일지 통계</li>
@@ -68,26 +68,8 @@
       <div class="container">
         <h2>시설물 정보</h2>
         <div>
-          
-            <table>
-              <thead></thead>
-              <tbody>
-                <tr>
-                  <th>관리 번호 <span>*</span></th>
-                  <td>서울-10-59</td>
-                </tr>
-                <tr>
-                  <th>권역 선택 <span>*</span></th>
-                  <td>권역</td>
-                </tr>
-                <tr>
-                  <th>시설물 그룹 명 입력 <span>*</span></th>
-                  <td>울타리</td>
-                </tr>
-              </tbody>
-            </table>
             <div class="form_wrap com_wrap">
-              <form action="" class="det_form com_form">
+              <form action="" class="fct_det_form com_form">
                 <ul>
                   <li>
                     <label for="patrol_plan">관리 번호 <span>*</span></label>
@@ -109,7 +91,7 @@
         </div>
       </div>
     </div>
-    <div class="add_map">
+    <div class="regi_map">
       <div class="container">
         <!-- api로 지도 추가 예정 -->
         <div class="map">

@@ -1,20 +1,23 @@
-$('.gnb li a').on('click', function () {
-  $('.gnb li a').removeClass('active')
-  $(this).addClass('active')
-})
+// $('.gnb li a').on('click', function () {
+//   $('.gnb li a').removeClass('active')
+//   $(this).addClass('active')
+// })
 
-$('.adm_menu li a').on('click', function (e) {
-  e.preventDefault()
-  $('.adm_menu li a').removeClass('on')
+// lnb
+$('.lnb_wrap li a').on('click', function () {
+  
+  $('.lnb li a').removeClass('on')
   $(this).addClass('on')
 })
 
+// pagination
 $('.pagination ul li a').on('click', function () {
 
   $('.pagination ul li a').removeClass('active')
   $(this).addClass('active')
 })
 
+// 모달 
 $(window).scroll(function () {
   let scrTop = $(this).scrollTop()
   $('.ptr_sch_btn').on('click',function(e){
@@ -48,7 +51,7 @@ $(window).scroll(function () {
 
 
 })
-
+// 순찰일지 관리 탭
 $('.tab_menu li').on('click',function(e){
   e.preventDefault()
   let idx=$(this).index()

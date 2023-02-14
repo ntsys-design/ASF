@@ -25,22 +25,33 @@
         <p class="login_tit">로그인하세요.</p>
         <div class="loginform_wrap">
           <form>
-            <label for="id_in">
               <input type="text" name="id" required class="email_box" placeholder="E-MAIL">
               <button class="close-icon" type="reset"></button>
-            </label>
+            
           </form>
           <form>
-            <label for="pw_in">
-              <input type="password" id="pwd" name="pwd" required class="pw_box" placeholder="PASSWORD">
+            <input type="password" id="pwd" name="pwd" required class="pw_box" placeholder="PASSWORD">
+            <button class="close-icon" type="reset"></button>
+          </form>
+
+
+          <form>
+            <input type="button" value="인증번호 발송">
+          </form>
+
+          <form>
+              <input type="text" id="otp" name="otp" required class="pw_box" placeholder="OTP 정보를 입력하세요">
               <button class="close-icon" type="reset"></button>
           </form>
 
-          </label>
-          <form action=""><input type="button" value="로그인"></form>
+          <h3 class="otp_time">만료시간<span>02:12</span></h3>
 
+          <form>
+            <input type="button" id="login_btn" value="로그인">
+          </form>
+          <h3 class="tit">한국환경보전협회</h3>
         </div>
-        <h3>한국환경보전협회</h3>
+
 
 
       </div>
