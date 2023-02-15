@@ -860,8 +860,10 @@
       <!-- 수정예정 -->
       <div class="modal_box ptr_modal_box">
         <div class="modal_contents">
-          <h3>담당자 검색</h3><button class="close">❌</button>
-          <h4>담당자 검색</h4>
+          <div class="modal_top">
+            <h3>순찰 계획 검색</h3><button class="close"><img src="../common/images/md_close_btn.png" alt="팝업 끄기 버튼"></button>
+          </div>
+          
           <div class="form_wrap">
             <form action="" class="search_form">
               <ul>
@@ -869,23 +871,97 @@
 
                   <select name="ptr_select" id="ptr_select">
                     <option value="" disabled selected>전체</option>
-                    <option value="">담당 회사</option>
-                    <option value="">담당자</option>
-                    <option value=""></option>
+                    <option value="">시설물 그룹 명</option>
+                    <option value="">순찰 계획 명</option>
+                    <option value="">등록자</option>
                   </select>
                 </li>
 
                 <li>
                   <div class="search_bar">
-                    <input type="text" name="search" id="ptr _search" placeholder="">
+                    <input type="text" name="search" id="ptr _search" placeholder="검색어를 입력하세요.">
                     <button class="search_btn"></button>
                   </div>
                 </li>
 
               </ul>
             </form>
-
           </div>
+            <div class="modal_tb">
+              <p>※ 관련 순찰 계획을 선택 하실 수 있습니다.</p>
+
+              <ul class="fence_list">
+                <li>
+                  <ul class="tb_hd">
+                    <li>시설물 그룹 명</li>
+                    <li>순찰 계획 명</li>
+                    <li>등록자</li>
+                    <li>등록일</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>북한산 가나다라마바사 ASF 울타리</li>
+                    <li>북한산 가나다라마바사 ASF 순찰 계획</li>
+                    <li>홍길동팀</li>
+                    <li>2019. 02. 13</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>북한산 가나다라마바사 ASF 울타리</li>
+                    <li>북한산 가나다라마바사 ASF 순찰 계획</li>
+                    <li>홍길동팀</li>
+                    <li>2019. 02. 13</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>북한산 가나다라마바사 ASF 울타리</li>
+                    <li>북한산 가나다라마바사 ASF 순찰 계획</li>
+                    <li>홍길동팀</li>
+                    <li>2019. 02. 13</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>북한산 가나다라마바사 ASF 울타리</li>
+                    <li>북한산 가나다라마바사 ASF 순찰 계획</li>
+                    <li>홍길동팀</li>
+                    <li>2019. 02. 13</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>북한산 가나다라마바사 ASF 울타리</li>
+                    <li>북한산 가나다라마바사 ASF 순찰 계획</li>
+                    <li>홍길동팀</li>
+                    <li>2019. 02. 13</li>
+                  </ul>
+                </li>
+               
+              </ul>
+              <div class="pagination_wrap">
+                <div class="pagination">
+                  <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
+                  <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
+                  <ul>
+                    <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
+                    <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
+                    <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
+                    <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
+                    <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
+                  </ul>
+                  <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
+                  <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
+      
+                </div>
+               
+              </div>
+              <div class="btn_wrap"><button class="cancel_btn"><span>닫기</span></button></div>
+            </div>
+
+          
         </div>
       </div>
 
