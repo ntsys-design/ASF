@@ -62,3 +62,34 @@ $('.tab_menu li').on('click',function(e){
 
 
 })
+
+// 임시저장 버튼 클릭 탭 이동
+$('.ch_list_btn').click(function(){
+  
+  let href=$(this).attr('href')
+console.log(href)
+$('.ptr_log').hide()
+$(href).show()
+$('.tab_menu li').removeClass('on')
+$('.tab_menu li:nth-child(2)').addClass('on')
+})
+
+$('.phm_btn').click(function(){
+  
+  let href=$(this).attr('href')
+console.log(href)
+$('.ptr_log').hide()
+$(href).show()
+$('.tab_menu li').removeClass('on')
+$('.tab_menu li:nth-child(3)').addClass('on')
+})
+
+$('.nm_list_btn').click(function(){
+  
+  let href=$(this).attr('href')
+console.log(href)
+$('.ptr_log').hide()
+$(href).show()
+$('.tab_menu li').removeClass('on')
+$('.tab_menu li:nth-child(4)').addClass('on')
+})

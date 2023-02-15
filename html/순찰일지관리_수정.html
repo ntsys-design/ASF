@@ -86,10 +86,10 @@
               <form action="" class="com_form">
                 <ul>
                   <li>
-                    <label for="patrol_plan">순찰 계획 명 <span>*</span></label>
+                    <label for="patrol_plan">순찰 계획 명  <span>*</span></label>
                     <div class="search_bar">
                       <input type="text" name="patrol_plan" id="patrol_plan" placeholder="순찰 계획을 입력해 주세요."
-                        value="삐리리 ASF 울타리 순찰 계획">
+                        value="삐리리 ASF 울타리 순찰 계획" readonly>
                       <button class="search_btn ptr_sch_btn"></button>
                     </div>
 
@@ -132,7 +132,7 @@
               <form action="" class="com_form">
                 <ul>
                   <li>
-                    <label for="fence_num">관리 번호 <span>*</span></label>
+                    <label for="fence_num">관리 번호 </label>
                     <input type="text" name="fence_num" id="fence_num" placeholder="" value="서울-10-59" readonly>
                   </li>
                   <li>
@@ -163,7 +163,7 @@
                   <li>
                     <label for="ptr_note">순찰 일지 명 <span>*</span></label>
                     <div class="search_bar">
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch" placeholder="순찰 일지 명 입력">
+                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch" placeholder="순찰 일지 명 입력" value="ASF 울타리 유지관리" >
                       <button class="search_btn ptr_sch_btn"></button>
                     </div>
 
@@ -172,10 +172,20 @@
                     <label for="ptr_area">순찰 지역 <span>*</span></label>
                     <select name="ptr_area" id="ptr_area">
                       <option value="" disabled selected>선택</option>
-                      <option value=""></option>
+                      <option value="서울" selected>서울</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
+                  </li>
+                  <li class="wid_50">
+                    <label for="ptr_complete" class="ptr_cpl_lb">순찰 완료 여부 <span>*</span> </label>
+                    <select name="ptr_complete" id="ptr_complete">
+                      <option value="" disabled selected>임시저장</option>
+                      <option value="서울" ></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+
                   </li>
                   <li class="wid_50">
                     <label for="ptr_date">순찰 일자 <span>*</span></label>
@@ -185,7 +195,9 @@
                   </li>
                   <li class="text_area">
                     <label for="fence_name">순찰 내용 <span>*</span></label>
-                    <textarea id="cont" name="cont" placeholder="내용을 입력하세요.">내용 없음</textarea>
+                    <textarea id="cont" name="cont" placeholder="내용을 입력하세요." >1. 기존 안내판 제거 
+2. 신규 안내판 부착	
+                      </textarea>
                   </li>
                 </ul>
               </form>
@@ -197,7 +209,7 @@
             <div class="container">
               <div class="btn_wrap">
                 <button class="cancel_btn" onclick="location.href='순찰일지관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn ch_list_btn" href='#check_list'><span>임시 저장</span></button>
+                <button class="save_btn"><span>임시 저장</span></button>
               </div>
             </div>
           </div>
@@ -206,7 +218,7 @@
         <!-- 순찰일지 -->
 
         <!-- 관리 체크 목록 -->
-        <div class="ptr_log" id="check_list">
+        <div class="ptr_log">
           <div class="container">
             <table border="0">
               <colgroup>
@@ -234,7 +246,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for=""></label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span>개</span>
+                      <input type="text" name="count" id="count" placeholder="" value="21" ><span>개</span>
                     </div>
                   </td>
                   <td class="hide">없음</td>
@@ -247,7 +259,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="door">문닫음</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span>건</span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -259,7 +271,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="unfasten">고정 해제</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span>건</span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -271,7 +283,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="Unfasten">장치 해제</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span>건</span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -284,20 +296,20 @@
                   </td>
                   <td class="bd_r">
                     <div class="tb_input_wrap">
-                      <label for="1m" class="bl_lb">1M 이하</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span>건</span>
+                      <label for="1m" class="bl_lb" >1M 이하</label>
+                      <input type="text" name="count" id="count" placeholder="" value="10" ><span>건</span>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
                       <label for="artificial">인위적</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
                       <label for="self_repair">자체 수리</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                 </tr>
@@ -305,20 +317,20 @@
                   <td class="bd_r">
                     <div class="tb_input_wrap">
                       <label for="1m" class="bl_lb">1M 초과</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span
+                      <input type="text" name="count" id="count" placeholder="" value="10" ><span
                         class="cl_trsprt">건</span>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
                       <label for="natural">자연적</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
                       <label for="repair">업체 수리</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                 </tr>
@@ -332,7 +344,7 @@
                   <td class="bd_r">
                     <div class="tb_input_wrap">
                       <label for="30m" class="bl_lb">30M 이하</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span>건</span>
+                      <input type="text" name="count" id="count" placeholder="" value="10" ><span>건</span>
                     </div>
                   </td>
                   <td>
@@ -344,7 +356,7 @@
                   <td class="bd_r">
                     <div class="tb_input_wrap">
                       <label for="30m" class="bl_lb">30M 초과</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span
+                      <input type="text" name="count" id="count" placeholder="" value="10" ><span
                         class="cl_trsprt">건</span>
                     </div>
                   </td>
@@ -362,7 +374,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="maintain">유지 가능</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -371,7 +383,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="impossible">불가능</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -383,7 +395,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="ground">지반 약화</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -392,7 +404,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="unbalance">불균형</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -401,7 +413,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="accident">사고</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span></span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -417,7 +429,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="light">경광등 설치</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span>건</span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -425,7 +437,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="repellent">기피제 설치</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0"><span>건</span>
+                      <input type="text" name="count" id="count" placeholder="" value="24" ><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -487,7 +499,7 @@
                     특이사항
                   </td>
                   <td colspan="2">
-                    <div class="tb_input_wrap"><textarea id="cont" name="cont" placeholder=""></textarea></div>
+                    <div class="tb_input_wrap"><textarea id="cont" name="cont" placeholder="" ></textarea ></div>
                   </td>
                 </tr>
                 <tr>
@@ -495,7 +507,7 @@
                     조치사항
                   </td>
                   <td colspan="2">
-                    <div class="tb_input_wrap"><textarea id="cont" name="cont" placeholder=""></textarea></div>
+                    <div class="tb_input_wrap"><textarea id="cont" name="cont" placeholder="" ></textarea readonly></div>
                   </td>
                 </tr>
               </tbody>
@@ -507,7 +519,7 @@
             <div class="container">
               <div class="btn_wrap">
                 <button class="cancel_btn" onclick="location.href='순찰일지관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn phm_btn" href='#photomount'><span>임시 저장</span></button>
+                <button class="save_btn"><span>임시 저장</span></button>
               </div>
             </div>
           </div>
@@ -515,7 +527,7 @@
         <!-- 관리 체크 목록 -->
 
         <!-- 사진 대지 -->
-        <div class="ptr_log photomount" id="photomount">
+        <div class="ptr_log photomount phm_dt">
           <div class="container">
             
             <table>
@@ -532,9 +544,11 @@
                   <td class="bd_r vtc_m">첫번째 이미지</td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure>
+                        <img src="../common/images/photomount_1.png" alt="사진 대지">
+                      </figure>
                       <figcaption>
-                        <textarea name="" id="" placeholder="이미지 내용"></textarea>
+                        <textarea name="" id="" placeholder="이미지 내용">토사로 인한 배수로 막힘</textarea>
                       </figcaption>
                     </div>
                   </td>
@@ -544,9 +558,9 @@
                   <td class="bd_r vtc_m">두번째 이미지</td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/photomount_2.png" alt="사진 대지"></figure>
                       <figcaption>
-                        <textarea name="" id="" placeholder="이미지 내용"></textarea>
+                        <textarea name="" id="" placeholder="이미지 내용">입주민 강제 철거</textarea>
                       </figcaption>
                     </div>
                   </td>
@@ -557,9 +571,10 @@
                   
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/photomount_3.png" alt="사진 대지">
+                      <button><img src="../common/images/rem_btn.png" alt=""></button></figure>
                       <figcaption>
-                        <textarea name="" id="" placeholder="이미지 내용"></textarea>
+                        <textarea name="" id="" placeholder="이미지 내용">공사로 인해 강제철거 20m 파손</textarea>
                       </figcaption>
                     </div>
                   </td>
@@ -568,9 +583,9 @@
                   <td class="bd_r vtc_m">네번째 이미지</td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/photomount_4.png" alt="사진 대지"></figure>
                       <figcaption>
-                        <textarea name="" id="" placeholder="이미지 내용"></textarea>
+                        <textarea name="" id="" placeholder="이미지 내용">토사로 인한 울타리 파손</textarea>
                       </figcaption>
                     </div>
                   </td>
@@ -583,7 +598,7 @@
             <div class="container">
               <div class="btn_wrap">
                 <button class="cancel_btn" onclick="location.href='순찰일지관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn nm_list_btn" href='#name_list'><span>임시 저장</span></button>
+                <button class="save_btn"><span>임시 저장</span></button>
               </div>
             </div>
           </div>
@@ -614,17 +629,17 @@
                       <li>1</li>
                       <li>
                         <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
+                        <input type="text" name="search" id="ptr _search" placeholder="" value="홍길동">
                         <button class="search_btn"></button>
                       </div>
                     </li>
                       <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
+                        <input type="date" name="date" id="date" value="1950-05-05" readonly>
                       </li>
                       <li>
-                        <input type="text" name="" id="" value=""> 
+                        <input type="text" name="adress" id="adress" value="파주시 적성면"> 
                       </li>
-                      <li><input type="text" name="" id="" value=""></li>
+                      <li><input type="text" name="" id="" value="순찰 및 유지보수"></li>
                       <li>
                         <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
                       </li>
@@ -636,17 +651,17 @@
                       <li>2</li>
                       <li>
                         <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
+                        <input type="text" name="search" id="ptr _search" placeholder="" value="고길동">
                         <button class="search_btn"></button>
                       </div>
                     </li>
                       <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
+                        <input type="date" name="date" id="date" value="1984-10-10" readonly>
                       </li>
                       <li>
-                        <input type="text" name="" id="" value=""> 
+                        <input type="text" name="adress" id="adress" value="파주시 적성면"> 
                       </li>
-                      <li><input type="text" name="" id="" value=""></li>
+                      <li><input type="text" name="" id="" value="순찰 및 유지보수"></li>
                       <li>
                         <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
                       </li>
@@ -658,15 +673,15 @@
                       <li>3</li>
                       <li>
                         <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
+                        <input type="text" name="search" id="ptr _search" placeholder="" value="">
                         <button class="search_btn"></button>
                       </div>
                     </li>
                       <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
+                        <input type="date" name="date" id="date" value="1950-05-05" readonly>
                       </li>
                       <li>
-                        <input type="text" name="" id="" value=""> 
+                        <input type="text" name="adress" id="adress" value=""> 
                       </li>
                       <li><input type="text" name="" id="" value=""></li>
                       <li>
@@ -675,173 +690,16 @@
                       
                     </ul>
                   </li>
-                  <li>
-                    <ul>
-                      <li>4</li>
-                      <li>
-                        <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
-                        <button class="search_btn"></button>
-                      </div>
-                    </li>
-                      <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
-                      </li>
-                      <li>
-                        <input type="text" name="" id="" value=""> 
-                      </li>
-                      <li><input type="text" name="" id="" value=""></li>
-                      <li>
-                        <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>5</li>
-                      <li>
-                        <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
-                        <button class="search_btn"></button>
-                      </div>
-                    </li>
-                      <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
-                      </li>
-                      <li>
-                        <input type="text" name="" id="" value=""> 
-                      </li>
-                      <li><input type="text" name="" id="" value=""></li>
-                      <li>
-                        <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>6</li>
-                      <li>
-                        <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
-                        <button class="search_btn"></button>
-                      </div>
-                    </li>
-                      <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
-                      </li>
-                      <li>
-                        <input type="text" name="" id="" value=""> 
-                      </li>
-                      <li><input type="text" name="" id="" value=""></li>
-                      <li>
-                        <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>7</li>
-                      <li>
-                        <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
-                        <button class="search_btn"></button>
-                      </div>
-                    </li>
-                      <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
-                      </li>
-                      <li>
-                        <input type="text" name="" id="" value=""> 
-                      </li>
-                      <li><input type="text" name="" id="" value=""></li>
-                      <li>
-                        <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>8</li>
-                      <li>
-                        <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
-                        <button class="search_btn"></button>
-                      </div>
-                    </li>
-                      <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
-                      </li>
-                      <li>
-                        <input type="text" name="" id="" value=""> 
-                      </li>
-                      <li><input type="text" name="" id="" value=""></li>
-                      <li>
-                        <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>9</li>
-                      <li>
-                        <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
-                        <button class="search_btn"></button>
-                      </div>
-                    </li>
-                      <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
-                      </li>
-                      <li>
-                        <input type="text" name="" id="" value=""> 
-                      </li>
-                      <li><input type="text" name="" id="" value=""></li>
-                      <li>
-                        <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>10</li>
-                      <li>
-                        <div class="search_bar">
-                        <input type="text" name="search" id="ptr _search" placeholder="">
-                        <button class="search_btn"></button>
-                      </div>
-                    </li>
-                      <li>
-                        <input type="date" name="date" id="date" value="2022-08-10" readonly>
-                      </li>
-                      <li>
-                        <input type="text" name="" id="" value=""> 
-                      </li>
-                      <li><input type="text" name="" id="" value=""></li>
-                      <li>
-                        <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                   
-                  
                   
                 </ul>
-        
-              
-                
-              
-            
-            <div class="btn_wrap">
-              <button class="cancel_btn" onclick="location.href='순찰일지관리_목록.html'"><span>취소</span></button>
-              <button class="save_btn"><span>임시 저장</span></button>
-              <button class="register_btn"><span>등록</span></button>
+    
+            <div class="btn_container">
+              <button class="remove_btn"><span>삭제</span></button>
+              <div class="btn_wrap">
+                <button class="cancel_btn" onclick="location.href='순찰일지관리_목록.html'"><span>취소</span></button>
+                <button class="save_btn"><span>임시 저장</span></button>
+                <button class="modify_btn"><span>수정</span></button>
+              </div>
             </div>
           </div>
         </div>
@@ -877,7 +735,7 @@
 
                 <li>
                   <div class="search_bar">
-                    <input type="text" name="search" id="ptr _search" placeholder="">
+                    <input type="text" name="search" id="ptr _search" placeholder="검색어를 입력하세요.">
                     <button class="search_btn"></button>
                   </div>
                 </li>
@@ -909,7 +767,7 @@
 
                 <li>
                   <div class="search_bar">
-                    <input type="text" name="search" id="fence _search" placeholder="">
+                    <input type="text" name="search" id="fence _search" placeholder="검색어를 입력하세요.">
                     <button class="search_btn"></button>
                   </div>
                 </li>
