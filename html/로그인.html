@@ -25,26 +25,25 @@
         <p class="login_tit">로그인하세요.</p>
         <div class="loginform_wrap">
           <form>
-              <input type="text" name="id" required class="email_box" placeholder="E-MAIL">
-              <button class="close-icon" type="reset"></button>
-            
+            <label for="loginid" class="hide">id</label>
+            <input type="text" name="id" required class="email_box" id="loginid" placeholder="E-MAIL">
+            <button class="close-icon" type="reset"></button>
+
           </form>
           <form>
+            <label for="pwd" class="hide">pwd</label>
             <input type="password" id="pwd" name="pwd" required class="pw_box" placeholder="PASSWORD">
             <button class="close-icon" type="reset"></button>
           </form>
 
+          <!-- 0216 otp 발급 버튼 삭제, 만료시간 삭제 -->
 
           <form>
-            <input type="button" value="인증번호 발송">
+            <label for="otp" class="hide">pwd</label>
+            <input type="text" id="otp" name="otp" required class="pw_box" placeholder="OTP 정보를 입력하세요">
+            <button class="close-icon" type="reset"></button>
           </form>
 
-          <form>
-              <input type="text" id="otp" name="otp" required class="pw_box" placeholder="OTP 정보를 입력하세요">
-              <button class="close-icon" type="reset"></button>
-          </form>
-
-          <h3 class="otp_time">만료시간<span>02:12</span></h3>
 
           <form>
             <input type="button" id="login_btn" value="로그인">

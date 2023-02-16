@@ -36,30 +36,47 @@
     </header>
     <div class="lnb_wrap">
       <div class="container">
+        <!-- 0216 아이콘 수정 -->
         <ul class="lnb">
           <li><a href="./시설물정보_목록.html" class="on">
-              <div><!-- 아이콘 수정 후 추가 예정 --></div>
+              <div>
+                <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
+              </div>
             </a>시설물 정보</li>
           <li><a href="./순찰계획관리_목록.html">
-              <div></div>
+              <div>
+                <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
+              </div>
             </a>순찰 계획 관리</li>
           <li><a href="./순찰일지관리_목록.html">
-              <div></div>
+              <div>
+                <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
+              </div>
             </a>순찰 일지 관리</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./유지보수작업관리_목록.html">
+              <div>
+                <img src="../common/images/mt_ico.png" alt="유지보수 작업 관리 아이콘">
+              </div>
             </a>유지보수 작업 관리</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./민원일지관리_목록.html">
+              <div>
+                <img src="../common/images/cp_log_ico.png" alt="민원 일지 관리 아이콘">
+              </div>
             </a>민원 일지 관리</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./순찰일지통계.html">
+              <div>
+                <img src="../common/images/ptr_st_ico.png" alt="순찰 일지 통계 아이콘">
+              </div>
             </a>순찰 일지 통계</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./유지보수작업통계.html">
+              <div>
+                <img src="../common/images/mt_st_ico.png" alt="유지보수 작업 통계 아이콘">
+              </div>
             </a>유지보수 작업 통계</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./민원일지통계.html">
+              <div>
+                <img src="../common/images/cp_st_ico.png" alt="민원 일지 통계 아이콘">
+              </div>
             </a>민원 일지 통계</li>
         </ul>
       </div>
@@ -135,6 +152,49 @@
             </ul>
           </form>
 
+          <!-- 0216 추가 -->
+            <table>
+              <thead>
+                <tr>
+                  <th>시설물 관리 번호</th>
+                  <th>순찰 순서</th>
+                  <th>비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A1001</td>
+                  <td>
+                    <label for="ptr_order03" class="hide">순찰 순서 번호 입력</label>
+                    <input type="text" name="ptr_order03" id="ptr_order03" placeholder="순찰 순서 번호 입력"  value="1" readonly>
+                  </td>
+                  <td>
+                    <label for="ptr_order_note03" class="hide">비고</label>
+                    <input type="text" name="ptr_order_note03" id="ptr_order_note03" placeholder="시설물별 주의사항을 입력해 주세요.
+                    " value="기둥 부분 밟지 않게 조심해 주세요.
+                    "  readonly>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>A1002</td>
+                  <td>
+                    <label for="ptr_order04" class="hide">순찰 순서 번호 입력</label>
+                    <input type="text" name="ptr_order04" id="ptr_order04" placeholder="순찰 순서 번호 입력"  value="2" readonly>
+                  </td>
+                  <td>
+                    <label for="ptr_order_note04" class="hide">비고</label>
+                    <input type="text" name="ptr_order_note04" id="ptr_order_note04" placeholder="시설물별 주의사항을 입력해 주세요.
+                    "  value="철조망 체크 요망
+                    " readonly>
+                  </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+            <!-- //0216 추가 -->
+          
+
 
 
         </div>
@@ -155,9 +215,11 @@
     <footer>
       <div class="container">
         <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
+        <!-- 0215 푸터 수정 -->
         <p>Copyright © Environmental Preservation Association All rights reserved.</p>
       </div>
     </footer>
+
 
   </div>
 

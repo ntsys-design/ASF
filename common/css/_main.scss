@@ -1,10 +1,10 @@
 .wrapper {
   &.main {
     display: flex;
+  height: 100vh;
 
   }
 
-  height: 100vh;
 
   .info_wrap {
     width: 50%;
@@ -147,6 +147,7 @@
               background: #4661DC;
             }
             &#otp{
+              margin-top: 24px;
               background: url(../images/otp_ico.png) no-repeat;
                 background-position: 16px center;
               border-radius: 4px;

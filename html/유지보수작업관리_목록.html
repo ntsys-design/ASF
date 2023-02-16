@@ -36,7 +36,6 @@
     </header>
     <div class="lnb_wrap">
       <div class="container">
-        <!-- 0216 아이콘 수정 -->
         <ul class="lnb">
           <li><a href="./시설물정보_목록.html" class="on">
               <div>
@@ -83,27 +82,29 @@
     </div>
     <div class="contents">
       <div class="container">
-        <h2>시설물 정보</h2>
+        <h2>유지보수 작업 관리</h2>
         <div class="form_wrap">
-          <form action="" class="search_form">
+          <form action="" class="search_form list_dt_form">
             <ul>
               <li>
-                <!-- 0216 레이블 수정 -->
-                <label for="area_select">검색</label>
-                <select name="area_select" id="area_select">
-                  <option value="" disabled selected>시설물 그룹 명</option>
+                <label for="pat_company" >검색</label>
+                <select name="pat_company" id="pat_company">
+                  <option value="" disabled selected>순찰 회사 명</option>
                   <option value=""></option>
                   <option value=""></option>
                   <option value=""></option>
                 </select>
               </li>
-              
-              <li class="ml24">
+              <li>
+                <label for="date29" class="hide">날짜</label>
+                <input type="date" name="date29" id="date29" value="2022-08-10" readonly> <span>~</span>
+                <label for="date30" class="hide">날짜</label>
+                <input type="date" name="date30" id="date30" value="2022-08-10" readonly>
+              </li>
+              <li>
                 <div class="search_bar">
-                  <!-- 0216 레이블추가  -->
-                  <label for="fence_search" class="hide">검색</label>
-                  <!-- 0216  id="fence_search" 수정-->
-                  <input type="text" name="fence_search" id="fence_search" placeholder="검색어를 입력하세요.">
+                  <label for="fence_search301" class="hide">검색</label>
+                  <input type="text" name="search" id="fence_search301" placeholder="검색어를 입력하세요.">
                   <button  class="search_btn"></button>
                 </div>
               </li>
@@ -115,106 +116,132 @@
     </div>
     <div class="fence_list_wrap">
       <div class="container">
-        
-        <ul class="fence_list">
+        <ul class="fence_list mt_list">
           <li>
             <ul class="tb_hd">
-              <li>관리 번호</li>
-              <li>권역</li>
+              <li>No</li>
+              <li>공사 회사명</li>
               <li>시설물 그룹 명</li>
+              <li>유지보수 명</li>
+              <li>등록자</li>
               <li>등록일</li>
+              <li>공사 완료</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>10</li>
+              <li>(주)가나다라</li>
               <li>북한산 가나다라마바사 ASF 울타리</li>
+              <li>북한산 가나다라마바사 ASF 울타리 순찰</li>
+              <li>홍길동팀 </li>
               <li>2019. 02. 13</li>
+              <li>임시 저장</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>9</li>
+              <li>(주)가나다</li>
               <li>지리산 멧돼지 ASF 울타리</li>
+              <li>지리산 멧돼지 ASF 울타리 순찰</li>
+              <li>허정연팀</li>
               <li>2019. 02. 13</li>
+              <li>임시 저장</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>8</li>
+              <li>(주)마바사</li>
               <li>북한산 ASF 울타리</li>
+              <li>북한산 ASF 울타리 순찰 계획</li>
+              <li>이정연팀</li>
               <li>2019. 02. 13</li>
+              <li>완료</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>7</li>
+              <li>-</li>
               <li>북한산 ASF 울타리</li>
+              <li>북한산 ASF 울타리 순찰 계획</li>
+              <li>최훈팀</li>
               <li>2019. 02. 13</li>
+              <li>임시 저장</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>6</li>
+              <li>-</li>
               <li>북한산 ASF 울타리</li>
+              <li>북한산 ASF 울타리 순찰 계획</li>
+              <li>김훈팀</li>
               <li>2019. 02. 13</li>
+              <li>임시 저장</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>5</li>
+              <li>-</li>
               <li>북한산 ASF 울타리</li>
+              <li>북한산 ASF 울타리 순찰 계획</li>
+              <li>김정현팀</li>
               <li>2019. 02. 13</li>
+              <li>임시 저장</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>4</li>
+              <li>-</li>
               <li>북한산 ASF 울타리</li>
+              <li>북한산 ASF 울타리 순찰 계획</li>
+              <li>김정현팀</li>
               <li>2019. 02. 13</li>
+              <li>임시 저장</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>3</li>
+              <li>-</li>
               <li>북한산 ASF 울타리</li>
+              <li>북한산 ASF 울타리 순찰 계획</li>
+              <li>김정현팀</li>
               <li>2019. 02. 13</li>
+              <li>임시 저장</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>2</li>
+              <li>(주)마바사</li>
               <li>북한산 ASF 울타리</li>
+              <li>북한산 ASF 울타리 순찰 계획</li>
+              <li>이정연팀</li>
               <li>2019. 02. 13</li>
+              <li>완료</li>
             </ul>
           </li>
           <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
+            <ul onclick="location.href='유지보수작업관리_상세.html'">
+              <li>1</li>
+              <li>(주)마바사</li>
               <li>북한산 ASF 울타리</li>
+              <li>북한산 ASF 울타리 순찰 계획</li>
+              <li>이정연팀</li>
               <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
+              <li>완료</li>
             </ul>
           </li>
           
         </ul>
+
+      
         <div class="pagination_wrap">
           <div class="pagination">
             <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
@@ -230,14 +257,13 @@
             <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
 
           </div>
-          <!-- <button class="register_btn" onclick="location.href='울타리관리_등록.html'"><span>등록</span></button> -->
+          <button class="register_btn" onclick="location.href='유지보수작업관리_등록.html'"><span>글 등록</span></button>
         </div>
       </div>
     </div>
     <footer>
       <div class="container">
         <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
-        <!-- 0215 푸터 수정 -->
         <p>Copyright © Environmental Preservation Association All rights reserved.</p>
       </div>
     </footer>

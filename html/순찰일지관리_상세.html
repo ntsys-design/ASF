@@ -36,32 +36,47 @@
     </header>
     <div class="lnb_wrap">
       <div class="container">
+        <!-- 0216 아이콘 수정 -->
         <ul class="lnb">
           <li><a href="./시설물정보_목록.html" class="on">
               <div>
-                <!-- 아이콘 수정 후 추가 예정 -->
+                <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
             </a>시설물 정보</li>
           <li><a href="./순찰계획관리_목록.html">
-              <div></div>
+              <div>
+                <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
+              </div>
             </a>순찰 계획 관리</li>
           <li><a href="./순찰일지관리_목록.html">
-              <div></div>
+              <div>
+                <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
+              </div>
             </a>순찰 일지 관리</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./유지보수작업관리_목록.html">
+              <div>
+                <img src="../common/images/mt_ico.png" alt="유지보수 작업 관리 아이콘">
+              </div>
             </a>유지보수 작업 관리</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./민원일지관리_목록.html">
+              <div>
+                <img src="../common/images/cp_log_ico.png" alt="민원 일지 관리 아이콘">
+              </div>
             </a>민원 일지 관리</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./순찰일지통계.html">
+              <div>
+                <img src="../common/images/ptr_st_ico.png" alt="순찰 일지 통계 아이콘">
+              </div>
             </a>순찰 일지 통계</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./유지보수작업통계.html">
+              <div>
+                <img src="../common/images/mt_st_ico.png" alt="유지보수 작업 통계 아이콘">
+              </div>
             </a>유지보수 작업 통계</li>
-          <li><a href="#">
-              <div></div>
+          <li><a href="./민원일지통계.html">
+              <div>
+                <img src="../common/images/cp_st_ico.png" alt="민원 일지 통계 아이콘">
+              </div>
             </a>민원 일지 통계</li>
         </ul>
       </div>
@@ -76,84 +91,9 @@
           <li><a href="#">공사 실명부(매일)</a></li>
         </ul>
       </div>
-      <div class="ptr_log_wrap">
+      <div class="tab_con_wrap">
         <!-- 순찰 일지 -->
-        <div class="ptr_log">
-
-          <div class="container">
-            <div class="form_wrap com_wrap ptr_pl_regi">
-              <h3>순찰 계획 및 순찰 담당자</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li>
-                    <label for="patrol_plan">순찰 계획 명 </label>
-                    <div class="search_bar">
-                      <input type="text" name="patrol_plan" id="patrol_plan" placeholder="순찰 계획을 입력해 주세요."
-                        value="삐리리 ASF 울타리 순찰 계획" readonly>
-                      <button class="search_btn ptr_sch_btn"></button>
-                    </div>
-
-
-                  </li>
-                  <li class="wid_50">
-                    <label for="company">회사명</label>
-                    <input type="text" name="company" id="company" placeholder="" value="주식회사 삼성 울타리 관리센터" readonly>
-                  </li>
-                  <li class="wid_50">
-                    <label for="part" class="part_lb">부서</label>
-                    <input type="text" name="part" id="part" placeholder="" value="정보콘텐츠과" readonly>
-                  </li>
-                  <li class="wid_100">
-                    <label for="patroller">순찰자</label>
-                    <div class="search_bar">
-                      <input type="text" name="patroller" id="patroller" placeholder="검색어를 입력하세요.
-                    " value="남궁길동" readonly>
-                  </li>
-                  <li class="wid_50">
-                    <label for="pat_num">순찰자 연락처 </label>
-                    <input type="text" name="pat_num" id="pat_num" placeholder="" value="070-***-5568" readonly>
-                  </li>
-                  <li class="wid_50">
-                    <label for="pat_email">순찰자 이메일 </label>
-                    <input type="text" name="pat_email" id="pat_email" placeholder="" value="test@******.go.kr"
-                      readonly>
-                  </li>
-                  <li class="text_area">
-                    <label for="cont">내용 </label>
-                    <textarea id="cont" name="cont" placeholder="내용을 입력하세요." readonly>내용 없음</textarea>
-                  </li>
-                </ul>
-              </form>
-            </div>
-
-
-            <div class="form_wrap com_wrap ptr_pl_regi">
-              <h3>순찰 울타리 구간</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li>
-                    <label for="fence_num">관리 번호 </label>
-                    <input type="text" name="fence_num" id="fence_num" placeholder="" value="서울-10-59" readonly>
-                  </li>
-                  <li>
-                    <label for="fence_name">시설물 그룹 명</label>
-                    <input type="text" name="fence_name" id="fence_name" placeholder="" value="주식회사 삼성 울타리" readonly>
-                  </li>
-                  <li>
-                    <label for="area">권역</label>
-                    <input type="text" name="area" id="area" placeholder="" value="내 권역" readonly>
-                  </li>
-                </ul>
-              </form>
-
-            </div>
-          </div>
-          <div class="regi_map">
-            <div class="container">
-              <div class="map"></div>
-            </div>
-          </div>
-
+        <div class="tab_con ptr_log" id="tab1_content">
 
           <div class="container">
             <div class="form_wrap com_wrap ptr_pl_regi">
@@ -161,11 +101,11 @@
               <form action="" class="com_form">
                 <ul>
                   <li>
-                    <label for="ptr_note">순찰 일지 명 </label>
+                    <label for="ptr_log_sch">순찰 일지 명 </label>
                     <div class="search_bar">
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch" placeholder="순찰 일지 명 입력" value="ASF 울타리 유지관리"
+                      <input type="text" name="ptr_log_sch" id="ptr_log_sch" placeholder="순찰 일지 명 입력" value="ASF 울타리 유지관리"
                         readonly>
-                      <button class="search_btn ptr_sch_btn"></button>
+                      
                     </div>
 
                   </li>
@@ -186,26 +126,148 @@
 
                   </li>
                   <li class="wid_50">
-                    <label for="ptr_date">순찰 일자 </label>
-                    <input type="date" name="date" id="date" value="2022-08-10" readonly> <span>~</span>
-                    <input type="date" name="date" id="date" value="2022-08-10" readonly>
+                    <label for="date17">순찰 일자 </label>
+                    <input type="date" name="date17" id="date17" value="2022-08-10" readonly> <span>~</span>
+                    <label for="date18" class="hide">날짜</label>
+                    <input type="date" name="date18" id="date18" value="2022-08-10" readonly>
 
                   </li>
                   <li class="text_area">
-                    <label for="fence_name">순찰 내용 </label>
-                    <textarea id="cont" name="cont" placeholder="내용을 입력하세요." readonly>1. 기존 안내판 제거 
+                    <label for="cont05">순찰 내용 </label>
+                    <textarea id="cont05" name="cont" placeholder="내용을 입력하세요." readonly>1. 기존 안내판 제거 
 2. 신규 안내판 부착</textarea>
                   </li>
                 </ul>
               </form>
 
             </div>
+            <div class="form_wrap com_wrap ptr_pl_regi">
+              <h3>순찰 계획 및 순찰 담당자</h3>
+              <form action="" class="com_form">
+                <ul>
+                  <li>
+                    <label for="patrol_plan">순찰 계획 명 </label>
+                    <div class="search_bar">
+                      <input type="text" name="patrol_plan" id="patrol_plan" placeholder="순찰 계획을 입력해 주세요."
+                        value="삐리리 ASF 울타리 순찰 계획" readonly>
+                      
+                    </div>
 
+
+                  </li>
+                  <li class="wid_50">
+                    <label for="company">회사명</label>
+                    <input type="text" name="company" id="company" placeholder="" value="주식회사 삼성 울타리 관리센터" readonly>
+                  </li>
+                  <li class="wid_50">
+                    <label for="part" class="part_lb">부서</label>
+                    <input type="text" name="part" id="part" placeholder="" value="정보콘텐츠과" readonly>
+                  </li>
+                  <li class="wid_50 mr_50">
+                    <label for="patroller">순찰자</label>
+                    <div class="search_bar">
+                      <input type="text" name="patroller" id="patroller" placeholder="검색어를 입력하세요.
+                    " value="남궁길동" readonly>
+                    </div>
+                  </li>
+                  <li class="wid_50">
+                    <label for="pat_num">순찰자 연락처 </label>
+                    <input type="text" name="pat_num" id="pat_num" placeholder="" value="070-***-5568" readonly>
+                  </li>
+                  <li class="wid_50">
+                    <label for="pat_email">순찰자 이메일 </label>
+                    <input type="text" name="pat_email" id="pat_email" placeholder="" value="test@******.go.kr"
+                      readonly>
+                  </li>
+                  <li class="text_area">
+                    <label for="cont02">내용 </label>
+                    <textarea id="cont02" name="cont02" placeholder="내용을 입력하세요." readonly>내용 없음</textarea>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="form_wrap com_wrap ptr_pl_regi">
+              <h3>순찰 울타리 구간</h3>
+              <form action="" class="com_form">
+                <ul>
+                  <li>
+                    <label for="fence_num">관리 번호 </label>
+                    <input type="text" name="fence_num" id="fence_num" placeholder="" value="서울-10-59" readonly>
+                  </li>
+                  <li>
+                    <label for="fence_name">시설물 그룹 명</label>
+                    <input type="text" name="fence_name" id="fence_name" placeholder="" value="주식회사 삼성 울타리" readonly>
+                  </li>
+                  <li>
+                    <label for="area">권역</label>
+                    <input type="text" name="area" id="area" placeholder="" value="내 권역" readonly>
+                  </li>
+                </ul>
+              </form>
+              <table>
+                <thead>
+                  <tr>
+                    <th>시설물 관리 번호</th>
+                    <th>순찰 순서</th>
+                    <th>비고</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder=""  value="A1001" readonly></td>
+
+                    <td>
+                      <label for="ptr_order09" class="hide">순찰 순서 번호 입력</label>
+                      <input type="text" name="ptr_order09" id="ptr_order09" placeholder="순찰 순서 번호 입력"  value="1" readonly>
+                    </td>
+                    <td>
+                      <label for="ptr_order_note09" class="hide">비고</label>
+                      <input type="text" name="ptr_order_note09" id="ptr_order_note09" placeholder="시설물별 주의사항을 입력해 주세요.
+                      " value="기둥 부분 밟지 않게 조심해 주세요.
+                      "  readonly>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num02" placeholder=""  value="A1002" readonly></td>
+
+                    <td>
+                      <label for="ptr_order10" class="hide">순찰 순서 번호 입력</label>
+                      <input type="text" name="ptr_order10" id="ptr_order10" placeholder="순찰 순서 번호 입력"  value="2" readonly>
+                    </td>
+                    <td>
+                      <label for="ptr_order_note10" class="hide">비고</label>
+                      <input type="text" name="ptr_order_note10" id="ptr_order_note10" placeholder="시설물별 주의사항을 입력해 주세요.
+                      "  value="철조망 체크 요망
+                      " readonly>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            
           </div>
-          <div class="ptr_nt_btn">
+          <div class="regi_map">
             <div class="container">
+              <div class="map"></div>
+            </div>
+          </div>
+
+
+          
+            
+
+          
+          <div class="tab_con_btn">
+            <div class="container">
+              <button class="remove_btn"><span>삭제</span></button>
               <div class="btn_wrap">
                 <button class="list_btn" onclick="location.href='순찰일지관리_목록.html'"><span>목록</span></button>
+                <button class="list_btn"><span>완료</span></button>
                 <button class="modify_btn" onclick="location.href='순찰일지관리_수정.html'"><span>글 수정</span></button>
               </div>
             </div>
@@ -215,7 +277,7 @@
         <!-- 순찰일지 -->
 
         <!-- 관리 체크 목록 -->
-        <div class="ptr_log">
+        <div class="tab_con ptr_log" id="tab2_content">
           <div class="container">
             <table border="0">
               <colgroup>
@@ -242,8 +304,8 @@
                   </td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for=""></label>
-                      <input type="text" name="count" id="count" placeholder="" value="21" readonly><span>개</span>
+                      <label for="count01"></label>
+                      <input type="text" name="count" id="count01" placeholder="" value="21" readonly><span>개</span>
                     </div>
                   </td>
                   <td class="hide">없음</td>
@@ -255,8 +317,8 @@
                   <td class="hide">없음</td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="door">문닫음</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span>건</span>
+                      <label for="count02">문닫음</label>
+                      <input type="text" name="count" id="count02" placeholder="" value="24" readonly><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -267,8 +329,8 @@
                   <td class="hide">없음</td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="unfasten">고정 해제</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span>건</span>
+                      <label for="count03">고정 해제</label>
+                      <input type="text" name="count" id="count03" placeholder="" value="24" readonly><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -279,8 +341,8 @@
                   <td class="hide">없음</td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="Unfasten">장치 해제</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span>건</span>
+                      <label for="count04">장치 해제</label>
+                      <input type="text" name="count" id="count04" placeholder="" value="24" readonly><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -293,41 +355,41 @@
                   </td>
                   <td class="bd_r">
                     <div class="tb_input_wrap">
-                      <label for="1m" class="bl_lb">1M 이하</label>
-                      <input type="text" name="count" id="count" placeholder="" value="10" readonly><span>건</span>
+                      <label for="count05" class="bl_lb">1M 이하</label>
+                      <input type="text" name="count" id="count05" placeholder="" value="10" readonly><span>건</span>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="artificial">인위적</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count06">인위적</label>
+                      <input type="text" name="count" id="count06" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="self_repair">자체 수리</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count07">자체 수리</label>
+                      <input type="text" name="count" id="count07" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td class="bd_r">
                     <div class="tb_input_wrap">
-                      <label for="1m" class="bl_lb">1M 초과</label>
-                      <input type="text" name="count" id="count" placeholder="" value="10" readonly><span
+                      <label for="count501" class="bl_lb">1M 초과</label>
+                      <input type="text" name="count" id="count501" placeholder="" value="10" readonly><span
                         class="cl_trsprt">건</span>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="natural">자연적</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count08">자연적</label>
+                      <input type="text" name="count" id="count08" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="repair">업체 수리</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count09">업체 수리</label>
+                      <input type="text" name="count" id="count09" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                 </tr>
@@ -340,8 +402,8 @@
                   </td>
                   <td class="bd_r">
                     <div class="tb_input_wrap">
-                      <label for="30m" class="bl_lb">30M 이하</label>
-                      <input type="text" name="count" id="count" placeholder="" value="10" readonly><span>건</span>
+                      <label for="count10" class="bl_lb">30M 이하</label>
+                      <input type="text" name="count" id="count10" placeholder="" value="10" readonly><span>건</span>
                     </div>
                   </td>
                   <td>
@@ -352,8 +414,8 @@
                 <tr>
                   <td class="bd_r">
                     <div class="tb_input_wrap">
-                      <label for="30m" class="bl_lb">30M 초과</label>
-                      <input type="text" name="count" id="count" placeholder="" value="10" readonly><span
+                      <label for="count11" class="bl_lb">30M 초과</label>
+                      <input type="text" name="count" id="count11" placeholder="" value="10" readonly><span
                         class="cl_trsprt">건</span>
                     </div>
                   </td>
@@ -370,8 +432,8 @@
                   </td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="maintain">유지 가능</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count12">유지 가능</label>
+                      <input type="text" name="count" id="count12" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -379,8 +441,8 @@
                 <tr>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="impossible">불가능</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count13">불가능</label>
+                      <input type="text" name="count" id="count13" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -391,8 +453,8 @@
                   </td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="ground">지반 약화</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count14">지반 약화</label>
+                      <input type="text" name="count" id="count14" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -400,8 +462,8 @@
                 <tr>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="unbalance">불균형</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count15">불균형</label>
+                      <input type="text" name="count" id="count15" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -409,8 +471,8 @@
                 <tr>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="accident">사고</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span></span>
+                      <label for="count16">사고</label>
+                      <input type="text" name="count" id="count16" placeholder="" value="24" readonly><span></span>
                     </div>
                   </td>
                   <td></td>
@@ -425,16 +487,16 @@
                   <td rowspan="2"></td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="light">경광등 설치</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span>건</span>
+                      <label for="count17">경광등 설치</label>
+                      <input type="text" name="count" id="count17" placeholder="" value="24" readonly><span>건</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="repellent">기피제 설치</label>
-                      <input type="text" name="count" id="count" placeholder="" value="24" readonly><span>건</span>
+                      <label for="count18">기피제 설치</label>
+                      <input type="text" name="count" id="count18" placeholder="" value="24" readonly><span>건</span>
                     </div>
                   </td>
                 </tr>
@@ -496,7 +558,9 @@
                     특이사항
                   </td>
                   <td colspan="2">
-                    <div class="tb_input_wrap"><textarea id="cont" name="cont" placeholder="" readonly></textarea></div>
+                    <div class="tb_input_wrap">
+                      <label for="cont03" class="hide">내용</label>
+                      <textarea id="cont03" name="cont" placeholder="" readonly></textarea></div>
                   </td>
                 </tr>
                 <tr>
@@ -504,7 +568,8 @@
                     조치사항
                   </td>
                   <td colspan="2">
-                    <div class="tb_input_wrap"><textarea id="cont" name="cont" placeholder="" readonly></textarea readonly></div>
+                    <div class="tb_input_wrap">
+                      <label for="cont04" class="hide">내용</label><textarea id="cont04" name="cont" placeholder="" readonly></textarea></div>
                   </td>
                 </tr>
               </tbody>
@@ -512,10 +577,12 @@
 
 
           </div>
-          <div class="ptr_nt_btn">
+          <div class="tab_con_btn">
             <div class="container">
+              <button class="remove_btn"><span>삭제</span></button>
               <div class="btn_wrap">
                 <button class="list_btn" onclick="location.href='순찰일지관리_목록.html'"><span>목록</span></button>
+                <button class="list_btn"><span>완료</span></button>
                 <button class="modify_btn" onclick="location.href='순찰일지관리_수정.html'"><span>글 수정</span></button>
               </div>
             </div>
@@ -524,7 +591,7 @@
         <!-- 관리 체크 목록 -->
 
         <!-- 사진 대지 -->
-        <div class="ptr_log photomount phm_dt">
+        <div class="tab_con ptr_log photomount phm_dt" id="tab3_content">
           <div class="container">
             
             <table>
@@ -588,10 +655,12 @@
               </tbody>
             </table>
           </div>
-          <div class="ptr_nt_btn">
+          <div class="tab_con_btn">
             <div class="container">
+              <button class="remove_btn"><span>삭제</span></button>
               <div class="btn_wrap">
                 <button class="list_btn" onclick="location.href='순찰일지관리_목록.html'"><span>목록</span></button>
+                <button class="list_btn"><span>완료</span></button>
                 <button class="modify_btn" onclick="location.href='순찰일지관리_수정.html'"><span>글 수정</span></button>
               </div>
             </div>
@@ -600,7 +669,7 @@
         <!-- 사진 대지 -->
 
         <!-- 공사 실명부 -->
-        <div class="ptr_log name_list" id="name_list">
+        <div class="tab_con ptr_log name_list" id="tab4_content">
           <div class="container">
             <div class="tit_wrap">
               <h3 class="nm_list_tit">공사 참여자 실명부</h3>
@@ -654,16 +723,17 @@
                  
    
                 </ul>
-        
-              
-                
-              
-            
-            <div class="btn_wrap">
-              
-              <button class="list_btn" onclick="location.href='순찰일지관리_목록.html'"><span>목록</span></button>
-              <button class="modify_btn" onclick="location.href='순찰일지관리_수정.html'"><span>글 수정</span></button>
-            </div>
+
+                <div class="tab_con_btn">
+                  <div class="container">
+                    <button class="remove_btn"><span>삭제</span></button>
+                    <div class="btn_wrap">
+                      <button class="list_btn" onclick="location.href='순찰일지관리_목록.html'"><span>목록</span></button>
+                      <button class="list_btn"><span>완료</span></button>
+                      <button class="modify_btn" onclick="location.href='순찰일지관리_수정.html'"><span>글 수정</span></button>
+                    </div>
+                  </div>
+                </div>
           </div>
         </div>
         <!-- 공사 실명부 -->
@@ -678,69 +748,8 @@
         </div>
       </footer>
 
-      <!-- 수정예정 -->
-      <div class="modal_box ptr_modal_box">
-        <div class="modal_contents">
-          <h3>담당자 검색</h3><button class="close">❌</button>
-          <h4>담당자 검색</h4>
-          <div class="form_wrap">
-            <form action="" class="search_form">
-              <ul>
-                <li>
-
-                  <select name="ptr_select" id="ptr_select">
-                    <option value="" disabled selected>전체</option>
-                    <option value="">담당 회사</option>
-                    <option value="">담당자</option>
-                    <option value=""></option>
-                  </select>
-                </li>
-
-                <li>
-                  <div class="search_bar">
-                    <input type="text" name="search" id="ptr _search" placeholder="검색어를 입력하세요.">
-                    <button class="search_btn"></button>
-                  </div>
-                </li>
-
-              </ul>
-            </form>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="modal_box fcnum_modal_box">
-        <div class="modal_contents">
-          <h3>울타리 검색</h3><button class="close">❌</button>
-          <h4>을타리 검색</h4>
-          <div class="form_wrap">
-            <form action="" class="search_form">
-              <ul>
-                <li>
-
-                  <select name="pat_select" id="pat_select">
-                    <option value="" disabled selected>전체</option>
-                    <option value="">관리 번호</option>
-                    <option value="">권역</option>
-                    <option value="">타입</option>
-                    <option value="">시설물 그룹 명</option>
-                  </select>
-                </li>
-
-                <li>
-                  <div class="search_bar">
-                    <input type="text" name="search" id="fence _search" placeholder="검색어를 입력하세요.">
-                    <button class="search_btn"></button>
-                  </div>
-                </li>
-
-              </ul>
-            </form>
-
-          </div>
-        </div>
-      </div>
+      
+    </div>
     </div>
 
     <script src="../common/js/jquery-3.6.2.min.js"></script>
