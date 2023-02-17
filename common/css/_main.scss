@@ -1,3 +1,4 @@
+// 로그인
 .wrapper {
   &.main {
     display: flex;
@@ -214,3 +215,29 @@
   }
 }
 
+// main
+.lnb_wrap{
+  .main_lnb_container{
+    max-width: 744px;
+    margin: auto;
+    .lnb{
+      padding-top: 94px;
+      padding-bottom: 122px;
+      grid-gap: 56px;
+      li{
+        a{
+          width: 144px;
+          height: 144px;
+          
+        }
+      }
+    }
+
+  }
+}
+.main_wrapper{
+  footer{
+    border-top: 1px solid #C6CBD0;
+    background: #fff;
+  }
+}

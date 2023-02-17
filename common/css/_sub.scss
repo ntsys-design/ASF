@@ -194,7 +194,7 @@ textarea {
           &::after {
             position: absolute;
             top: 50%;
-            right: 10px;
+            right: 20px;
             content: '';
             width: 20px;
             height: 22px;
@@ -303,11 +303,11 @@ textarea {
             height: 56px;
           }
 
-          select {
+          @at-root select {
             background: url(../images/search_down.png) no-repeat 95% center;
 
             &.readonly {
-              background: #f7f7f8;
+              background: #f7f7f8 !important;
             }
           }
         }
@@ -320,33 +320,38 @@ textarea {
       }
     }
 
-    &.ptr_pl_regi {
-      table{
-          margin-bottom: 56px;
-            text-align: center;
+    &.com_regi {
+      table {
+        margin-bottom: 56px;
+        text-align: center;
 
-          th{
-            font-weight: 500;
-            font-size: 1.25em;
+        th {
+          font-weight: 500;
+          font-size: 1.25em;
+          padding: 10px;
+        }
+
+        tr {
+          td {
             padding: 10px;
-          }
-          tr{
-            td{padding: 10px;
-              font-size: 1.125em;
-               input{
+            font-size: 1.125em;
+
+            input {
               height: 56px;
               background: #fff;
-    border: 1px solid #C6CBD0;
-    border-radius: 4px;
-    font-size: 1em;
-    &:read-only{
-      background: #F7F7F8;
-    }
+              border: 1px solid #C6CBD0;
+              border-radius: 4px;
+              font-size: 1em;
+
+              &:read-only {
+                background: #F7F7F8;
+              }
             }
-            }
-           
           }
+
         }
+      }
+
       form.com_form {
         ul {
           li {
@@ -399,16 +404,18 @@ textarea {
             }
           }
         }
-        
+
       }
     }
-    &.mt_log_regi{
-      form.com_form{
-        ul{
-          li{
-            label{
+
+    &.mt_log_regi {
+      form.com_form {
+        ul {
+          li {
+            label {
               min-width: 125px;
             }
+
             &.text_area {
               height: 200px;
               align-items: flex-start;
@@ -526,6 +533,10 @@ textarea {
             li {
               flex: 0 1 12%;
 
+              &:first-child {
+                color: #55626F;
+              }
+
               &:nth-child(2) {
                 flex: 0 1 20%;
                 color: #17A400;
@@ -552,20 +563,56 @@ textarea {
         }
 
       }
-      &.mt_list{
-        li{
-          ul{
-            li{
-              
-                flex: 0 1 12%;
-                &:nth-child(3),&:nth-child(4){
-                  flex: 0 1 21%;
-  
-                }
-              &:nth-child(4){
+
+      &.mt_list {
+        li {
+          ul {
+            li {
+
+              flex: 0 1 12%;
+
+              &:nth-child(3),
+              &:nth-child(4) {
+                flex: 0 1 21%;
+
+              }
+
+              &:nth-child(4) {
                 color: #4661DC;
 
               }
+            }
+
+            &.tb_hd {
+              height: 64px;
+
+              li {
+                color: #fff;
+
+              }
+            }
+          }
+        }
+      }
+
+      &.cp_log_list {
+        li {
+          ul {
+            li {
+              flex: 0 1 10%;
+              color: #55626F;
+
+              &:nth-child(2) {
+                color: #17A400;
+                flex: 0 1 20%;
+              }
+
+              &:nth-child(5) {
+                flex: 0 1 20%;
+                color: #4661DC;
+
+              }
+
             }
 
             &.tb_hd {
@@ -798,7 +845,8 @@ textarea {
       color: #484B51;
     }
   }
-  .btn_wrap.btn_right{
+
+  .btn_wrap.btn_right {
     width: 100%;
 
   }
@@ -978,249 +1026,247 @@ textarea {
 }
 
 
-  .tab_con, .ptr_pl_regi{
-    margin-top: 40px;
-    display: none;
+.tab_con,
+.com_regi {
+  margin-top: 40px;
+  display: none;
 
-    &:nth-child(1) {
-      display: block;
-    }
-
-    
-
-    table {
-      border-collapse: collapse;
-      font-size: 1.25em;
-      margin-bottom: 56px;
-
-      thead {
-        border-top: 1px solid #696E76;
-        border-bottom: 1px solid #EBEEF0;
+  &:nth-child(1) {
+    display: block;
+  }
 
 
-        tr {
-          th {
-            text-align: center;
-            font-weight: 600;
-            padding: 28px 0;
 
-            // &.th_1 {
-            //   width: 43.5%;
-            // }
-          }
-        }
-      }
+  table {
+    border-collapse: collapse;
+    font-size: 1.25em;
+    margin-bottom: 56px;
 
-      tbody {
-        tr {
-          th {
-            &.check_num {
-              font-weight: 500;
-              padding: 40px 0 24px;
-              border-bottom: 1px solid #696E76;
+    thead {
+      border-top: 1px solid #696E76;
+      border-bottom: 1px solid #EBEEF0;
 
-            }
-          }
-
-          td {
-            padding: 24px 24px;
-
-            &.bd_r {
-              border-right: 1px solid #EBEEF0;
-            }
-
-            &.vtc_m {
-              vertical-align: middle;
-
-            }
-
-            &.vtc_t {
-              vertical-align: top;
-
-            }
-
-            &.pdr_0 {
-              padding-right: 0;
-            }
-          }
-
-          border-bottom : 1px solid #EBEEF0;
-
-        }
-      }
 
       tr {
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-      }
+        th {
+          text-align: center;
+          font-weight: 600;
+          padding: 28px 0;
 
-      .tb_input_wrap {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        label {
-          text-align: right;
-          margin-right: 24px;
-          min-width: 92px;
-
-          &.bl_lb {
-            color: #4661DC;
-          }
-        }
-
-        input {
-          height: 56px;
-          border: 1px solid #C6CBD0;
-          border-radius: 4px;
-          width: 160px;
-          text-align: right;
-          margin-right: 16px;
-          font-size: 0.9em;
-
-          &:read-only {
-            background: #F7F7F8;
-            outline: none;
-          }
-        }
-        select{
-          height: 56px;
-          border: 1px solid #C6CBD0;
-          border-radius: 4px;
-        }
-
-        span {
-          &.cl_trsprt {
-            color: transparent;
-          }
-        }
-
-        textarea {
-          height: 200px;
-          border: 1px solid #C6CBD0;
-          background: #fff;
-          overflow: auto;
-          font-size: 0.9em;
-
-          &:read-only {
-            border: none;
-            outline: none;
-          }
+          // &.th_1 {
+          //   width: 43.5%;
+          // }
         }
       }
-
     }
 
-    &.mt_log{
-      table{
-        tbody{
-          tr{
-            td{
-              text-align: center;
-              .tb_input_wrap{
-                input{
-                  width: 100%;
-                  &[type="date"]{
-                    text-align: center;
-                  }
-                }
-              }
-            
+    tbody {
+      tr {
+        th {
+          &.check_num {
+            font-weight: 500;
+            padding: 40px 0 24px;
+            border-bottom: 1px solid #696E76;
+
+          }
+
+          .b_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          .add_row_btn {
+            width: 136px;
+            height: 58px;
+            border-radius: 4px;
+            font-weight: 500;
+            background: #4661DC;
+
+            span {
+              font-size: 1em;
+              color: #fff;
             }
           }
         }
-      }
 
+        td {
+          padding: 24px 24px;
+
+          &.bd_r {
+            border-right: 1px solid #EBEEF0;
+          }
+
+          &.vtc_m {
+            vertical-align: middle;
+
+          }
+
+          &.vtc_t {
+            vertical-align: top;
+
+          }
+
+          &.pdr_0 {
+            padding-right: 0;
+          }
+        }
+
+        border-bottom : 1px solid #EBEEF0;
+
+      }
     }
 
-    // 사진 대지
-    &.photomount {
+    tr {
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+    }
+
+    .tb_input_wrap {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      label {
+        text-align: right;
+        margin-right: 24px;
+        min-width: 92px;
+
+        &.bl_lb {
+          color: #4661DC;
+        }
+      }
+
+      input {
+        height: 56px;
+        border: 1px solid #C6CBD0;
+        border-radius: 4px;
+        width: 160px;
+        text-align: right;
+        margin-right: 16px;
+        font-size: 0.9em;
+
+        &:read-only {
+          background: #F7F7F8;
+          outline: none;
+        }
+      }
+
+      select {
+        height: 56px;
+        border: 1px solid #C6CBD0;
+        border-radius: 4px;
+      }
+
+      span {
+        &.cl_trsprt {
+          color: transparent;
+        }
+      }
+
+      textarea {
+        height: 200px;
+        border: 1px solid #C6CBD0;
+        background: #fff;
+        overflow: auto;
+        font-size: 0.9em;
+
+        &:read-only {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+  }
+
+  &.mt_log,&.cp_log {
+    table {
       tbody {
         tr {
-          th {
-            font-size: 1.5em;
-            padding: 24px 0 40px;
-            font-weight: 500;
-            border-bottom: 1px solid #696E76;
-          }
-
           td {
-            height: 250px;
-            padding: 24px 32px;
+            text-align: center;
+
+            .tb_input_wrap {
+              input {
+                width: 100%;
+
+                &[type="date"] {
+                  text-align: center;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+
+  // 사진 대지
+  &.photomount {
+    tbody {
+      tr {
+        th {
+          font-size: 1.5em;
+          padding: 24px 0 40px;
+          font-weight: 500;
+          border-bottom: 1px solid #696E76;
+
+          &.tit {
+            font-size: 1.2em;
+          }
+        }
+
+        &.tb_tit {
+          td {
+            height: 20px;
+          }
+        }
+
+        td {
+          height: 273px;
+          padding: 24px 32px;
 
 
-            .img_wrap {
-              display: flex;
-              align-items: center;
+          .img_wrap {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            figure {
+              width: 46%;
+              max-height: 225px;
+              overflow: hidden;
+              position: relative;
+
+              img {
+                width: 100%;
+              }
+
+              button {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+              }
+            }
+
+            figcaption {
+              margin-left: 32px;
+              width: 60%;
               height: 100%;
 
-              figure {
-                width: 40%;
-                max-height: 225px;
-                overflow: hidden;
-                position: relative;
-
-                img {
-                  width: 100%;
-                }
-
-                button {
-                  position: absolute;
-                  right: 20px;
-                  top: 20px;
-                }
-              }
-
-              figcaption {
-                margin-left: 20px;
-                width: 60%;
+              textarea {
+                font-size: 1em;
                 height: 100%;
+                border: 1px solid #C6CBD0;
+                background: #fff;
+                overflow: auto;
 
-                textarea {
-                  font-size: 1em;
-                  height: 100%;
-                  border: 1px solid #C6CBD0;
-                  background: #fff;
-                  overflow: auto;
-
-                  &:read-only {
-                    border: none;
-                    outline: none;
-                  }
-                }
-              }
-            }
-          }
-
-        }
-      }
-      &.mt_log{
-        tbody{
-          tr{
-            td{
-              figure{
-                width: 100%;
-                
-              }
-            }
-          }
-        }
-      }
-      &.phm_dt {
-        tbody {
-          tr {
-            td {
-              .img_wrap {
-                figcaption {
-                  display: flex;
-                  align-items: center;
-                  height: 100%;
-
-                  p {
-                    width: 100%;
-                    max-height: 225px;
-                    overflow: auto;
-                  }
+                &:read-only {
+                  border: none;
+                  outline: none;
                 }
               }
             }
@@ -1230,142 +1276,196 @@ textarea {
       }
     }
 
-    // 공사 실명부
-    &.name_list {
-      background: #ECEFF2;
-      margin-top: 0;
+    &.mt_log {
+      tbody {
+        tr {
+          td {
+            padding: 24px 10px;
 
-      .btn_container {
-        padding-top: 40px;
+            figure {
+              width: 100%;
+              height: 100%;
 
-        .btn_wrap {
-          padding-top: 0;
+              img {
+                height: 100%;
+              }
+
+            }
+          }
         }
       }
+    }
 
-      .tit_wrap {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &.phm_dt {
+      tbody {
+        tr {
+          td {
+            .img_wrap {
+              figcaption {
+                display: flex;
+                align-items: center;
+                height: 100%;
 
-        button {
-          width: 136px;
-          height: 58px;
-          background: #4661DC;
-          border-radius: 4px;
-          font-weight: 500;
-
-          span {
-            color: #fff;
+                p {
+                  width: 100%;
+                  max-height: 225px;
+                  overflow: auto;
+                }
+              }
+            }
           }
         }
       }
 
-      .name_list_tb {
-        padding: 0;
+    }
+  }
 
+  // 공사 실명부
+  &.name_list {
+    background: #ECEFF2;
+    margin-top: 0;
+
+    .btn_container {
+      padding-top: 40px;
+
+      .btn_wrap {
+        padding-top: 0;
+      }
+    }
+
+    .tit_wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        width: 136px;
+        height: 58px;
+        background: #4661DC;
+        border-radius: 4px;
+        font-weight: 500;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+
+    .name_list_tb {
+      padding: 0;
+
+      li {
+        cursor: default;
+
+        ul {
+          li {
+            padding: 0 12px;
+
+            &:nth-child(1) {
+              flex: 0 1 10%;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+              flex: 0 1 19%;
+            }
+
+            &:nth-child(4),
+            &:nth-child(5) {
+              flex: 0 1 20%;
+            }
+
+            input {
+              height: 56px;
+              border: 1px solid #C6CBD0;
+              border-radius: 4px;
+              font-size: 1.125em;
+
+
+            }
+          }
+        }
+      }
+
+      &.nmlist_det {
         li {
-          cursor: default;
-
           ul {
             li {
-              padding: 0 12px;
+              font-weight: 400;
 
-              &:nth-child(1) {
-                flex: 0 1 10%;
-              }
-
-              &:nth-child(2),
-              &:nth-child(3) {
-                flex: 0 1 19%;
-              }
-
-              &:nth-child(4),
-              &:nth-child(5) {
+              &:nth-child(n+2) {
                 flex: 0 1 20%;
               }
 
-              input {
-                height: 56px;
-                border: 1px solid #C6CBD0;
-                border-radius: 4px;
-                font-size: 1.125em;
-
-
+              &:nth-child(4) {
+                flex: 0 1 30%;
               }
-            }
-          }
-        }
 
-        &.nmlist_det {
-          li {
-            ul {
+              color:#55626F;
+            }
+
+            &.tb_hd {
               li {
-                font-weight: 400;
-
-                &:nth-child(n+2) {
-                  flex: 0 1 20%;
-                }
-
-                &:nth-child(4) {
-                  flex: 0 1 30%;
-                }
-
-                color:#55626F;
-              }
-
-              &.tb_hd {
-                li {
-                  color: #fff;
-                  font-weight: 600;
-                }
+                color: #fff;
+                font-weight: 600;
               }
             }
           }
         }
+      }
+    }
+  }
+
+  .btn_wrap {
+    padding-top: 40px;
+
+    button {
+      position: static !important;
+
+      &.nm_list_cc_btn {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.com_regi {
+  display: block;
+  margin-top: 0;
+}
+
+.tab_con_btn {
+  background: #ECEFF2;
+  padding-top: 40px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button.remove_btn {
+      width: 136px;
+      height: 58px;
+      border-radius: 4px;
+      font-weight: 500;
+      background: #fff;
+
+      span {
+        font-size: 1.125em;
+        color: #484B51;
       }
     }
 
     .btn_wrap {
-      padding-top: 40px;
+      padding-top: 0;
 
-      button {
-        position: static !important;
-
-        &.nm_list_cc_btn {
-          margin-right: 16px;
-        }
+      &.btn_right {
+        justify-content: flex-end;
+        width: 100%;
       }
     }
   }
-  .ptr_pl_regi{display: block;margin-top: 0;}
-
-  .tab_con_btn {
-    background: #ECEFF2;
-    padding-top: 40px;
-    .container{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      button.remove_btn {
-        width: 136px;
-        height: 58px;
-        border-radius: 4px;
-        font-weight: 500;
-        background: #fff;
-    
-        span {
-          font-size: 1.125em;
-          color: #484B51;
-        }
-      }
-      .btn_wrap{
-        padding-top: 0;
-        &.btn_right{
-          justify-content: flex-end;
-          width: 100%;
-        }
-      }
-    }
-  }
-  
+}
+.form_wrap.com_wrap.cp_log_regi form.com_form ul li.text_area{
+  margin-bottom: 24px;
+}

@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper main_wrapper">
     <header>
-      <div class="container">
+      <div class="container ">
         <a href="#">
           <h1 class="hd_logo"><img src="../common/images/hd_logo.png" alt="헤더 로고"> <span> 환경보전협회</span></h1>
         </a>
@@ -35,10 +35,10 @@
       </div>
     </header>
     <div class="lnb_wrap">
-      <div class="container">
+      <div class="container main_lnb_container">
         <!-- 0216 아이콘 수정 -->
         <ul class="lnb">
-          <li class="on"><a href="./시설물정보_목록.html">
+          <li class="on"><a href="./시설물정보_목록.html" class="on">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
@@ -81,48 +81,11 @@
         </ul>
       </div>
     </div>
-    <div class="contents">
-      <div class="container">
-        <h2>시설물 정보</h2>
-        <div>
-            <div class="form_wrap com_wrap">
-              <form action="" class="fct_det_form com_form">
-                <ul>
-                  <li>
-                    <label for="patrol_plan">관리 번호 <span>*</span></label>
-                    <input type="text" name="patrol_plan" id="patrol_plan" placeholder="서울-10-59" readonly>
-                  </li>
-                  <li>
-                    <label for="company">권역 선택 <span>*</span></label>
-                    <input type="text" name="company" id="company" placeholder="***권역" readonly>
-                  </li>
-                  <li>
-                    <label for="part">시설물 그룹 명 입력 <span>*</span></label>
-                    <input type="text" name="part" id="part" placeholder="*** ASF 울타리" readonly >
-                  </li>
-              
-                </ul>
-              </form>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-    <div class="regi_map">
-      <div class="container">
-        <!-- api로 지도 추가 예정 -->
-        <div class="map">
-
-        </div>
-        <div class="btn_wrap">
-          <button class="list_btn" onclick="location.href='시설물정보_목록.html'"><span>목록</span></button>
-        </div>
-      </div>
-    </div>
+    
+   
     <footer>
       <div class="container">
         <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
-        <!-- 0215 푸터 수정 -->
         <p>Copyright © Environmental Preservation Association All rights reserved.</p>
       </div>
     </footer>

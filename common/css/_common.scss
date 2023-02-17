@@ -139,6 +139,19 @@ header {
 
       li {
         text-align: center;
+        font-size: 1.125em;
+        &.on{
+          font-weight: 500;
+          color:#4661DC ;
+
+          a{
+            border: 2px solid #6DA2FF;
+          }
+        }
+        &:hover{
+          font-weight: 500;
+          color:#4661DC ;
+        }
 
         a {
           width: 130px;
@@ -155,10 +168,7 @@ header {
             border: 2px solid #6DA2FF;
           }
 
-          &.on {
-            border: 2px solid #6DA2FF;
-
-          }
+          
 
           div {
             width: 64px;
@@ -195,6 +205,66 @@ footer {
   }
 }
 
+// 오류화면
+.wrapper.error_wrapper{
+  height: 100vh;
+  .error_notice_wrap{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .error_notice{
+      padding-left: 19%;
+      padding-bottom: 8%;
+    }
+    
+    p{
+      font-weight: 400;
+      font-size: 1.125em;
+      color: #696E76;
+      &.tit{
+      font-weight: 500;
+      font-size: 2em;
+      padding: 32px 0;
+      color: #26282C;
+    }
+  }
+  .errorpg_btn{
+    padding-top: 80px;
+    display: flex;
+    
+      
+
+      button{
+
+        width: 240px;
+        height: 64px;
+        
+        border-radius: 4px;
+        span{
+          font-weight: 500;
+        }
+        &.prev_pg_btn{
+          border: 1px solid #4661DC; 
+          margin-right: 16px;
+          background: #fff;
+          span{
+            color: #4661DC;
+          }
+        }
+        &.login_pg_btn{
+          background:#4661DC ;
+          span{
+            color: #fff;
+          }
+        }
+        span{
+          font-size: 1.125em;
+        }
+      
+    }
+  }
+  }
+}
 
 @include maxWidth(1260px) {
   .container {

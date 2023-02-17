@@ -101,7 +101,7 @@
                   <li>
                     <label for="ptr_nt_sch02">유지 보수 명 <span>*</span></label>
                     <div class="search_bar">
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch02" placeholder="유지 보수 명 입력">
+                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch02" placeholder="유지보수 명 입력" value="ASF 울타리 유지관리(6권역) 작업일보 (지성테크주식회사)">
                       
                     </div>
 
@@ -109,8 +109,8 @@
                   <li class="wid_50 mr_50">
                     <label for="ptr_area02">유지 보수 지역 <span>*</span></label>
                     <select name="ptr_area" id="ptr_area02">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
+                      <option value="" disabled >선택</option>
+                      <option value=""selected>서울</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
@@ -124,7 +124,7 @@
                   </li>
                   <li class="text_area">
                     <label for="cont02">유지 보수 내용 <span>*</span></label>
-                    <textarea id="cont02" name="cont" placeholder="내용을 입력하세요."></textarea>
+                    <textarea id="cont02" name="cont" placeholder="내용을 입력하세요.">교량 및 그물망 해체</textarea>
                   </li>
                 </ul>
               </form>
@@ -137,7 +137,7 @@
                   <li>
                     <label for="ptr_nt_sch">순찰 일지 명 <span>*</span></label>
                     <div class="search_bar">
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch" placeholder="순찰 일지 명 입력">
+                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch" placeholder="순찰 일지 명 입력" value="ASF 울타리 유지관리" readonly>
                       <button class="search_btn ptr_log_sch_btn"></button>
                       
                     </div>
@@ -149,7 +149,7 @@
                       onFocus="this.initialSelect = this.selectedIndex;"
                       onChange="this.selectedIndex = this.initialSelect;">
                       <option value="" disabled selected>선택</option>
-                      <option value="" >서울</option>
+                      <option value="" selected>서울</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
@@ -163,7 +163,9 @@
                   </li>
                   <li class="text_area">
                     <label for="cont">순찰 내용 </label>
-                    <textarea id="cont" name="cont" placeholder="" readonly></textarea>
+                    <textarea id="cont" name="cont" placeholder="" readonly>1. 기존 안내판 제거  2. 신규 안내판 부착 3. 출입문 단속 및 주민교육 4. 노선조사(울타리 유,무, 출입문, 배수로등)
+
+                    </textarea>
                   </li>
                 </ul>
               </form>
@@ -175,15 +177,15 @@
                 <ul>
                   <li>
                     <label for="fence_num">관리 번호</label>
-                    <input type="text" name="fence_num" id="fence_num" placeholder=""  readonly>
+                    <input type="text" name="fence_num" id="fence_num" placeholder=""value="서울-10-59"  readonly>
                   </li>
                   <li>
                     <label for="fence_name">시설물 그룹 명</label>
-                    <input type="text" name="fence_name" id="fence_name" placeholder=""  readonly>
+                    <input type="text" name="fence_name" id="fence_name" placeholder=""value="ASF울타리"  readonly>
                   </li>
                   <li>
                     <label for="area">권역</label>
-                    <input type="text" name="area" id="area" placeholder=""  readonly>
+                    <input type="text" name="area" id="area" placeholder=""value="내 권역"  readonly>
                   </li>
                 </ul>
               </form>
@@ -198,29 +200,29 @@
                 <tbody>
                   <tr>
                     <td>
-                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder="" readonly ></td>
+                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder=""value="A1001" readonly ></td>
                     <td>
                       <label for="ptr_order07" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order07" id="ptr_order07" placeholder="" readonly >
+                      <input type="text" name="ptr_order07" id="ptr_order07" placeholder="" value="1"readonly >
                     </td>
                     <td>
                       <label for="ptr_order_note07" class="hide">비고</label>
                       <input type="text" name="ptr_order_note07" id="ptr_order_note07" placeholder="
-                      "  readonly>
+                      " value="기둥 부분 밟지 않게 조심해 주세요." readonly>
                     </td>
                     
                   </tr>
                   <tr>
                     <td>
-                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num02" id="fclt_num02" placeholder=""  readonly></td>
+                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num02" id="fclt_num02" placeholder="" value="A1002" readonly></td>
                     <td>
                       <label for="ptr_order08" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order08" id="ptr_order08" placeholder="" readonly>
+                      <input type="text" name="ptr_order08" id="ptr_order08" placeholder="" value="2"readonly>
                     </td>
                     <td>
                       <label for="ptr_order_note08" class="hide">비고</label>
                       <input type="text" name="ptr_order_note08" id="ptr_order_note08" placeholder="
-                      "  readonly>
+                      "  value="철조망 체크 요망" readonly>
                     </td>
                     
                   </tr>
@@ -278,7 +280,7 @@
                   <td class="bd_r">
                     <div class="tb_input_wrap">
                       <label for="count" class="hide">수</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0">
+                      <input type="text" name="count" id="count" placeholder="" value="1">
                     </div>
                   </td>
                   <td colspan="2" >
@@ -295,7 +297,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count03" class="hide">수</label>
-                      <input type="text" name="count" id="count03" placeholder="" value="0">
+                      <input type="text" name="count" id="count03" placeholder="" value="1">
                     </div>
                   </td>
                   <td colspan="2">
@@ -312,7 +314,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count05" class="hide">수</label>
-                      <input type="text" name="count" id="count05" placeholder="" value="0">
+                      <input type="text" name="count" id="count05" placeholder="" value="1">
                     </div>
                   </td>
                   <td colspan="2">
@@ -329,7 +331,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count07" class="hide">수</label>
-                      <input type="text" name="count" id="count07" placeholder="" value="0" readonly>
+                      <input type="text" name="count" id="count07" placeholder="" value="3" readonly>
                     </div>
                   </td>
                   <td colspan="2">
@@ -353,13 +355,14 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="adress" class="hide">주소</label>
-                      <input type="text" name="count" id="adress" placeholder="" value="" readonly>
+                      <input type="text" name="count" id="adress" placeholder="" value="울진군 금강송면 광회리 산1-10
+                      " readonly>
                     </div>
                   </td>
                   <td >
                     <div class="tb_input_wrap">
                       <label for="count10" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count10" placeholder="" value="">
+                    <input type="text" name="count" id="count10" placeholder="" value="그물망 해체">
                   </div>
                 </td>
                 <td>
@@ -376,13 +379,15 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="adress02" class="hide">주소</label>
-                      <input type="text" name="count" id="adress02" placeholder="" value="" readonly>
+                      <input type="text" name="count" id="adress02" placeholder=""value="울진군 금강송면 쌍전리 산102-2
+                      " readonly>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count12" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count12" placeholder="" value="">
+                    <input type="text" name="count" id="count12" placeholder="" value="배수구 막이 해체(2개소)
+                    " >
                   </div>
                 </td>
                 <td>
@@ -399,13 +404,15 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="adress03" class="hide">주소</label>
-                      <input type="text" name="count" id="adress03" placeholder="" value="" readonly>
+                      <input type="text" name="count" id="adress03" placeholder=""value="울진군 금강송면 쌍전리 산102-2
+                      " readonly>
                     </div>
                   </td>
                   <td >
                     <div class="tb_input_wrap">
                       <label for="count14" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count14" placeholder="" value="">
+                    <input type="text" name="count" id="count14" placeholder="" value="배수구 막이 해체(2개소)
+                    " >
                   </div>
                 </td>
                 <td>
@@ -437,8 +444,8 @@
                     <div class="tb_input_wrap">
                       <label for="ptr_log_select01" class="hide">구분</label>
                       <select name="ptr_log_select" id="ptr_log_select01">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
+                      <option value="" disabled >선택</option>
+                      <option value=""selected>그물망 해체(m)</option>
                       <option value=""></option>
                       <option value=""></option>
                                         </select>
@@ -453,13 +460,83 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count16" class="hide">수</label>
-                    <input type="text" name="count" id="count16" placeholder="" value="0">
+                    <input type="text" name="count" id="count16" placeholder="" value="269">
                   </div>
                 </td>
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count17" class="hide">수</label>
-                    <input type="text" name="count" id="count17" placeholder="" value="0">
+                    <input type="text" name="count" id="count17" placeholder="" value="269">
+                  </div>
+                </td>
+                  <td>
+                    <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <label for="ptr_log_select02" class="hide">구분</label>
+                      <select name="ptr_log_select" id="ptr_log_select02">
+                      <option value="" disabled selected>선택</option>
+                      <option value="">그물망 해체(m)</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                                        </select>
+                    </div>
+                </td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <label for="count15" class="hide">수</label>
+                      <input type="text" name="count" id="count15" placeholder="" value="">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <label for="count16" class="hide">수</label>
+                    <input type="text" name="count" id="count16" placeholder="" value="">
+                  </div>
+                </td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <label for="count17" class="hide">수</label>
+                    <input type="text" name="count" id="count17" placeholder="" value="">
+                  </div>
+                </td>
+                  <td>
+                    <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <label for="ptr_log_select03" class="hide">구분</label>
+                      <select name="ptr_log_select" id="ptr_log_select03">
+                      <option value="" disabled selected>선택</option>
+                      <option value="">그물망 해체(m)</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                                        </select>
+                    </div>
+                </td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <label for="count15" class="hide">수</label>
+                      <input type="text" name="count" id="count15" placeholder="" value="">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <label for="count16" class="hide">수</label>
+                    <input type="text" name="count" id="count16" placeholder="" value="">
+                  </div>
+                </td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <label for="count17" class="hide">수</label>
+                    <input type="text" name="count" id="count17" placeholder="" value="">
                   </div>
                 </td>
                   <td>
@@ -487,11 +564,11 @@
           <div class="container">
             <table>
               <colgroup>
-              <col width="15%">
-              <col width="25%">
-              <col width="30%">
-              <col width="30%">
-            </colgroup>
+                <col width="15%">
+                <col width="25%">
+                <col width="30%">
+                <col width="30%">
+              </colgroup>
               <thead></thead>
               <tbody>
                 
@@ -513,13 +590,15 @@
                   </td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/photomount_1.png" alt="작업 사진1">
+                        <button><img src="../common/images/rem_btn.png" alt=""></button></figure>
                       
                     </div>
                   </td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/photomount_2.png" alt="작업 사진2">
+                        <button><img src="../common/images/rem_btn.png" alt=""></button></figure>
                       
                     </div>
                   </td>
@@ -532,13 +611,15 @@
                   </td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/photomount_3.png" alt="작업 사진3">
+                        <button><img src="../common/images/rem_btn.png" alt=""></button></figure>
                       
                     </div>
                   </td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/photomount_4.png" alt="작업 사진4">
+                        <button><img src="../common/images/rem_btn.png" alt=""></button></figure>
                       
                     </div>
                   </td>
@@ -550,13 +631,15 @@
                   </td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/no_image.png" alt="이미지 없음">
+                        </figure>
                       
                     </div>
                   </td>
                   <td>
                     <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+                      <figure><img src="../common/images/no_image.png" alt="이미지 없음">
+                        </figure>
                       
                     </div>
                   </td>
@@ -569,8 +652,8 @@
             <div class="container">
               <div class="btn_wrap btn_right">
                 <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
-                <button class="modify_btn tab4_btn" ><span>임시 저장</span></button>
-                <button class="register_btn" onclick="location.href='유지보수작업관리_등록.html'"><span>글 수정</span></button>
+                <button class="save_btn tab4_btn" ><span>임시 저장</span></button>
+                <button class="modify_btn" onclick="location.href='유지보수작업관리_등록.html'"><span>글 수정</span></button>
               </div>
             </div>
           </div>

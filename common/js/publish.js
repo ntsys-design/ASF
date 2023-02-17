@@ -3,10 +3,11 @@
 //   $(this).addClass('active')
 // })
 
-// lnb
-$('.lnb_wrap li a').on('click', function () {
+// lnb 
+// 0217 수정
+$('.lnb_wrap li').on('click', function () {
   
-  $('.lnb li a').removeClass('on')
+  $('.lnb li').removeClass('on')
   $(this).addClass('on')
 })
 
@@ -95,12 +96,13 @@ $('.tab_menu li').on('click',function(e){
 
 })
 
-// 임시저장 버튼 클릭 탭 이동
+//0217 수정
+//순찰일지관리_등록,유지보수작업관리_등록,민원일지관리_등록 임시저장 버튼 클릭 탭 이동
 $('.tab2_btn').click(function(){
   
   let href=$(this).attr('href')
 console.log(href)
-$('.ptr_log').hide()
+$('.tab_con').hide()
 $(href).show()
 $('.tab_menu li').removeClass('on')
 $('.tab_menu li:nth-child(2)').addClass('on')
@@ -110,7 +112,7 @@ $('.tab3_btn').click(function(){
   
   let href=$(this).attr('href')
 console.log(href)
-$('.ptr_log').hide()
+$('.tab_con').hide()
 $(href).show()
 $('.tab_menu li').removeClass('on')
 $('.tab_menu li:nth-child(3)').addClass('on')
@@ -120,8 +122,9 @@ $('.tab4_btn').click(function(){
   
   let href=$(this).attr('href')
 console.log(href)
-$('.ptr_log').hide()
+$('.tab_con').hide()
 $(href).show()
 $('.tab_menu li').removeClass('on')
 $('.tab_menu li:nth-child(4)').addClass('on')
 })
+

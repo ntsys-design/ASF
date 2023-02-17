@@ -82,100 +82,92 @@
     </div>
     <div class="contents">
       <div class="container">
-        <h2>유지보수 작업 관리</h2>
+        <h2>민원 일지 관리</h2>
         <ul class="tab_menu">
-          <li class="on"><a href="#">유지보수 일지</a></li>
-          <li><a href="#">유지보수 작업내용</a></li>
+          <li class="on"><a href="#">민원 일지</a></li>
+          <li><a href="#">작업 일지</a></li>
           <li><a href="#">작업 사진</a></li>
         </ul>
       </div>
       <div class="tab_con_wrap">
-        <!-- 유지보수 일지 -->
-        <div class="tab_con mt_log">
+        <!-- 민원 일지 -->
+        <div class="tab_con cp_log">
 
           <div class="container">
-            <div class="form_wrap com_wrap mt_log_regi">
-              <h3>유지보수 일시</h3>
+            <div class="form_wrap com_wrap com_regi cp_log_regi">
+              <h3>접수 내용</h3>
               <form action="" class="com_form">
                 <ul>
-                  <li>
-                    <label for="ptr_nt_sch02">유지 보수 명 <span>*</span></label>
-                    <div class="search_bar">
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch02" placeholder="유지 보수 명 입력">
-                      
-                    </div>
-
+                  <li class="wid_50">
+                    <label for="receipt_number">접수 번호 <span>*</span></label>
+                      <input type="text" name="receipt_number" id="receipt_number" placeholder="">  
                   </li>
-                  <li class="wid_50 mr_50">
-                    <label for="ptr_area02">유지 보수 지역 <span>*</span></label>
-                    <select name="ptr_area" id="ptr_area02">
+                  
+                  <li class="wid_50">
+                    <label for="date27">접수 일자 <span>*</span></label>
+                    <input type="date" name="date01" id="date01" value="2022-08-10" > 
+                  </li>
+
+                  <li class="wid_50">
+                    <label for="receipt_name">접수자 명 <span>*</span></label>
+                      <input type="text" name="receipt_name" id="receipt_name" placeholder="">
+                  </li>
+
+                  <li class="wid_50">
+                    <label for="cpl_name">민원 성명 <span>*</span></label>
+                      <input type="text" name="cpl_name" id="cpl_name" placeholder="">
+                  </li>
+
+                  <li class="wid_50">
+                    <label for="tel">전화 번호 <span>*</span></label>
+                      <input type="text" name="tel" id="tel" placeholder="">
+                  </li>
+
+                  <li class="wid_50">
+                    <label for="cpl_area">민원 지역 <span>*</span></label>
+                    <select name="cpl_area" id="cpl_area">
                       <option value="" disabled selected>선택</option>
                       <option value=""></option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
                   </li>
-                  <li class="wid_50">
-                    <label for="date27">유지 보수 일자 <span>*</span></label>
-                    <input type="date" name="date27" id="date27" value="2022-08-10" readonly> <span>~</span>
-                    <label for="date28" class="hide">날짜</label>
-                    <input type="date" name="date28" id="date28" value="2022-08-10" readonly>
 
+                  <li class="wid_50">
+                    <label for="cpl_type">민원 유형 <span>*</span></label>
+                    <select name="cpl_type" id="cpl_type">
+                      <option value="" disabled selected>선택</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
                   </li>
+
+                  <li>
+                    <label for="cpl_type">민원 제목 <span>*</span></label>
+                    <input type="text" name="cpl_type" id="cpl_type" placeholder="">
+                  </li>
+
                   <li class="text_area">
-                    <label for="cont02">유지 보수 내용 <span>*</span></label>
+                    <label for="cont02">민원 내용</label>
                     <textarea id="cont02" name="cont" placeholder="내용을 입력하세요."></textarea>
                   </li>
                 </ul>
               </form>
 
             </div>
-            <div class="form_wrap com_wrap mt_log_regi">
-              <h3>순찰 일시</h3>
+           
+            <div class="form_wrap com_wrap com_regi cp_log_regi">
+              <h3>울타리 선택</h3>
               <form action="" class="com_form">
                 <ul>
                   <li>
-                    <label for="ptr_nt_sch">순찰 일지 명 <span>*</span></label>
-                    <div class="search_bar">
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch" placeholder="순찰 일지 명 입력">
-                      <button class="search_btn ptr_log_sch_btn"></button>
-                      
-                    </div>
-
-                  </li>
-                  <li class="wid_50 mr_50">
-                    <label for="ptr_area">순찰 지역 </label>
-                    <select name="ptr_area" id="ptr_area" class="readonly"
-                      onFocus="this.initialSelect = this.selectedIndex;"
-                      onChange="this.selectedIndex = this.initialSelect;">
-                      <option value="" disabled selected>선택</option>
-                      <option value="" >서울</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </li>
-                  <li class="wid_50">
-                    <label for="date25">순찰 일자 </label>
-                    <input type="date" name="date25" id="date25" value="2022-08-10" readonly> <span>~</span>
-                    <label for="date26" class="hide">날짜</label>
-                    <input type="date" name="date26" id="date26" value="2022-08-10" readonly>
-
-                  </li>
-                  <li class="text_area">
-                    <label for="cont">순찰 내용 </label>
-                    <textarea id="cont" name="cont" placeholder="" readonly></textarea>
-                  </li>
-                </ul>
-              </form>
-
-            </div>
-            <div class="form_wrap com_wrap com_regi mt_log_regi">
-              <h3>순찰 울타리 구간</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li>
-                    <label for="fence_num">관리 번호</label>
-                    <input type="text" name="fence_num" id="fence_num" placeholder=""  readonly>
+                    <label for="fence_num">관리 번호 <span>*</span></label>
+                <div class="search_bar">
+                  <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요.
+                  ">
+                  <button class="search_btn fcnum_sch_btn"></button>
+                </div>
                   </li>
                   <li>
                     <label for="fence_name">시설물 그룹 명</label>
@@ -240,250 +232,79 @@
           <div class="tab_con_btn">
             <div class="container">
               <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
+                <button class="cancel_btn" onclick="location.href='민원일지관리_목록.html'"><span>취소</span></button>
                 <button class="save_btn tab2_btn" href='#tab2_content'><span>임시 저장</span></button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 유지보수 일지 -->
+        <!-- //민원 일지 -->
 
-        <!-- 유지보수 작업내용 -->
-        <div class="tab_con mt_log" id="tab2_content">
+        <!-- 작업 일지 -->
+        <div class="tab_con cp_log" id="tab2_content">
           <div class="container">
-            <table border="0">
-              <colgroup>
-                <col width="28%;">
-                <col width="28%">
-                <col width="29.5%">
-                <col width="14.5%">
-              </colgroup>
-              <thead>
-
-                <tr>
-                  <th>구분</th>
-                  <th>인원수/주소</th>
-                  <th colspan="2">비고/작업내용</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th colspan="4" class="check_num">작업 인원 <span>*</span></th>
-                </tr>
-                <tr>
-                  <td class="bd_r">
-                    관리자
-                  </td>
-                  <td class="bd_r">
-                    <div class="tb_input_wrap">
-                      <label for="count" class="hide">수</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0">
-                    </div>
-                  </td>
-                  <td colspan="2" >
-                    <div class="tb_input_wrap">
-                      <label for="count02" class="hide">비고</label>
-                    <input type="text" name="count" id="count02" placeholder="" value="">
-                  </div>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    팀장
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count03" class="hide">수</label>
-                      <input type="text" name="count" id="count03" placeholder="" value="0">
-                    </div>
-                  </td>
-                  <td colspan="2">
-                    <div class="tb_input_wrap">
-                      <label for="count04" class="hide">비고</label>
-                    <input type="text" name="count" id="count04" placeholder="" value="">
-                  </div>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    팀원
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count05" class="hide">수</label>
-                      <input type="text" name="count" id="count05" placeholder="" value="0">
-                    </div>
-                  </td>
-                  <td colspan="2">
-                    <div class="tb_input_wrap">
-                      <label for="count06" class="hide">비고</label>
-                    <input type="text" name="count" id="count06" placeholder="" value="">
-                  </div>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    합계
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count07" class="hide">수</label>
-                      <input type="text" name="count" id="count07" placeholder="" value="0" readonly>
-                    </div>
-                  </td>
-                  <td colspan="2">
-                    <div class="tb_input_wrap">
-                      <label for="count08" class="hide">수</label>
-                    <input type="text" name="count" id="count08" placeholder="" value="">
-                  </div>
-                </td>
-                </tr>
-                <tr>
-                  <th colspan="4" class="check_num">
-                    <div class="b_wrap"><b>작업 사항 <span>*</span></b><button class="add_row_btn"><span>행 추가</span></button></div></th>
-                </tr>
-                <tr>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="date29" class="hide">날짜</label>
-                      <input type="date" name="date29" id="date29" value="2022-08-10" readonly>-01
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="adress" class="hide">주소</label>
-                      <input type="text" name="count" id="adress" placeholder="" value="" readonly>
-                    </div>
-                  </td>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="count10" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count10" placeholder="" value="">
-                  </div>
-                </td>
-                <td>
-                  <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="date200" class="hide">날짜</label>
-                      <input type="date" name="date27" id="date200" value="2022-08-10" readonly>-02
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="adress02" class="hide">주소</label>
-                      <input type="text" name="count" id="adress02" placeholder="" value="" readonly>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count12" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count12" placeholder="" value="">
-                  </div>
-                </td>
-                <td>
-                  <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="date280" class="hide">날짜</label>
-                      <input type="date" name="date28" id="date280" value="2022-08-10" readonly>-03
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="adress03" class="hide">주소</label>
-                      <input type="text" name="count" id="adress03" placeholder="" value="" readonly>
-                    </div>
-                  </td>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="count14" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count14" placeholder="" value="">
-                  </div>
-                </td>
-                <td>
-                  <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
-                </td>
-                </tr>
-              
-              </tbody>
-            </table>
-            <table>
-              <thead></thead>
-              <tbody>
-                <tr>
-                  <th colspan="6"  class="check_num">
-                    <div class="b_wrap"><b>작업 현황</b><button class="add_row_btn"><span>행 추가</span></button></div>
-                  </th>
-                </tr>
-                <tr>
-                  <td>No</td>
-                  <td>구분</td>
-                  <td>전일</td>
-                  <td>금일</td>
-                  <td>누계</td>
-                  <td>삭제여부</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="ptr_log_select01" class="hide">구분</label>
-                      <select name="ptr_log_select" id="ptr_log_select01">
+            <div class="form_wrap com_wrap com_regi cp_log_regi">
+              <h3>작업 내용</h3>
+              <form action="" class="com_form">
+                <ul>
+                  <li class="wid_50">
+                    <label for="progress">진행 여부 <span>*</span></label>
+                    <select name="cpl_area" id="cpl_area">
                       <option value="" disabled selected>선택</option>
                       <option value=""></option>
                       <option value=""></option>
                       <option value=""></option>
-                                        </select>
-                    </div>
-                </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count15" class="hide">수</label>
-                      <input type="text" name="count" id="count15" placeholder="" value="0">
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count16" class="hide">수</label>
-                    <input type="text" name="count" id="count16" placeholder="" value="0">
-                  </div>
-                </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count17" class="hide">수</label>
-                    <input type="text" name="count" id="count17" placeholder="" value="0">
-                  </div>
-                </td>
-                  <td>
-                    <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                    </select>
+                  </li>
+                  
+                  <li class="wid_50">
+                    <label for="completion_date">완료 일자 <span>*</span></label>
+                    <input type="date" name="completion_date" id="completion_date" value="2022-08-10" > 
+                  </li>
+
+                  <li class="wid_50">
+                    <label for="name">담당자 명 <span>*</span></label>
+                      <input type="text" name="name" id="name" placeholder="">
+                  </li>
+
+                  <li class="wid_50">
+                    <label for="tel02">전화 번호 <span>*</span></label>
+                      <input type="text" name="tel02" id="tel02" placeholder="">
+                  </li>
+
+                  <li class="text_area">
+                    <label for="cont100">검토 사항</label>
+                    <textarea id="cont100" name="cont100" placeholder="내용을 입력하세요."></textarea>
+                  </li>
+                  <li class="text_area">
+                    <label for="cont101">작업 계획</label>
+                    <textarea id="cont101" name="cont101" placeholder="내용을 입력하세요."></textarea>
+                  </li>
+                  <li class="text_area">
+                    <label for="cont102">작업 내용</label>
+                    <textarea id="cont102" name="cont102" placeholder="내용을 입력하세요."></textarea>
+                  </li>
+                </ul>
+              </form>
+
+            </div>
 
 
           </div>
           <div class="tab_con_btn">
             <div class="container">
               <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
+                <button class="cancel_btn" onclick="location.href='민원일지관리_목록.html'"><span>취소</span></button>
                 <button class="save_btn tab3_btn" href='#tab3_content'><span>임시 저장</span></button>
               </div>
             </div>
           </div>
         </div>
-        <!-- 유지보수 작업내용 -->
+        <!-- //작업 일지 -->
 
         <!-- 작업 사진 -->
-        <div class="tab_con mt_log photomount" id="tab3_content">
+        <div class="tab_con cp_log photomount" id="tab3_content">
           <div class="container">
             <table>
               <colgroup>
@@ -575,7 +396,7 @@
             </div>
           </div>
         </div>
-        <!-- 작업 사진 -->
+        <!-- //작업 사진 -->
 
         
       </div>
