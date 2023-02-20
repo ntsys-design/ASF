@@ -36,9 +36,9 @@
     </header>
     <div class="lnb_wrap">
       <div class="container">
-        <!-- 0216 아이콘 수정 -->
+        <!-- 0220 아이콘 수정 / li class="on" 순찰 계획 관리로 이동 -->
         <ul class="lnb">
-          <li class="on"><a href="./시설물정보_목록.html">
+          <li><a href="./시설물정보_목록.html">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
@@ -48,7 +48,7 @@
                 <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
               </div>
             </a>순찰 계획 관리</li>
-          <li><a href="./순찰일지관리_목록.html">
+          <li class="on"><a href="./순찰일지관리_목록.html">
               <div>
                 <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
               </div>
@@ -219,39 +219,45 @@
                 <tbody>
                   <tr>
                     <td>
-                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder=""  value="A1001" readonly></td>
+                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num"
+                        id="fclt_num01" placeholder="" value="A1001" readonly>
+                    </td>
                     <td>
                       <label for="ptr_order11" class="hide">순찰 순서 번호</label>
-                      <input type="text" name="ptr_order11" id="ptr_order11" placeholder="순찰 순서 번호 입력"  value="1" readonly>
+                      <input type="text" name="ptr_order11" id="ptr_order11" placeholder="순찰 순서 번호 입력" value="1"
+                        readonly>
                     </td>
                     <td>
                       <label for="ptr_order_note11" class="hide">비고</label>
                       <input type="text" name="ptr_order_note11" id="ptr_order_note11" placeholder="시설물별 주의사항을 입력해 주세요.
                       " value="기둥 부분 밟지 않게 조심해 주세요.
-                      "  readonly>
+                      " readonly>
                     </td>
-                    
+
                   </tr>
                   <tr>
                     <td>
-                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num02" placeholder=""  value="A1002" readonly></td>
+                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num"
+                        id="fclt_num02" placeholder="" value="A1002" readonly>
+                    </td>
                     <td>
                       <label for="ptr_order12" class="hide">순찰 순서 번호</label>
-                      <input type="text" name="ptr_order12" id="ptr_order12" placeholder="순찰 순서 번호 입력"  value="2" readonly>
+                      <input type="text" name="ptr_order12" id="ptr_order12" placeholder="순찰 순서 번호 입력" value="2"
+                        readonly>
                     </td>
                     <td>
                       <label for="ptr_order_note12" class="hide">비고</label>
                       <input type="text" name="ptr_order_note12" id="ptr_order_note12" placeholder="시설물별 주의사항을 입력해 주세요.
-                      "  value="철조망 체크 요망
+                      " value="철조망 체크 요망
                       " readonly>
                     </td>
-                    
+
                   </tr>
                 </tbody>
               </table>
 
             </div>
-            
+
           </div>
           <div class="regi_map">
             <div class="container">
@@ -554,7 +560,9 @@
                   </td>
                   <td colspan="2">
                     <div class="tb_input_wrap">
-                      <label for="cont03" class="hide">내용</label><textarea id="cont03" name="cont" placeholder=""></textarea></div>
+                      <label for="cont03" class="hide">내용</label><textarea id="cont03" name="cont"
+                        placeholder=""></textarea>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -563,7 +571,9 @@
                   </td>
                   <td colspan="2">
                     <div class="tb_input_wrap">
-                      <label for="cont04" class="hide">내용</label><textarea id="cont04" name="cont" placeholder=""></textarea></div>
+                      <label for="cont04" class="hide">내용</label><textarea id="cont04" name="cont"
+                        placeholder=""></textarea>
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -585,7 +595,7 @@
         <!-- 사진 대지 -->
         <div class="tab_con ptr_log photomount phm_dt" id="tab3_content">
           <div class="container">
-            
+
             <table>
               <!-- 0217 col width 수정 -->
               <colgroup>
@@ -594,7 +604,7 @@
               </colgroup>
               <thead></thead>
               <tbody>
-                <tr >
+                <tr>
                   <th colspan="2" class="tit">사진대지</th>
                 </tr>
                 <tr>
@@ -703,14 +713,17 @@
                   </li>
                   <li>
                     <label for="date22" class="hide">날짜</label>
-                    <input type="date" name="date22" id="date22" value="1950-05-05" readonly>
+                    <!-- 0220 인풋 readonly 제거 -->
+                    <input type="date" name="date22" id="date22" value="1950-05-05" >
                   </li>
                   <li>
                     <label for="adress01" class="hide">주소</label>
                     <input type="text" name="adress" id="adress01" value="파주시 적성면">
                   </li>
                   <li>
-                    <label for="cont205" class="hide">순찰 및 유지 보수</label><input type="text" name="cont205" id="cont205" value="순찰 및 유지보수"></li>
+                    <label for="cont205" class="hide">순찰 및 유지보수</label><input type="text" name="cont205" id="cont205"
+                      value="순찰 및 유지보수">
+                  </li>
                   <li>
                     <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
                   </li>
@@ -729,14 +742,17 @@
                   </li>
                   <li>
                     <label for="date23" class="hide">날짜</label>
-                    <input type="date" name="date23" id="date23" value="1984-10-10" readonly>
+                    <!-- 0220 인풋 readonly 제거 -->
+                    <input type="date" name="date23" id="date23" value="1984-10-10" >
                   </li>
                   <li>
                     <label for="adress02" class="hide">주소</label>
                     <input type="text" name="adress" id="adress02" value="파주시 적성면">
                   </li>
                   <li>
-                    <label for="cont206" class="hide">순찰 및 유지보수</label><input type="text" name="" id="cont206" value="순찰 및 유지보수"></li>
+                    <label for="cont206" class="hide">순찰 및 유지보수</label><input type="text" name="" id="cont206"
+                      value="순찰 및 유지보수">
+                  </li>
                   <li>
                     <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
                   </li>
@@ -755,14 +771,16 @@
                   </li>
                   <li>
                     <label for="date24" class="hide">날짜</label>
-                    <input type="date" name="date24" id="date24" value="1950-05-05" readonly>
+                    <!-- 0220 인풋 readonly 제거 -->
+                    <input type="date" name="date24" id="date24" value="1950-05-05" >
                   </li>
                   <li>
                     <label for="adress03" class="hide">주소</label>
                     <input type="text" name="adress" id="adress03" value="">
                   </li>
                   <li>
-                    <label for="cont210" class="hide">순찰 및 유지보수</label><input type="text" name="" id="cont210" value=""></li>
+                    <label for="cont210" class="hide">순찰 및 유지보수</label><input type="text" name="" id="cont210" value="">
+                  </li>
                   <li>
                     <button><span><img src="../common/images/remove_ico.png" alt=""></span></button>
                   </li>
@@ -772,144 +790,146 @@
 
             </ul>
 
-            
+
           </div>
           <div class="tab_con_btn">
-              
-              <div class="container">
-                <div class="btn_wrap btn_right">
-                  <button class="cancel_btn nm_list_cc_btn"
-                    onclick="location.href='순찰일지관리_목록.html'"><span>취소</span></button>
-                  <button class="save_btn"><span>임시 저장</span></button>
-                  <button class="modify_btn"><span>수정</span></button>
-                </div>
+
+            <div class="container">
+              <div class="btn_wrap btn_right">
+                <button class="cancel_btn nm_list_cc_btn"
+                  onclick="location.href='순찰일지관리_목록.html'"><span>취소</span></button>
+                <button class="save_btn"><span>임시 저장</span></button>
+                <button class="modify_btn"><span>수정</span></button>
               </div>
             </div>
+          </div>
         </div>
         <!-- 공사 실명부 -->
       </div>
 
 
 
-      <footer>
-        <div class="container">
-          <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
-          <p>Copyright © Environmental Preservation Association All rights reserved.</p>
+
+    </div>
+    <!-- 0220 footer modalbox 영역 콘텐츠 밖으로 위치 수정 -->
+    <footer>
+      <div class="container">
+        <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
+        <p>Copyright © Environmental Preservation Association All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 공사 실명부 이름 검색 -->
+    <div class="modal_box nm_list_modal_box">
+      <div class="modal_contents">
+        <div class="modal_top">
+          <h3>담당자 검색</h3><button class="close"><img src="../common/images/md_close_btn.png" alt="팝업 끄기 버튼"></button>
         </div>
-      </footer>
 
-      <!-- 공사 실명부 이름 검색 -->
-      <div class="modal_box nm_list_modal_box">
-        <div class="modal_contents">
-          <div class="modal_top">
-            <h3>담당자 검색</h3><button class="close"><img src="../common/images/md_close_btn.png" alt="팝업 끄기 버튼"></button>
-          </div>
+        <div class="form_wrap">
+          <form action="" class="search_form">
+            <ul>
+              <li>
+                <label for="ptr_select05">담당자 검색</label>
+                <select name="ptr_select05" id="ptr_select05">
+                  <option value="" disabled selected>전체</option>
+                  <option value="">담당 회사</option>
+                  <option value="">담당자</option>
+                </select>
+              </li>
 
-          <div class="form_wrap">
-            <form action="" class="search_form">
-              <ul>
-                <li>
-                  <label for="ptr_select05">담당자 검색</label>
-                  <select name="ptr_select05" id="ptr_select05">
-                    <option value="" disabled selected>전체</option>
-                    <option value="">담당 회사</option>
-                    <option value="">담당자</option>
-                  </select>
-                </li>
-
-                <li>
-                  <div class="search_bar">
-                    <label for="ptr_search19" class="hide">검색</label>
-                    <input type="text" name="search" id="ptr_search19" placeholder="검색어를 입력하세요.">
-                    <button class="search_btn"></button>
-                  </div>
-                </li>
-
-              </ul>
-            </form>
-          </div>
-          <div class="modal_tb">
-            <p>※ 관련 담당자 선택 하실 수 있습니다.</p>
-
-            <ul class="fence_list">
               <li>
-                <ul class="tb_hd">
-                  <li>담당자 ID</li>
-                  <li>담당자</li>
-                  <li>담당 회사</li>
-                  <li>담당 부서</li>
-                  <li>등록일</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>user1</li>
-                  <li>홍길동</li>
-                  <li>(주)</li>
-                  <li>정보콘텐츠과</li>
-                  <li>2022. 08. 01</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>user1</li>
-                  <li>홍길동</li>
-                  <li>(주)</li>
-                  <li>정보콘텐츠과</li>
-                  <li>2022. 08. 01</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>user1</li>
-                  <li>홍길동</li>
-                  <li>(주)</li>
-                  <li>정보콘텐츠과</li>
-                  <li>2022. 08. 01</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>user1</li>
-                  <li>홍길동</li>
-                  <li>(주)</li>
-                  <li>정보콘텐츠과</li>
-                  <li>2022. 08. 01</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>user1</li>
-                  <li>홍길동</li>
-                  <li>(주)</li>
-                  <li>정보콘텐츠과</li>
-                  <li>2022. 08. 01</li>
-                </ul>
+                <div class="search_bar">
+                  <label for="ptr_search19" class="hide">검색</label>
+                  <input type="text" name="search" id="ptr_search19" placeholder="검색어를 입력하세요.">
+                  <button class="search_btn"></button>
+                </div>
               </li>
 
             </ul>
-            <div class="pagination_wrap">
-              <div class="pagination">
-                <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
-                <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
-                <ul>
-                  <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
-                  <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
-                  <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
-                  <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
-                  <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
-                </ul>
-                <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
-                <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
+          </form>
+        </div>
+        <div class="modal_tb">
+          <p>※ 관련 담당자 선택 하실 수 있습니다.</p>
 
-              </div>
+          <ul class="fence_list">
+            <li>
+              <ul class="tb_hd">
+                <li>담당자 ID</li>
+                <li>담당자</li>
+                <li>담당 회사</li>
+                <li>담당 부서</li>
+                <li>등록일</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>user1</li>
+                <li>홍길동</li>
+                <li>(주)</li>
+                <li>정보콘텐츠과</li>
+                <li>2022. 08. 01</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>user1</li>
+                <li>홍길동</li>
+                <li>(주)</li>
+                <li>정보콘텐츠과</li>
+                <li>2022. 08. 01</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>user1</li>
+                <li>홍길동</li>
+                <li>(주)</li>
+                <li>정보콘텐츠과</li>
+                <li>2022. 08. 01</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>user1</li>
+                <li>홍길동</li>
+                <li>(주)</li>
+                <li>정보콘텐츠과</li>
+                <li>2022. 08. 01</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>user1</li>
+                <li>홍길동</li>
+                <li>(주)</li>
+                <li>정보콘텐츠과</li>
+                <li>2022. 08. 01</li>
+              </ul>
+            </li>
+
+          </ul>
+          <div class="pagination_wrap">
+            <div class="pagination">
+              <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
+              <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
+              <ul>
+                <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
+                <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
+              </ul>
+              <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
+              <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
 
             </div>
-            <div class="btn_wrap"><button class="cancel_btn md_cancel_btn"><span>닫기</span></button></div>
+
           </div>
-
-
+          <div class="btn_wrap"><button class="cancel_btn md_cancel_btn"><span>닫기</span></button></div>
         </div>
+
+
       </div>
     </div>
     <div class="dim"></div>

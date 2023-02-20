@@ -36,9 +36,9 @@
     </header>
     <div class="lnb_wrap">
       <div class="container">
-        <!-- 0216 아이콘 수정 -->
+        <!-- 0220 아이콘 수정 / li class="on" 순찰 계획 관리로 이동 -->
         <ul class="lnb">
-          <li class="on"><a href="./시설물정보_목록.html">
+          <li><a href="./시설물정보_목록.html">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
@@ -48,7 +48,7 @@
                 <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
               </div>
             </a>순찰 계획 관리</li>
-          <li><a href="./순찰일지관리_목록.html">
+          <li class="on"><a href="./순찰일지관리_목록.html">
               <div>
                 <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
               </div>
@@ -88,7 +88,7 @@
           <form action="" class="search_form list_dt_form">
             <ul>
               <li>
-                <label for="pat_company" >검색</label>
+                <label for="pat_company">검색</label>
                 <select name="pat_company" id="pat_company">
                   <option value="" disabled selected>순찰 회사 명</option>
                   <option value=""></option>
@@ -97,16 +97,17 @@
                 </select>
               </li>
               <li>
+                <!-- 0220 인풋 readonly 제거 -->
                 <label for="date15" class="hide">날짜</label>
-                <input type="date" name="date15" id="date15" value="2022-08-10" readonly> <span>~</span>
+                <input type="date" name="date15" id="date15" value="2022-08-10" > <span>~</span>
                 <label for="date16" class="hide">날짜</label>
-                <input type="date" name="date16" id="date16" value="2022-08-10" readonly>
+                <input type="date" name="date16" id="date16" value="2022-08-10" >
               </li>
               <li>
                 <div class="search_bar">
                   <label for="fence_search101" class="hide">검색</label>
                   <input type="text" name="search" id="fence_search101" placeholder="검색어를 입력하세요.">
-                  <button  class="search_btn"></button>
+                  <button class="search_btn"></button>
                 </div>
               </li>
 
@@ -114,176 +115,178 @@
           </form>
         </div>
       </div>
-    </div>
-    <div class="fence_list_wrap">
-      <div class="container">
-        <ul class="fence_list ptr_pl_list">
-          <li>
-            <ul class="tb_hd">
-              <li>No</li>
-              <li>시설물 그룹 명</li>
-              <li>순찰 일지 명</li>
-              <li>등록자</li>
-              <li>등록일</li>
-              <li>순찰자</li>
-              <li>순찰 완료</li>
-              <li>공사 선정</li>
-              <li>공사 담당자</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>10</li>
-              <li>북한산 가나다라마바사 ASF 울타리</li>
-              <li>북한산 가나다라마바사 ASF 울타리 순찰</li>
-              <li>홍길동팀 </li>
-              <li>2019. 02. 13</li>
-              <li>홍길동</li>
-              <li>임시 저장</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>9</li>
-              <li>지리산 멧돼지 ASF 울타리</li>
-              <li>지리산 멧돼지 ASF 울타리 순찰</li>
-              <li>허정연팀</li>
-              <li>2019. 02. 13</li>
-              <li>허정연</li>
-              <li>임시저장</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>8</li>
-              <li>북한산 ASF 울타리</li>
-              <li>북한산 ASF 울타리 순찰</li>
-              <li>이정연팀</li>
-              <li>2019. 02. 13</li>
-              <li>이정연</li>
-              <li>완료</li>
-              <li>선정</li>
-              <li>이정연</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>7</li>
-              <li>북한산 ASF 울타리</li>
-              <li>북한산 ASF 울타리 순찰</li>
-              <li>최훈팀</li>
-              <li>2019. 02. 13</li>
-              <li>최훈</li>
-              <li>완료</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>6</li>
-              <li>북한산 ASF 울타리</li>
-              <li>북한산 ASF 울타리 순찰</li>
-              <li>김훈팀</li>
-              <li>2019. 02. 13</li>
-              <li>김훈</li>
-              <li>완료</li>
-              <li>선정</li>
-              <li>김훈 외 1명</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>5</li>
-              <li>북한산 ASF 울타리</li>
-              <li>북한산 ASF 울타리 순찰</li>
-              <li>김정현팀</li>
-              <li>2019. 02. 13</li>
-              <li>김정현</li>
-              <li>완료</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>4</li>
-              <li>북한산 ASF 울타리</li>
-              <li>북한산 ASF 울타리 순찰</li>
-              <li>김정현팀</li>
-              <li>2019. 02. 13</li>
-              <li>김정현</li>
-              <li>임시 저장</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>3</li>
-              <li>북한산 ASF 울타리</li>
-              <li>북한산 ASF 울타리 순찰</li>
-              <li>김정현팀</li>
-              <li>2019. 02. 13</li>
-              <li>김정현</li>
-              <li>완료</li>
-              <li>미 선정</li>
-              <li>-</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>2</li>
-              <li>북한산 ASF 울타리</li>
-              <li>북한산 ASF 울타리 순찰</li>
-              <li>제갈정연팀</li>
-              <li>2019. 02. 13</li>
-              <li>제갈정연</li>
-              <li>완료</li>
-              <li>미 선정</li>
-              <li>-</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='순찰일지관리_상세.html'">
-              <li>1</li>
-              <li>북한산 ASF 울타리</li>
-              <li>북한산 ASF 울타리 순찰</li>
-              <li>고길훈팀</li>
-              <li>2019. 02. 13</li>
-              <li>고길훈</li>
-              <li>완료</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
-          </li>
-          
-        </ul>
+      <!--0220 fence_list_wrap contents 영역으로 이동  -->
+      <div class="fence_list_wrap">
+        <div class="container">
+          <ul class="fence_list ptr_pl_list">
+            <li>
+              <ul class="tb_hd">
+                <li>No</li>
+                <li>시설물 그룹 명</li>
+                <li>순찰 일지 명</li>
+                <li>등록자</li>
+                <li>등록일</li>
+                <li>순찰자</li>
+                <li>순찰 완료</li>
+                <li>공사 선정</li>
+                <li>공사 담당자</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>10</li>
+                <li>북한산 가나다라마바사 ASF 울타리</li>
+                <li>북한산 가나다라마바사 ASF 울타리 순찰</li>
+                <li>홍길동팀 </li>
+                <li>2019. 02. 13</li>
+                <li>홍길동</li>
+                <li>임시 저장</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>9</li>
+                <li>지리산 멧돼지 ASF 울타리</li>
+                <li>지리산 멧돼지 ASF 울타리 순찰</li>
+                <li>허정연팀</li>
+                <li>2019. 02. 13</li>
+                <li>허정연</li>
+                <li>임시저장</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>8</li>
+                <li>북한산 ASF 울타리</li>
+                <li>북한산 ASF 울타리 순찰</li>
+                <li>이정연팀</li>
+                <li>2019. 02. 13</li>
+                <li>이정연</li>
+                <li>완료</li>
+                <li>선정</li>
+                <li>이정연</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>7</li>
+                <li>북한산 ASF 울타리</li>
+                <li>북한산 ASF 울타리 순찰</li>
+                <li>최훈팀</li>
+                <li>2019. 02. 13</li>
+                <li>최훈</li>
+                <li>완료</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>6</li>
+                <li>북한산 ASF 울타리</li>
+                <li>북한산 ASF 울타리 순찰</li>
+                <li>김훈팀</li>
+                <li>2019. 02. 13</li>
+                <li>김훈</li>
+                <li>완료</li>
+                <li>선정</li>
+                <li>김훈 외 1명</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>5</li>
+                <li>북한산 ASF 울타리</li>
+                <li>북한산 ASF 울타리 순찰</li>
+                <li>김정현팀</li>
+                <li>2019. 02. 13</li>
+                <li>김정현</li>
+                <li>완료</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>4</li>
+                <li>북한산 ASF 울타리</li>
+                <li>북한산 ASF 울타리 순찰</li>
+                <li>김정현팀</li>
+                <li>2019. 02. 13</li>
+                <li>김정현</li>
+                <li>임시 저장</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>3</li>
+                <li>북한산 ASF 울타리</li>
+                <li>북한산 ASF 울타리 순찰</li>
+                <li>김정현팀</li>
+                <li>2019. 02. 13</li>
+                <li>김정현</li>
+                <li>완료</li>
+                <li>미 선정</li>
+                <li>-</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>2</li>
+                <li>북한산 ASF 울타리</li>
+                <li>북한산 ASF 울타리 순찰</li>
+                <li>제갈정연팀</li>
+                <li>2019. 02. 13</li>
+                <li>제갈정연</li>
+                <li>완료</li>
+                <li>미 선정</li>
+                <li>-</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='순찰일지관리_상세.html'">
+                <li>1</li>
+                <li>북한산 ASF 울타리</li>
+                <li>북한산 ASF 울타리 순찰</li>
+                <li>고길훈팀</li>
+                <li>2019. 02. 13</li>
+                <li>고길훈</li>
+                <li>완료</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+            </li>
 
-      
-        <div class="pagination_wrap">
-          <div class="pagination">
-            <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
-            <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
-            <ul>
-              <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
-              <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
-              <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
-              <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
-              <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
-            </ul>
-            <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
-            <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
+          </ul>
 
+
+          <div class="pagination_wrap">
+            <div class="pagination">
+              <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
+              <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
+              <ul>
+                <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
+                <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
+              </ul>
+              <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
+              <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
+
+            </div>
+            <button class="register_btn" onclick="location.href='순찰일지관리_등록.html'"><span>글 등록</span></button>
           </div>
-          <button class="register_btn" onclick="location.href='순찰일지관리_등록.html'"><span>글 등록</span></button>
         </div>
       </div>
     </div>
+
     <footer>
       <div class="container">
         <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>

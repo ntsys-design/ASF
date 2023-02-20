@@ -2,6 +2,11 @@
   position: relative;
 
 }
+input[type="date"]{
+  &:read-only{
+    background:#f7f7f8 !important;
+  }
+}
 
 .dim {
   display: none;
@@ -327,14 +332,16 @@ textarea {
 
         th {
           font-weight: 500;
-          font-size: 1.25em;
+          //font-size: 1.25em;
+          font-size: 1em;
           padding: 10px;
         }
 
         tr {
           td {
             padding: 10px;
-            font-size: 1.125em;
+            //font-size: 1.125em;
+            font-size: 0.9em;
 
             input {
               height: 56px;
@@ -345,6 +352,9 @@ textarea {
 
               &:read-only {
                 background: #F7F7F8;
+              }
+              &:focus{
+                outline: none;
               }
             }
           }
@@ -1291,6 +1301,27 @@ textarea {
               }
 
             }
+          }
+        }
+      }
+    }
+
+    &.cp_log {
+      tbody {
+        tr {
+          td {
+            .img_wrap{
+              justify-content: center;
+            figure {
+              width: 75%;
+              height: 100%;
+
+              img {
+                height: 100%;
+              }
+
+            }
+          }
           }
         }
       }

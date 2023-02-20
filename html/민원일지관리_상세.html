@@ -100,34 +100,36 @@
                 <ul>
                   <li class="wid_50">
                     <label for="receipt_number">접수 번호 <span>*</span></label>
-                      <input type="text" name="receipt_number" id="receipt_number" placeholder="">  
+                      <input type="text" name="receipt_number" id="receipt_number" placeholder="" value="88-서울-98
+                      " readonly>  
                   </li>
                   
                   <li class="wid_50">
                     <label for="date27">접수 일자 <span>*</span></label>
-                    <input type="date" name="date01" id="date01" value="2022-08-10" > 
+                    <input type="date" name="date01" id="date01" value="2022-08-10" readonly> 
                   </li>
 
                   <li class="wid_50">
                     <label for="receipt_name">접수자 명 <span>*</span></label>
-                      <input type="text" name="receipt_name" id="receipt_name" placeholder="">
+                      <input type="text" name="receipt_name" id="receipt_name" placeholder="" value="고길동" readonly>
                   </li>
 
                   <li class="wid_50">
                     <label for="cpl_name">민원 성명 <span>*</span></label>
-                      <input type="text" name="cpl_name" id="cpl_name" placeholder="">
+                      <input type="text" name="cpl_name" id="cpl_name" placeholder="" value="홍길동" readonly>
                   </li>
 
                   <li class="wid_50">
                     <label for="tel">전화 번호 <span>*</span></label>
-                      <input type="text" name="tel" id="tel" placeholder="">
+                      <input type="text" name="tel" id="tel" placeholder="" value="010-****-7980" readonly>
                   </li>
 
                   <li class="wid_50">
                     <label for="cpl_area">민원 지역 <span>*</span></label>
-                    <select name="cpl_area" id="cpl_area">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
+                    <select name="cpl_area" id="cpl_area"
+                    class="readonly" onfocus="this.initialSelect = this.selectedIndex;" onchange="this.selectedIndex = this.initialSelect;">
+                      <option value="" disabled >선택</option>
+                      <option value=""selected>서울</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
@@ -135,22 +137,25 @@
 
                   <li class="wid_50">
                     <label for="cpl_type">민원 유형 <span>*</span></label>
-                    <select name="cpl_type" id="cpl_type">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
+                    <select name="cpl_type" id="cpl_type"
+                    class="readonly" onfocus="this.initialSelect = this.selectedIndex;" onchange="this.selectedIndex = this.initialSelect;">
+                      <option value="" disabled >선택</option>
+                      <option value="" selected>그물망 교체</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
                   </li>
 
                   <li>
-                    <label for="cplcpl_title_type">민원 제목 <span>*</span></label>
-                    <input type="text" name="cpl_title" id="cpl_title" placeholder="">
+                    <label for="cpl_title">민원 제목 <span>*</span></label>
+                    <input type="text" name="cpl_title" id="cpl_title" placeholder="" value="ASF 울타리 민원 수정 요청
+                    " readonly>
                   </li>
 
                   <li class="text_area">
                     <label for="cont02">민원 내용</label>
-                    <textarea id="cont02" name="cont" placeholder="내용을 입력하세요."></textarea>
+                    <textarea id="cont02" name="cont" placeholder="" readonly>**** 울타리 그물망 일부분이 끊어져 있는 상태 입니다. 반려 견이 들어갈 수 있을 정도로 구멍이 나 위험한 상황입니다.
+                      </textarea>
                   </li>
                 </ul>
               </form>
@@ -164,18 +169,17 @@
                   <li>
                     <label for="fence_num">관리 번호 <span>*</span></label>
                 <div class="search_bar">
-                  <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요.
-                  ">
-                  <button class="search_btn fcnum_sch_btn"></button>
+                  <input type="text" name="fence_num" id="fence_num" placeholder="" value="서울-10-59" readonly>
+                  
                 </div>
                   </li>
                   <li>
                     <label for="fence_name">시설물 그룹 명</label>
-                    <input type="text" name="fence_name" id="fence_name" placeholder=""  readonly>
+                    <input type="text" name="fence_name" id="fence_name" placeholder="" value="*** 울타리" readonly>
                   </li>
                   <li>
                     <label for="area">권역</label>
-                    <input type="text" name="area" id="area" placeholder=""  readonly>
+                    <input type="text" name="area" id="area" placeholder="" value="*** 권역" readonly>
                   </li>
                 </ul>
               </form>
@@ -190,29 +194,29 @@
                 <tbody>
                   <tr>
                     <td>
-                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder="" readonly ></td>
+                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder="" value="A1001" readonly ></td>
                     <td>
                       <label for="ptr_order07" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order07" id="ptr_order07" placeholder="" readonly >
+                      <input type="text" name="ptr_order07" id="ptr_order07" placeholder="" value="1" readonly >
                     </td>
                     <td>
                       <label for="ptr_order_note07" class="hide">비고</label>
                       <input type="text" name="ptr_order_note07" id="ptr_order_note07" placeholder="
-                      "  readonly>
+                      " value="기둥 부분 밟지 않게 조심해 주세요." readonly>
                     </td>
                     
                   </tr>
                   <tr>
                     <td>
-                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num02" id="fclt_num02" placeholder=""  readonly></td>
+                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num02" id="fclt_num02" placeholder=""value="A1002"  readonly></td>
                     <td>
                       <label for="ptr_order08" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order08" id="ptr_order08" placeholder="" readonly>
+                      <input type="text" name="ptr_order08" id="ptr_order08" placeholder="" value="2" readonly>
                     </td>
                     <td>
                       <label for="ptr_order_note08" class="hide">비고</label>
                       <input type="text" name="ptr_order_note08" id="ptr_order_note08" placeholder="
-                      "  readonly>
+                      " value="철조망 체크 요망" readonly>
                     </td>
                     
                   </tr>
@@ -231,9 +235,11 @@
 
           <div class="tab_con_btn">
             <div class="container">
-              <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='민원일지관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn tab2_btn" href='#tab2_content'><span>임시 저장</span></button>
+              <button class="remove_btn"><span>삭제</span></button>
+              <div class="btn_wrap">
+                <button class="list_btn" onclick="location.href='민원일지관리_목록.html'"><span>목록</span></button>
+                
+                <button class="modify_btn" onclick="location.href='민원일지관리_수정.html'"><span>글 수정</span></button>
               </div>
             </div>
           </div>
@@ -250,9 +256,10 @@
                 <ul>
                   <li class="wid_50">
                     <label for="progress">진행 여부 <span>*</span></label>
-                    <select name="progress" id="progress">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
+                    <select name="progress" id="progress"
+                    class="readonly" onfocus="this.initialSelect = this.selectedIndex;" onchange="this.selectedIndex = this.initialSelect;">
+                      <option value="" disabled>선택</option>
+                      <option value="" selected>작업대기</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
@@ -260,30 +267,30 @@
                   
                   <li class="wid_50">
                     <label for="completion_date">완료 일자 </label>
-                    <input type="date" name="completion_date" id="completion_date" value="2022-08-10" > 
+                    <input type="date" name="completion_date" id="completion_date" value="2022-08-10" readonly> 
                   </li>
 
                   <li class="wid_50">
                     <label for="name">담당자 명 <span>*</span></label>
-                      <input type="text" name="name" id="name" placeholder="">
+                      <input type="text" name="name" id="name" placeholder="" value="홍길동" readonly>
                   </li>
 
                   <li class="wid_50">
                     <label for="tel02">전화 번호 <span>*</span></label>
-                      <input type="text" name="tel02" id="tel02" placeholder="">
+                      <input type="text" name="tel02" id="tel02" placeholder="" value="070-5375-5586" readonly>
                   </li>
 
                   <li class="text_area">
                     <label for="cont100">검토 사항</label>
-                    <textarea id="cont100" name="cont100" placeholder="내용을 입력하세요."></textarea>
+                    <textarea id="cont100" name="cont100" placeholder="" readonly>검토 사항 내용</textarea>
                   </li>
                   <li class="text_area">
                     <label for="cont101">작업 계획</label>
-                    <textarea id="cont101" name="cont101" placeholder="내용을 입력하세요."></textarea>
+                    <textarea id="cont101" name="cont101" placeholder="" readonly> 작업 계획 내용</textarea>
                   </li>
                   <li class="text_area">
                     <label for="cont102">작업 내용</label>
-                    <textarea id="cont102" name="cont102" placeholder="내용을 입력하세요."></textarea>
+                    <textarea id="cont102" name="cont102" placeholder="" readonly>작업 내용</textarea>
                   </li>
                 </ul>
               </form>
@@ -294,9 +301,11 @@
           </div>
           <div class="tab_con_btn">
             <div class="container">
-              <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='민원일지관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn tab3_btn" href='#tab3_content'><span>임시 저장</span></button>
+              <button class="remove_btn"><span>삭제</span></button>
+              <div class="btn_wrap">
+                <button class="list_btn" onclick="location.href='민원일지관리_목록.html'"><span>목록</span></button>
+                
+                <button class="modify_btn" onclick="location.href='민원일지관리_수정.html'"><span>글 수정</span></button>
               </div>
             </div>
           </div>
@@ -375,10 +384,11 @@
           </div>
           <div class="tab_con_btn">
             <div class="container">
-              <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
-                <button class="modify_btn tab4_btn" ><span>임시 저장</span></button>
-                <button class="register_btn" onclick="location.href='민원일지관리_목록.html'"><span>글 등록</span></button>
+              <button class="remove_btn"><span>삭제</span></button>
+              <div class="btn_wrap">
+                <button class="list_btn" onclick="location.href='민원일지관리_목록.html'"><span>목록</span></button>
+                
+                <button class="modify_btn" onclick="location.href='민원일지관리_수정.html'"><span>글 수정</span></button>
               </div>
             </div>
           </div>

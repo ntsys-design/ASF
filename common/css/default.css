@@ -458,6 +458,7 @@ header .container .nav_wrap .util a button {
 .lnb_wrap .container ul li {
   text-align: center;
   font-size: 1.125em;
+  color: #696E76;
 }
 .lnb_wrap .container ul li.on {
   font-weight: 500;
@@ -492,8 +493,8 @@ header .container .nav_wrap .util a button {
   border: 2px solid #6DA2FF;
 }
 .lnb_wrap .container ul li a div {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,6 +556,14 @@ footer .container p {
   padding: 32px 0;
   color: #26282C;
 }
+.wrapper.error_wrapper .error_notice_wrap p.error2_p {
+  color: #1D1D1D;
+  padding-bottom: 16px;
+  font-weight: 500;
+}
+.wrapper.error_wrapper .error_notice_wrap p.error2_txt {
+  color: #696E76;
+}
 .wrapper.error_wrapper .error_notice_wrap .errorpg_btn {
   padding-top: 80px;
   display: -webkit-box;
@@ -613,18 +622,24 @@ footer .container p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding-right: 9.5%;
   padding-left: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .wrapper .info_wrap > div {
   max-width: 266px;
   width: 100%;
+  margin-bottom: 24.8%;
+  margin-right: 11.7%;
 }
 .wrapper .info_wrap > div span {
   display: inline-block;
@@ -641,23 +656,23 @@ footer .container p {
   color: #fff;
   margin-bottom: 6px;
 }
-.wrapper .info_wrap > div p {
-  font-size: 0.875em;
-  line-height: 150%;
-  color: #fff;
-  word-break: keep-all;
-}
-.wrapper .info_wrap > div p.cp {
-  margin-top: 187px;
-  line-height: 17px;
-  opacity: 0.5;
-}
 .wrapper .info_wrap > div h1 {
   margin-top: 78px;
   text-align: right;
 }
 .wrapper .info_wrap > div h1 img {
   width: 200px;
+}
+.wrapper .info_wrap p {
+  font-size: 0.875em;
+  line-height: 150%;
+  color: #fff;
+  word-break: keep-all;
+}
+.wrapper .info_wrap p.cp {
+  line-height: 17px;
+  opacity: 0.5;
+  font-weight: 400;
 }
 .wrapper .input_wrap {
   width: 50%;
@@ -678,7 +693,7 @@ footer .container p {
 .wrapper .input_wrap .login {
   width: 100%;
   max-width: 400px;
-  padding-top: 8%;
+  padding-bottom: 8%;
 }
 .wrapper .input_wrap .login p {
   font-size: 2.5em;
@@ -750,7 +765,7 @@ footer .container p {
   margin-top: -1px;
   background: url(../images/password_ico.png) no-repeat;
   background-position: 16px center;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0;
   border-top: 1px solid transparent;
 }
 .wrapper .input_wrap .login .loginform_wrap form input[type=password]:focus {
@@ -762,21 +777,23 @@ footer .container p {
   border: 1px solid transparent;
   cursor: pointer;
   background: #6D769F;
-  margin: 24px 0;
+  margin: 40px 0;
   color: #fff;
 }
 .wrapper .input_wrap .login .loginform_wrap form input#login_btn {
   background: #4661DC;
 }
 .wrapper .input_wrap .login .loginform_wrap form input#otp {
-  margin-top: 24px;
   background: url(../images/otp_ico.png) no-repeat;
+  margin-top: -1px;
   background-position: 16px center;
-  border-radius: 4px;
+  border-radius: 0 0 4px 4px;
+  border-top: 1px solid transparent;
 }
 .wrapper .input_wrap .login .loginform_wrap form input#otp:focus {
   background: url(../images/otp_ico_on.png) no-repeat;
   background-position: 16px center;
+  border-top: 1px solid #016FF3;
 }
 .wrapper .input_wrap .login .loginform_wrap form .email_box:not(:valid) ~ .close-icon {
   display: none;
@@ -801,7 +818,6 @@ footer .container p {
   border-radius: 50%;
 }
 .wrapper .input_wrap h3 {
-  margin-top: 17px;
   text-align: right;
   font-size: 0.875em;
   font-weight: 500;
@@ -814,7 +830,6 @@ footer .container p {
 }
 .wrapper .input_wrap h3.tit {
   font-weight: 400;
-  margin-top: 40px;
   color: #1D1F35;
   opacity: 0.6;
 }
@@ -833,13 +848,20 @@ footer .container p {
   height: 144px;
 }
 
-.main_wrapper footer {
-  border-top: 1px solid #C6CBD0;
-  background: #fff;
+.contents {
+  min-height: calc(100vh - 558px);
 }
 
 .wrapper {
   position: relative;
+}
+
+input[type=date]:-moz-read-only {
+  background: #f7f7f8 !important;
+}
+
+input[type=date]:read-only {
+  background: #f7f7f8 !important;
 }
 
 .dim {
@@ -1117,12 +1139,12 @@ select.readonly {
 }
 .form_wrap.com_wrap.com_regi table th {
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: 1em;
   padding: 10px;
 }
 .form_wrap.com_wrap.com_regi table tr td {
   padding: 10px;
-  font-size: 1.125em;
+  font-size: 0.9em;
 }
 .form_wrap.com_wrap.com_regi table tr td input {
   height: 56px;
@@ -1136,6 +1158,9 @@ select.readonly {
 }
 .form_wrap.com_wrap.com_regi table tr td input:read-only {
   background: #F7F7F8;
+}
+.form_wrap.com_wrap.com_regi table tr td input:focus {
+  outline: none;
 }
 .form_wrap.com_wrap.com_regi form.com_form ul li label {
   min-width: 111px;
@@ -1934,6 +1959,21 @@ select.readonly {
 }
 .tab_con.photomount.mt_log tbody tr td figure img,
 .com_regi.photomount.mt_log tbody tr td figure img {
+  height: 100%;
+}
+.tab_con.photomount.cp_log tbody tr td .img_wrap,
+.com_regi.photomount.cp_log tbody tr td .img_wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tab_con.photomount.cp_log tbody tr td .img_wrap figure,
+.com_regi.photomount.cp_log tbody tr td .img_wrap figure {
+  width: 75%;
+  height: 100%;
+}
+.tab_con.photomount.cp_log tbody tr td .img_wrap figure img,
+.com_regi.photomount.cp_log tbody tr td .img_wrap figure img {
   height: 100%;
 }
 .tab_con.photomount.phm_dt tbody tr td .img_wrap figcaption,

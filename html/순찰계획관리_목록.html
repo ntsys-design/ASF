@@ -36,14 +36,14 @@
     </header>
     <div class="lnb_wrap">
       <div class="container">
-        <!-- 0216 아이콘 수정 -->
+        <!-- 0220 아이콘 수정 / li class="on" 순찰 계획 관리로 이동 -->
         <ul class="lnb">
-          <li class="on"><a href="./시설물정보_목록.html">
+          <li><a href="./시설물정보_목록.html">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
             </a>시설물 정보</li>
-          <li><a href="./순찰계획관리_목록.html">
+          <li class="on"><a href="./순찰계획관리_목록.html">
               <div>
                 <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
               </div>
@@ -99,10 +99,11 @@
               </li>
               <li>
                 <!-- 0216 레이블 추가 인풋 name id 수정 -->
+                <!-- 0220 인풋 readonly 제거 -->
                 <label for="date01" class="hide">날짜</label>
-                <input type="date" name="date01" id="date01" value="2022-08-10" readonly> <span>~</span>
+                <input type="date" name="date01" id="date01" value="2022-08-10" > <span>~</span>
                 <label for="date02" class="hide">날짜</label>
-                <input type="date" name="date02" id="date02" value="2022-08-10" readonly>
+                <input type="date" name="date02" id="date02" value="2022-08-10" >
               </li>
               <li>
                 <div class="search_bar">
@@ -117,8 +118,8 @@
           </form>
         </div>
       </div>
-    </div>
-    <div class="fence_list_wrap">
+      <!--0220 fence_list_wrap contents 영역으로 이동  -->
+      <div class="fence_list_wrap">
       <div class="container">
         <ul class="fence_list ptr_pl_list">
           <li>
@@ -265,6 +266,8 @@
         </div>
       </div>
     </div>
+    </div>
+    
     <footer>
       <div class="container">
         <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>

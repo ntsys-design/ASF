@@ -37,7 +37,7 @@
     <div class="lnb_wrap">
       <div class="container">
         <ul class="lnb">
-          <li class="on"><a href="./시설물정보_목록.html">
+          <li><a href="./시설물정보_목록.html">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
@@ -52,7 +52,7 @@
                 <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
               </div>
             </a>순찰 일지 관리</li>
-          <li><a href="./유지보수작업관리_목록.html">
+          <li  class="on"><a href="./유지보수작업관리_목록.html">
               <div>
                 <img src="../common/images/mt_ico.png" alt="유지보수 작업 관리 아이콘">
               </div>
@@ -99,15 +99,15 @@
               <form action="" class="com_form">
                 <ul>
                   <li>
-                    <label for="ptr_nt_sch02">유지 보수 명 <span>*</span></label>
+                    <label for="ptr_nt_sch02">유지보수 명 <span>*</span></label>
                     <div class="search_bar">
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch02" placeholder="유지 보수 명 입력">
+                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch02" placeholder="유지보수 명 입력">
                       
                     </div>
 
                   </li>
                   <li class="wid_50 mr_50">
-                    <label for="ptr_area02">유지 보수 지역 <span>*</span></label>
+                    <label for="ptr_area02">유지보수 지역 <span>*</span></label>
                     <select name="ptr_area" id="ptr_area02">
                       <option value="" disabled selected>선택</option>
                       <option value=""></option>
@@ -116,14 +116,14 @@
                     </select>
                   </li>
                   <li class="wid_50">
-                    <label for="date27">유지 보수 일자 <span>*</span></label>
-                    <input type="date" name="date27" id="date27" value="2022-08-10" readonly> <span>~</span>
+                    <label for="date27">유지보수 일자 <span>*</span></label>
+                    <input type="date" name="date27" id="date27" value="2022-08-10" > <span>~</span>
                     <label for="date28" class="hide">날짜</label>
-                    <input type="date" name="date28" id="date28" value="2022-08-10" readonly>
+                    <input type="date" name="date28" id="date28" value="2022-08-10" >
 
                   </li>
                   <li class="text_area">
-                    <label for="cont02">유지 보수 내용 <span>*</span></label>
+                    <label for="cont02">유지보수 내용 <span>*</span></label>
                     <textarea id="cont02" name="cont" placeholder="내용을 입력하세요."></textarea>
                   </li>
                 </ul>
@@ -157,7 +157,7 @@
                   <li class="wid_50">
                     <label for="date25">순찰 일자 </label>
                     <input type="date" name="date25" id="date25" value="2022-08-10" readonly> <span>~</span>
-                    <label for="date26" class="hide">날짜</label>
+                    <label for="date26" class="hide">날짜</label >
                     <input type="date" name="date26" id="date26" value="2022-08-10" readonly>
 
                   </li>
@@ -347,7 +347,7 @@
                   <td >
                     <div class="tb_input_wrap">
                       <label for="date29" class="hide">날짜</label>
-                      <input type="date" name="date29" id="date29" value="2022-08-10" readonly>-01
+                      <input type="date" name="date29" id="date29" value="2022-08-10" >-01
                     </div>
                   </td>
                   <td>
@@ -370,7 +370,7 @@
                   <td >
                     <div class="tb_input_wrap">
                       <label for="date200" class="hide">날짜</label>
-                      <input type="date" name="date27" id="date200" value="2022-08-10" readonly>-02
+                      <input type="date" name="date27" id="date200" value="2022-08-10" >-02
                     </div>
                   </td>
                   <td>
@@ -393,7 +393,7 @@
                   <td >
                     <div class="tb_input_wrap">
                       <label for="date280" class="hide">날짜</label>
-                      <input type="date" name="date28" id="date280" value="2022-08-10" readonly>-03
+                      <input type="date" name="date28" id="date280" value="2022-08-10" >-03
                     </div>
                   </td>
                   <td>
@@ -570,7 +570,7 @@
               <div class="btn_wrap btn_right">
                 <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
                 <button class="modify_btn tab4_btn" ><span>임시 저장</span></button>
-                <button class="register_btn" onclick="location.href='유지보수작업관리_등록.html'"><span>글 수정</span></button>
+                <button class="register_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>글 등록</span></button>
               </div>
             </div>
           </div>
@@ -578,6 +578,7 @@
         <!-- 작업 사진 -->
 
         
+      </div>
       </div>
 
 

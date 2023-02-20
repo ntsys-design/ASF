@@ -36,9 +36,9 @@
     </header>
     <div class="lnb_wrap">
       <div class="container">
-        <!-- 0216 아이콘 수정 -->
+        <!-- 0220 아이콘 수정 / li class="on" 순찰 계획 관리로 이동 -->
         <ul class="lnb">
-          <li class="on"><a href="./시설물정보_목록.html">
+          <li><a href="./시설물정보_목록.html">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
@@ -48,7 +48,7 @@
                 <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
               </div>
             </a>순찰 계획 관리</li>
-          <li><a href="./순찰일지관리_목록.html">
+          <li class="on"><a href="./순찰일지관리_목록.html">
               <div>
                 <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
               </div>
@@ -103,9 +103,9 @@
                   <li>
                     <label for="ptr_log_sch">순찰 일지 명 </label>
                     <div class="search_bar">
-                      <input type="text" name="ptr_log_sch" id="ptr_log_sch" placeholder="순찰 일지 명 입력" value="ASF 울타리 유지관리"
-                        readonly>
-                      
+                      <input type="text" name="ptr_log_sch" id="ptr_log_sch" placeholder="순찰 일지 명 입력"
+                        value="ASF 울타리 유지관리" readonly>
+
                     </div>
 
                   </li>
@@ -150,7 +150,7 @@
                     <div class="search_bar">
                       <input type="text" name="patrol_plan" id="patrol_plan" placeholder="순찰 계획을 입력해 주세요."
                         value="삐리리 ASF 울타리 순찰 계획" readonly>
-                      
+
                     </div>
 
 
@@ -215,41 +215,47 @@
                 <tbody>
                   <tr>
                     <td>
-                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder=""  value="A1001" readonly></td>
+                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num"
+                        id="fclt_num01" placeholder="" value="A1001" readonly>
+                    </td>
 
                     <td>
                       <label for="ptr_order09" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order09" id="ptr_order09" placeholder="순찰 순서 번호 입력"  value="1" readonly>
+                      <input type="text" name="ptr_order09" id="ptr_order09" placeholder="순찰 순서 번호 입력" value="1"
+                        readonly>
                     </td>
                     <td>
                       <label for="ptr_order_note09" class="hide">비고</label>
                       <input type="text" name="ptr_order_note09" id="ptr_order_note09" placeholder="시설물별 주의사항을 입력해 주세요.
                       " value="기둥 부분 밟지 않게 조심해 주세요.
-                      "  readonly>
+                      " readonly>
                     </td>
-                    
+
                   </tr>
                   <tr>
                     <td>
-                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num02" placeholder=""  value="A1002" readonly></td>
+                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num"
+                        id="fclt_num02" placeholder="" value="A1002" readonly>
+                    </td>
 
                     <td>
                       <label for="ptr_order10" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order10" id="ptr_order10" placeholder="순찰 순서 번호 입력"  value="2" readonly>
+                      <input type="text" name="ptr_order10" id="ptr_order10" placeholder="순찰 순서 번호 입력" value="2"
+                        readonly>
                     </td>
                     <td>
                       <label for="ptr_order_note10" class="hide">비고</label>
                       <input type="text" name="ptr_order_note10" id="ptr_order_note10" placeholder="시설물별 주의사항을 입력해 주세요.
-                      "  value="철조망 체크 요망
+                      " value="철조망 체크 요망
                       " readonly>
                     </td>
-                    
+
                   </tr>
                 </tbody>
               </table>
 
             </div>
-            
+
           </div>
           <div class="regi_map">
             <div class="container">
@@ -258,10 +264,10 @@
           </div>
 
 
-          
-            
 
-          
+
+
+
           <div class="tab_con_btn">
             <div class="container">
               <button class="remove_btn"><span>삭제</span></button>
@@ -560,7 +566,8 @@
                   <td colspan="2">
                     <div class="tb_input_wrap">
                       <label for="cont03" class="hide">내용</label>
-                      <textarea id="cont03" name="cont" placeholder="" readonly></textarea></div>
+                      <textarea id="cont03" name="cont" placeholder="" readonly></textarea>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -569,7 +576,9 @@
                   </td>
                   <td colspan="2">
                     <div class="tb_input_wrap">
-                      <label for="cont04" class="hide">내용</label><textarea id="cont04" name="cont" placeholder="" readonly></textarea></div>
+                      <label for="cont04" class="hide">내용</label><textarea id="cont04" name="cont" placeholder=""
+                        readonly></textarea>
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -593,7 +602,7 @@
         <!-- 사진 대지 -->
         <div class="tab_con ptr_log photomount phm_dt" id="tab3_content">
           <div class="container">
-            
+
             <table>
               <!-- 0217 col width 수정 -->
               <colgroup>
@@ -602,7 +611,7 @@
               </colgroup>
               <thead></thead>
               <tbody>
-                <tr >
+                <tr>
                   <th colspan="2" class="tit">사진대지</th>
                 </tr>
                 <tr>
@@ -615,7 +624,7 @@
                       </figcaption>
                     </div>
                   </td>
-                  
+
                 </tr>
                 <tr>
                   <td class="bd_r vtc_m">두번째 이미지</td>
@@ -627,11 +636,11 @@
                       </figcaption>
                     </div>
                   </td>
-                
+
                 </tr>
                 <tr>
                   <td class="bd_r vtc_m">세번째 이미지</td>
-                  
+
                   <td>
                     <div class="img_wrap">
                       <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
@@ -651,7 +660,7 @@
                       </figcaption>
                     </div>
                   </td>
-                 
+
                 </tr>
               </tbody>
             </table>
@@ -674,67 +683,67 @@
           <div class="container">
             <div class="tit_wrap">
               <h3 class="nm_list_tit">공사 참여자 실명부</h3>
-              
-            </div>
-            
-                <ul class=" name_list_tb nmlist_det">
-                  <li>
-                    <ul class="tb_hd">
-                      <li>No</li>
-                      <li>성명</li>
-                      <li>생년월일</li>
-                      <li>작업 위치</li>
-                      <li>공사 내용 </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>1</li>
-                      <li>
-                      홍길동
-                    </li>
-                      <li>
-                      1950-05-05
-                      </li>
-                      <li>
-                        경기도 파주시 금정2길 55 파주교육지원청
-                      </li>
-                      <li>순찰 및 유지보수</li>
-                     
-                      
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>2</li>
-                      <li>
-                      김길동
-                    </li>
-                      <li>
-                      1950-05-05
-                      </li>
-                      <li>
-                        경기도 파주시 금정2길 55 파주교육지원청
-                      </li>
-                      <li>순찰 및 유지보수</li>
-                     
-                      
-                    </ul>
-                  </li>
-                 
-   
-                </ul>
 
-                <div class="tab_con_btn">
-                  <div class="container">
-                    <button class="remove_btn"><span>삭제</span></button>
-                    <div class="btn_wrap">
-                      <button class="list_btn" onclick="location.href='순찰일지관리_목록.html'"><span>목록</span></button>
-                      <button class="list_btn"><span>완료</span></button>
-                      <button class="modify_btn" onclick="location.href='순찰일지관리_수정.html'"><span>글 수정</span></button>
-                    </div>
-                  </div>
+            </div>
+
+            <ul class=" name_list_tb nmlist_det">
+              <li>
+                <ul class="tb_hd">
+                  <li>No</li>
+                  <li>성명</li>
+                  <li>생년월일</li>
+                  <li>작업 위치</li>
+                  <li>공사 내용 </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1</li>
+                  <li>
+                    홍길동
+                  </li>
+                  <li>
+                    1950-05-05
+                  </li>
+                  <li>
+                    경기도 파주시 금정2길 55 파주교육지원청
+                  </li>
+                  <li>순찰 및 유지보수</li>
+
+
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2</li>
+                  <li>
+                    김길동
+                  </li>
+                  <li>
+                    1950-05-05
+                  </li>
+                  <li>
+                    경기도 파주시 금정2길 55 파주교육지원청
+                  </li>
+                  <li>순찰 및 유지보수</li>
+
+
+                </ul>
+              </li>
+
+
+            </ul>
+
+            <div class="tab_con_btn">
+              <div class="container">
+                <button class="remove_btn"><span>삭제</span></button>
+                <div class="btn_wrap">
+                  <button class="list_btn" onclick="location.href='순찰일지관리_목록.html'"><span>목록</span></button>
+                  <button class="list_btn"><span>완료</span></button>
+                  <button class="modify_btn" onclick="location.href='순찰일지관리_수정.html'"><span>글 수정</span></button>
                 </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- 공사 실명부 -->
@@ -742,19 +751,21 @@
 
 
 
-      <footer>
-        <div class="container">
-          <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
-          <p>Copyright © Environmental Preservation Association All rights reserved.</p>
-        </div>
-      </footer>
 
-      
-    </div>
-    </div>
 
-    <script src="../common/js/jquery-3.6.2.min.js"></script>
-    <script src="../common/js/publish.js"></script>
+
+    </div>
+    <!-- 0220 footer 콘텐츠 밖으로 위치 수정 -->
+    <footer>
+      <div class="container">
+        <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
+        <p>Copyright © Environmental Preservation Association All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../common/js/jquery-3.6.2.min.js"></script>
+  <script src="../common/js/publish.js"></script>
 </body>
 
 </html>

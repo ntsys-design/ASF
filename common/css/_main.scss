@@ -12,14 +12,17 @@
     height: 100%;
     background: #4b61c3;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content:center;
+    align-items: flex-end;
     padding-right: 9.5%;
     padding-left: 25px;
+    flex-direction: column;
 
     >div {
       max-width: 266px;
       width: 100%;
+      margin-bottom: 24.8%;
+      margin-right: 11.7%;
 
       span {
         display: inline-block;
@@ -38,18 +41,7 @@
         margin-bottom: 6px;
       }
 
-      p {
-        font-size: 0.875em;
-        line-height: 150%;
-        color: #fff;
-        word-break: keep-all;
-
-        &.cp {
-          margin-top: 187px;
-          line-height: 17px;
-          opacity: 0.5;
-        }
-      }
+      
 
       h1 {
         margin-top: 78px;
@@ -60,6 +52,18 @@
         }
       }
     }
+    p {
+        font-size: 0.875em;
+        line-height: 150%;
+        color: #fff;
+        word-break: keep-all;
+
+        &.cp {
+          line-height: 17px;
+          opacity: 0.5;
+          font-weight: 400;
+        }
+      }
   }
 
   .input_wrap {
@@ -75,7 +79,7 @@
     .login {
       width: 100%;
       max-width: 400px;
-      padding-top: 8%;
+      padding-bottom: 8%;
 
       p {
         font-size: 2.5em;
@@ -126,7 +130,7 @@
               margin-top: -1px;
               background: url(../images/password_ico.png) no-repeat;
               background-position: 16px center;
-              border-radius: 0 0 4px 4px;
+              border-radius: 0 ;
               border-top: 1px solid transparent;
 
               &:focus {
@@ -141,20 +145,24 @@
 
               cursor: pointer;
               background: #6D769F;
-              margin: 24px 0;
+              margin: 40px 0;
               color: #fff;
             }
             &#login_btn{
               background: #4661DC;
             }
             &#otp{
-              margin-top: 24px;
               background: url(../images/otp_ico.png) no-repeat;
+              margin-top: -1px;
+
                 background-position: 16px center;
-              border-radius: 4px;
+              border-radius:0 0 4px 4px;
+              border-top: 1px solid transparent;
+
               &:focus {
                 background: url(../images/otp_ico_on.png) no-repeat;
                 background-position: 16px center;
+                border-top: 1px solid #016FF3;
                 
               }
             }
@@ -193,7 +201,7 @@
     }
 
     h3 {
-      margin-top: 17px;
+      //margin-top: 17px;
       text-align: right;
       font-size: 0.875em;
       font-weight: 500;
@@ -205,7 +213,7 @@
       }
       &.tit{
         font-weight: 400;
-        margin-top: 40px;
+        //margin-top: 40px;
         color: #1D1F35;
         opacity: 0.6;
 
@@ -235,9 +243,7 @@
 
   }
 }
-.main_wrapper{
-  footer{
-    border-top: 1px solid #C6CBD0;
-    background: #fff;
+
+  .contents{
+    min-height: calc(100vh - 558px);
   }
-}
