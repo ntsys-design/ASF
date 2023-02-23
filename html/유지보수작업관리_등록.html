@@ -100,20 +100,15 @@
                 <ul>
                   <li>
                     <label for="ptr_nt_sch02">유지보수 명 <span>*</span></label>
-                    <div class="search_bar">
                       <input type="text" name="ptr_nt_sch" id="ptr_nt_sch02" placeholder="유지보수 명 입력">
-                      
-                    </div>
-
                   </li>
-                  <li class="wid_50 mr_50">
-                    <label for="ptr_area02">유지보수 지역 <span>*</span></label>
-                    <select name="ptr_area" id="ptr_area02">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
+                  <li >
+                    
+                    <label for="ptr_area02" >유지보수 지역 <span>*</span></label>
+                    <div class="search_bar">
+                      <input type="text" name="search" id="ptr_area02" placeholder="검색어를 입력하세요.">
+                      <button class="search_btn"></button>
+                    </div>
                   </li>
                   <li class="wid_50">
                     <label for="date27">유지보수 일자 <span>*</span></label>
@@ -169,7 +164,7 @@
               </form>
 
             </div>
-            <div class="form_wrap com_wrap com_regi mt_log_regi">
+            <div class="form_wrap com_wrap ptr_pl_regi mt_log_regi">
               <h3>순찰 울타리 구간</h3>
               <form action="" class="com_form">
                 <ul>
@@ -256,8 +251,8 @@
               <colgroup>
                 <col width="28%;">
                 <col width="28%">
-                <col width="29.5%">
-                <col width="14.5%">
+                <col width="35.5%">
+                <col width="8.5%">
               </colgroup>
               <thead>
 
@@ -269,13 +264,13 @@
               </thead>
               <tbody>
                 <tr>
-                  <th colspan="4" class="check_num">작업 인원 <span>*</span></th>
+                  <th colspan="4" class="check_num"><b>작업 인원 <span>*</span></b></th>
                 </tr>
                 <tr>
-                  <td class="bd_r">
+                  <td>
                     관리자
                   </td>
-                  <td class="bd_r">
+                  <td >
                     <div class="tb_input_wrap">
                       <label for="count" class="hide">수</label>
                       <input type="text" name="count" id="count" placeholder="" value="0">
@@ -284,7 +279,7 @@
                   <td colspan="2" >
                     <div class="tb_input_wrap">
                       <label for="count02" class="hide">비고</label>
-                    <input type="text" name="count" id="count02" placeholder="" value="">
+                    <input type="text" name="count" class="txt_left" id="count02" placeholder="" value="">
                   </div>
                 </td>
                 </tr>
@@ -301,7 +296,7 @@
                   <td colspan="2">
                     <div class="tb_input_wrap">
                       <label for="count04" class="hide">비고</label>
-                    <input type="text" name="count" id="count04" placeholder="" value="">
+                    <input type="text" name="count" class="txt_left" id="count04" placeholder="" value="">
                   </div>
                 </td>
                 </tr>
@@ -318,7 +313,7 @@
                   <td colspan="2">
                     <div class="tb_input_wrap">
                       <label for="count06" class="hide">비고</label>
-                    <input type="text" name="count" id="count06" placeholder="" value="">
+                    <input type="text" name="count" class="txt_left" id="count06" placeholder="" value="">
                   </div>
                 </td>
                 </tr>
@@ -334,8 +329,8 @@
                   </td>
                   <td colspan="2">
                     <div class="tb_input_wrap">
-                      <label for="count08" class="hide">수</label>
-                    <input type="text" name="count" id="count08" placeholder="" value="">
+                      <label for="count08" class="hide">비고</label>
+                    <input type="text" name="count" class="txt_left" id="count08" placeholder="" value="">
                   </div>
                 </td>
                 </tr>
@@ -353,13 +348,16 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="address" class="hide">주소</label>
-                      <input type="text" name="count" id="address" placeholder="" value="" readonly>
+                      <div class="search_bar">
+                        <input type="text" name="count" id="address" class="txt_left" placeholder="" value="" >
+                        <button class="search_btn"></button>
+                      </div>
                     </div>
                   </td>
                   <td >
                     <div class="tb_input_wrap">
                       <label for="count10" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count10" placeholder="" value="">
+                    <input type="text" name="count" id="count10" class="txt_left" placeholder="" value="">
                   </div>
                 </td>
                 <td>
@@ -376,13 +374,17 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="address02" class="hide">주소</label>
-                      <input type="text" name="count" id="address02" placeholder="" value="" readonly>
+                      <div class="search_bar">
+                        <input type="text" name="count" class="txt_left" id="address02" placeholder="" value="" >
+                        <button class="search_btn"></button>
+                      </div>
+                      
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count12" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count12" placeholder="" value="">
+                    <input type="text" name="count" class="txt_left" id="count12" placeholder="" value="">
                   </div>
                 </td>
                 <td>
@@ -399,13 +401,17 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="address03" class="hide">주소</label>
-                      <input type="text" name="count" id="address03" placeholder="" value="" readonly>
+                      <div class="search_bar">
+                        <input type="text" name="count" class="txt_left" id="address03" placeholder="" value="" >
+                        <button class="search_btn"></button>
+                      </div>
+                      
                     </div>
                   </td>
                   <td >
                     <div class="tb_input_wrap">
                       <label for="count14" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count14" placeholder="" value="">
+                    <input type="text" name="count" class="txt_left" id="count14" placeholder="" value="">
                   </div>
                 </td>
                 <td>
@@ -416,6 +422,14 @@
               </tbody>
             </table>
             <table>
+              <colgroup>
+                <col width="6%">
+                <col width="23%">
+                <col width="20%">
+                <col width="20%">
+                <col width="21%">
+                <col width="10%">
+                </colgroup>
               <thead></thead>
               <tbody>
                 <tr>
@@ -700,10 +714,10 @@
           
         </div>
       </div>
- 
+     <div class="dim"></div> 
+
     </div>
     
-    <div class="dim"></div> 
     </div>
 
     <script src="../common/js/jquery-3.6.2.min.js"></script>

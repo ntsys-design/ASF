@@ -107,16 +107,12 @@
 
                   </li>
                   <li class="wid_50">
-                    <label for="ptr_area02">유지보수 지역 </label>
-                    <select name="ptr_area" id="ptr_area02"
-                    class="readonly"
-                      onFocus="this.initialSelect = this.selectedIndex;"
-                      onChange="this.selectedIndex = this.initialSelect;">
-                      <option value="" disabled>선택</option>
-                      <option value="" selected>서울</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
+                    
+                    <label for="ptr_area02" >유지보수 지역 </label>
+                    <div class="search_bar">
+                      <input type="text" name="search" id="ptr_area02" placeholder="" value="서울" readonly>
+                      
+                    </div>
                   </li>
                   <li class="wid_50">
                     <label for="check">유지보수 완료 여부</label>
@@ -176,8 +172,8 @@
                     class="readonly"
                       onFocus="this.initialSelect = this.selectedIndex;"
                       onChange="this.selectedIndex = this.initialSelect;">
-                      <option value="" disabled selected>임시저장</option>
-                      <option value="">완료</option>
+                      <option value="" disabled >임시저장</option>
+                      <option value=""selected>완료</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
@@ -192,7 +188,10 @@
                   </li>
                   <li class="text_area">
                     <label for="cont">순찰 내용 </label>
-                    <textarea id="cont" name="cont" placeholder="" readonly>1. 기존 안내판 제거  2. 신규 안내판 부착 3. 출입문 단속 및 주민교육 4. 노선조사(울타리 유,무, 출입문, 배수로등)
+                    <textarea id="cont" name="cont" placeholder="" readonly>1. 기존 안내판 제거  
+2. 신규 안내판 부착 
+3. 출입문 단속 및 주민교육 
+4. 노선조사(울타리 유,무, 출입문, 배수로등)
 
                     </textarea>
                   </li>
@@ -200,7 +199,7 @@
               </form>
 
             </div>
-            <div class="form_wrap com_wrap com_regi mt_log_regi">
+            <div class="form_wrap com_wrap ptr_pl_regi mt_log_regi">
               <h3>순찰 울타리 구간</h3>
               <form action="" class="com_form">
                 <ul>
@@ -305,10 +304,10 @@
                   <th colspan="3" class="check_num">작업 인원 </th>
                 </tr>
                 <tr>
-                  <td class="bd_r">
+                  <td >
                     관리자
                   </td>
-                  <td class="bd_r">
+                  <td >
                     <div class="tb_input_wrap">
                       <label for="count" class="hide">수</label>
                       <input type="text" name="count" id="count" placeholder="" value="1" readonly>
@@ -317,7 +316,7 @@
                   <td >
                     <div class="tb_input_wrap">
                       <label for="count02" class="hide">비고</label>
-                    <input type="text" name="count" id="count02" placeholder="" value="" readonly>
+                    <input type="text" name="count" class="txt_left" id="count02" placeholder="" value="" readonly>
                   </div>
                 </td>
                 </tr>
@@ -334,7 +333,7 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count04" class="hide">비고</label>
-                    <input type="text" name="count" id="count04" placeholder="" value=""readonly>
+                    <input type="text" name="count" class="txt_left" id="count04" placeholder="" value=""readonly>
                   </div>
                 </td>
                 </tr>
@@ -351,7 +350,7 @@
                   <td >
                     <div class="tb_input_wrap">
                       <label for="count06" class="hide">비고</label>
-                    <input type="text" name="count" id="count06" placeholder="" value=""readonly>
+                    <input type="text" name="count" class="txt_left" id="count06" placeholder="" value=""readonly>
                   </div>
                 </td>
                 </tr>
@@ -367,8 +366,8 @@
                   </td>
                   <td>
                     <div class="tb_input_wrap">
-                      <label for="count08" class="hide">수</label>
-                    <input type="text" name="count" id="count08" placeholder="" value=""readonly>
+                      <label for="count08" class="hide">비고</label>
+                    <input type="text" name="count" class="txt_left" id="count08" placeholder="" value=""readonly>
                   </div>
                 </td>
                 </tr>
@@ -387,14 +386,14 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="address" class="hide">주소</label>
-                      <input type="text" name="count" id="address" placeholder="" value="울진군 금강송면 광회리 산1-10
+                      <input type="text" name="count" id="address" class="txt_left" placeholder="" value="울진군 금강송면 광회리 산1-10
                       " readonly>
                     </div>
                   </td>
                   <td >
                     <div class="tb_input_wrap">
                       <label for="count10" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count10" placeholder="" value="그물망 해체
+                    <input type="text" name="count" id="count10" class="txt_left"  placeholder="" value="그물망 해체
                     " readonly>
                   </div>
                 </td>
@@ -410,14 +409,14 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="address02" class="hide">주소</label>
-                      <input type="text" name="count" id="address02" placeholder="" value="울진군 금강송면 쌍전리 산102-2
+                      <input type="text" name="count" id="address02" class="txt_left" placeholder="" value="울진군 금강송면 쌍전리 산102-2
                       " readonly>
                     </div>
                   </td>
                   <td>
                     <div class="tb_input_wrap">
                       <label for="count12" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count12" placeholder="" value="배수구 막이 해체(2개소)
+                    <input type="text" name="count" id="count12" class="txt_left" placeholder="" value="배수구 막이 해체(2개소)
                     " readonly>
                   </div>
                 </td>
@@ -433,14 +432,14 @@
                   <td>
                     <div class="tb_input_wrap">
                       <label for="address03" class="hide">주소</label>
-                      <input type="text" name="count" id="address03" placeholder="" value="울진군 금강송면 쌍전리 산102-2
+                      <input type="text" name="count" id="address03" class="txt_left" placeholder="" value="울진군 금강송면 쌍전리 산102-2
                       " readonly>
                     </div>
                   </td>
                   <td >
                     <div class="tb_input_wrap">
                       <label for="count14" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count14" placeholder="" value="배수구 막이 해체(2개소)
+                    <input type="text" name="count" class="txt_left" id="count14" placeholder="" value="배수구 막이 해체(2개소)
                     " readonly>
                   </div>
                 </td>
@@ -450,6 +449,13 @@
               </tbody>
             </table>
             <table>
+              <colgroup>
+              <col width="10%">
+              <col width="25%">
+              <col width="21%">
+              <col width="21%">
+              <col width="23%">
+              </colgroup>
               <thead></thead>
               <tbody>
                 <tr>
@@ -603,10 +609,11 @@
           </div>
           <div class="tab_con_btn">
             <div class="container">
-              <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
-                <button class="modify_btn tab4_btn" ><span>임시 저장</span></button>
-                <button class="register_btn" onclick="location.href='유지보수작업관리_등록.html'"><span>글 수정</span></button>
+              <button class="remove_btn"><span>삭제</span></button>
+              <div class="btn_wrap">
+                <button class="list_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>목록</span></button>
+                <button class="list_btn"><span>완료</span></button>
+                <button class="modify_btn" onclick="location.href='유지보수작업관리_수정.html'"><span>글 수정</span></button>
               </div>
             </div>
           </div>

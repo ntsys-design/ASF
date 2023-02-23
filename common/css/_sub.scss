@@ -57,6 +57,7 @@ textarea {
   background: #f3f6fb;
   border-radius: 4px;
   padding: 20px;
+  outline: 0;
 }
 
 //순찰일지관리_등록 탭메뉴
@@ -141,8 +142,8 @@ textarea {
           font-size: 1.125em;
 
           &:focus {
-            outline: none;
-            border: 2px solid #6DA2FF;
+            outline: 0;
+           //border: 2px solid #6DA2FF;
           }
 
           option {
@@ -312,7 +313,7 @@ textarea {
             background: url(../images/search_down.png) no-repeat 95% center;
 
             &.readonly {
-              background: #f7f7f8 !important;
+              background:url(../images/search_down.png) no-repeat 95% center #f7f7f8 !important;
             }
           }
         }
@@ -325,7 +326,7 @@ textarea {
       }
     }
 
-    &.com_regi {
+    &.ptr_pl_regi {
       table {
         margin-bottom: 56px;
         text-align: center;
@@ -1037,7 +1038,7 @@ textarea {
 
 
 .tab_con,
-.com_regi {
+.ptr_pl_regi{
   margin-top: 40px;
   display: none;
 
@@ -1460,7 +1461,7 @@ textarea {
   }
 }
 
-.com_regi {
+.ptr_pl_regi {
   display: block;
   margin-top: 0;
 }
@@ -1499,4 +1500,19 @@ textarea {
 }
 .form_wrap.com_wrap.cp_log_regi form.com_form ul li.text_area{
   margin-bottom: 24px;
+}
+
+.mt_log .container table tbody tr th.check_num b span{
+  color: #FC1F53;
+}
+.tb_input_wrap {
+ 
+  select{
+  font-size: 0.9em;
+  &:focus{
+    outline: 0;
+  }
+}}
+.tab_con table .tb_input_wrap input.txt_left{
+  text-align: left;
 }
