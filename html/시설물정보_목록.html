@@ -36,54 +36,78 @@
     </header>
     <div class="lnb_wrap">
       <div class="container">
-        <!-- 0216 아이콘 수정 -->
-        <!-- 0217 a 태그 class='on'을 li로 이동 -->
+        <!-- 0220 lnb 구조 수정 -->
         <ul class="lnb">
-          <li class="on"><a href="./시설물정보_목록.html">
+          <li class="on">
+            <a href="./시설물정보_목록.html">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
-            </a>시설물 정보</li>
-          <li><a href="./순찰계획관리_목록.html">
+              시설물 정보
+            </a>
+          </li>
+          <li>
+            <a href="./순찰계획관리_목록.html">
               <div>
                 <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
               </div>
-            </a>순찰 계획 관리</li>
-          <li><a href="./순찰일지관리_목록.html">
+              순찰 계획 관리
+            </a>
+          </li>
+          <li>
+            <a href="./순찰일지관리_목록.html">
               <div>
                 <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
               </div>
-            </a>순찰 일지 관리</li>
-          <li><a href="./유지보수작업관리_목록.html">
+              순찰 일지 관리
+            </a>
+          </li>
+          <li>
+            <a href="./유지보수작업관리_목록.html">
               <div>
                 <img src="../common/images/mt_ico.png" alt="유지보수 작업 관리 아이콘">
               </div>
-            </a>유지보수 작업 관리</li>
-          <li><a href="./민원일지관리_목록.html">
+              유지보수 작업 관리
+            </a>
+          </li>
+          <li>
+            <a href="./민원일지관리_목록.html">
               <div>
                 <img src="../common/images/cp_log_ico.png" alt="민원 일지 관리 아이콘">
               </div>
-            </a>민원 일지 관리</li>
-          <li><a href="./순찰일지통계.html">
+              민원 일지 관리
+            </a>
+          </li>
+          <li>
+            <a href="./순찰일지통계.html">
               <div>
                 <img src="../common/images/ptr_st_ico.png" alt="순찰 일지 통계 아이콘">
               </div>
-            </a>순찰 일지 통계</li>
-          <li><a href="./유지보수작업통계.html">
+              순찰 일지 통계
+            </a>
+          </li>
+          <li>
+            <a href="./유지보수작업통계.html">
               <div>
                 <img src="../common/images/mt_st_ico.png" alt="유지보수 작업 통계 아이콘">
               </div>
-            </a>유지보수 작업 통계</li>
-          <li><a href="./민원일지통계.html">
+              유지보수 작업 통계
+            </a>
+          </li>
+          <li>
+            <a href="./민원일지통계.html">
               <div>
                 <img src="../common/images/cp_st_ico.png" alt="민원 일지 통계 아이콘">
               </div>
-            </a>민원 일지 통계</li>
+              민원 일지 통계
+            </a>
+          </li>
         </ul>
+        <!-- //0220 lnb 구조 수정 -->
       </div>
     </div>
     <div class="contents">
-      
+
       <div class="container">
         <h2>시설물 정보</h2>
         <div class="form_wrap">
@@ -99,14 +123,14 @@
                   <option value=""></option>
                 </select>
               </li>
-              
+
               <li class="ml24">
                 <div class="search_bar">
                   <!-- 0216 레이블추가  -->
                   <label for="fence_search" class="hide">검색</label>
                   <!-- 0216  id="fence_search" 수정-->
                   <input type="text" name="fence_search" id="fence_search" placeholder="검색어를 입력하세요.">
-                  <button  class="search_btn"></button>
+                  <button class="search_btn"></button>
                 </div>
               </li>
 
@@ -115,130 +139,130 @@
         </div>
       </div>
       <!-- 0220 fence_list_wrap 콘텐츠 영역으로 이동 -->
-<div class="fence_list_wrap">
-      <div class="container">
-        
-        <ul class="fence_list">
-          <li>
-            <ul class="tb_hd">
-              <li>관리 번호</li>
-              <li>권역</li>
-              <li>시설물 그룹 명</li>
-              <li>등록일</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 가나다라마바사 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>지리산 멧돼지 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          <li>
-            <ul onclick="location.href='시설물정보_상세.html'">
-              <li>서울-10-59</li>
-              <li>서울 북한산 구역</li>
-              <li>북한산 ASF 울타리</li>
-              <li>2019. 02. 13</li>
-            </ul>
-          </li>
-          
-        </ul>
-        <div class="pagination_wrap">
-          <div class="pagination">
-            <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
-            <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
-            <ul>
-              <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
-              <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
-              <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
-              <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
-              <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
-            </ul>
-            <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
-            <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
+      <div class="fence_list_wrap">
+        <div class="container">
+          <ul class="fence_list">
+            <li>
+              <ul class="tb_hd">
+                <li>관리 번호</li>
+                <li>권역</li>
+                <li>시설물 그룹 명</li>
+                <li>등록일</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 가나다라마바사 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>지리산 멧돼지 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
+            <li>
+              <ul onclick="location.href='시설물정보_상세.html'">
+                <li>서울-10-59</li>
+                <li>서울 북한산 구역</li>
+                <li>북한산 ASF 울타리</li>
+                <li>2019. 02. 13</li>
+              </ul>
+            </li>
 
+          </ul>
+          <div class="pagination_wrap">
+            <div class="pagination">
+              <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
+              <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
+              <ul>
+                <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
+                <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
+                <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
+              </ul>
+              <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
+              <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
+
+            </div>
+            <!-- <button class="register_btn" onclick="location.href='울타리관리_등록.html'"><span>등록</span></button> -->
           </div>
-          <!-- <button class="register_btn" onclick="location.href='울타리관리_등록.html'"><span>등록</span></button> -->
         </div>
       </div>
+      <!-- //0220 fence_list_wrap 콘텐츠 영역으로 이동 -->
     </div>
+    <!-- //contents -->
 
-    </div>
-    
     <footer>
       <div class="container">
         <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>

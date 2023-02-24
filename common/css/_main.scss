@@ -234,9 +234,10 @@
       grid-gap: 56px;
       li{
         a{
-          width: 144px;
+          div{ width: 144px;
           height: 144px;
-          
+          }
+         
         }
       }
     }
@@ -246,4 +247,39 @@
 
   .contents{
     min-height: calc(100vh - 558px);
+  }
+
+
+
+
+
+
+  .wrapper{
+    .main_wrap{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      .lnb_wrap{
+        width: 10%;
+        .container{
+          .lnb{
+            padding: 20px;
+            grid-gap:20px;
+            li{
+              a{
+                div{
+                  width: 80px;height: 80px;
+                  img{
+                    width: 50px;height: 50px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .main_map{width: 90%;
+      background: #484B51;}
+
+    }
   }

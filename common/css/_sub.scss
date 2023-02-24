@@ -768,6 +768,12 @@ textarea {
       width: 100%;
       height: 658px;
       background: #6F8294;
+      span{
+        display: block;
+        font-size: 10em;
+        padding: 100px;
+        color: #484B51
+      }
 
     }
 
@@ -1515,4 +1521,13 @@ textarea {
 }}
 .tab_con table .tb_input_wrap input.txt_left{
   text-align: left;
+}
+.tab_con table .tb_input_wrap input.address_sch{
+  padding: 0 50px 0 20px;
+}
+.form_wrap.com_wrap.ptr_pl_regi table tr td input.txt_ct{
+  text-align: center;
+}
+.tab_con.mt_log table .tb_input_wrap input, .ptr_pl_regi table .tb_input_wrap input{
+  margin-right: 0;
 }

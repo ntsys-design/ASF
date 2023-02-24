@@ -37,46 +37,70 @@
     <div class="lnb_wrap">
       <div class="container">
         <ul class="lnb">
-          <li><a href="./시설물정보_목록.html">
+          <li>
+            <a href="./시설물정보_목록.html">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
               </div>
-            </a>시설물 정보</li>
-          <li><a href="./순찰계획관리_목록.html">
+              시설물 정보
+            </a>
+          </li>
+          <li>
+            <a href="./순찰계획관리_목록.html">
               <div>
                 <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
               </div>
-            </a>순찰 계획 관리</li>
-          <li><a href="./순찰일지관리_목록.html">
+              순찰 계획 관리
+            </a>
+          </li>
+          <li>
+            <a href="./순찰일지관리_목록.html">
               <div>
                 <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
               </div>
-            </a>순찰 일지 관리</li>
-          <li  class="on"><a href="./유지보수작업관리_목록.html">
+              순찰 일지 관리
+            </a>
+          </li>
+          <li class="on">
+            <a href="./유지보수작업관리_목록.html">
               <div>
                 <img src="../common/images/mt_ico.png" alt="유지보수 작업 관리 아이콘">
               </div>
-            </a>유지보수 작업 관리</li>
-          <li><a href="./민원일지관리_목록.html">
+              유지보수 작업 관리
+            </a>
+          </li>
+          <li>
+            <a href="./민원일지관리_목록.html">
               <div>
                 <img src="../common/images/cp_log_ico.png" alt="민원 일지 관리 아이콘">
               </div>
-            </a>민원 일지 관리</li>
-          <li><a href="./순찰일지통계.html">
+              민원 일지 관리
+            </a>
+          </li>
+          <li>
+            <a href="./순찰일지통계.html">
               <div>
                 <img src="../common/images/ptr_st_ico.png" alt="순찰 일지 통계 아이콘">
               </div>
-            </a>순찰 일지 통계</li>
-          <li><a href="./유지보수작업통계.html">
+              순찰 일지 통계
+            </a>
+          </li>
+          <li>
+            <a href="./유지보수작업통계.html">
               <div>
                 <img src="../common/images/mt_st_ico.png" alt="유지보수 작업 통계 아이콘">
               </div>
-            </a>유지보수 작업 통계</li>
-          <li><a href="./민원일지통계.html">
+              유지보수 작업 통계
+            </a>
+          </li>
+          <li>
+            <a href="./민원일지통계.html">
               <div>
                 <img src="../common/images/cp_st_ico.png" alt="민원 일지 통계 아이콘">
               </div>
-            </a>민원 일지 통계</li>
+              민원 일지 통계
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -183,6 +207,11 @@
                 </ul>
               </form>
               <table>
+                <colgroup>
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="60%">
+                              </colgroup>
                 <thead>
                   <tr>
                     <th>시설물 관리 번호</th>
@@ -227,7 +256,9 @@
           </div>
           <div class="regi_map">
             <div class="container">
-              <div class="map"></div>
+              <div class="map">
+                <span>map</span>
+              </div>
             </div>
           </div>
 
@@ -249,8 +280,8 @@
           <div class="container">
             <table border="0">
               <colgroup>
-                <col width="28%;">
-                <col width="28%">
+                <col width="23%;">
+                <col width="33%">
                 <col width="35.5%">
                 <col width="8.5%">
               </colgroup>
@@ -349,7 +380,7 @@
                     <div class="tb_input_wrap">
                       <label for="address" class="hide">주소</label>
                       <div class="search_bar">
-                        <input type="text" name="count" id="address" class="txt_left" placeholder="" value="" >
+                        <input type="text" name="count" id="address" class="txt_left address_sch" placeholder="" value="" >
                         <button class="search_btn"></button>
                       </div>
                     </div>
@@ -375,7 +406,7 @@
                     <div class="tb_input_wrap">
                       <label for="address02" class="hide">주소</label>
                       <div class="search_bar">
-                        <input type="text" name="count" class="txt_left" id="address02" placeholder="" value="" >
+                        <input type="text" name="count" class="txt_left address_sch" id="address02" placeholder="" value="" >
                         <button class="search_btn"></button>
                       </div>
                       
@@ -402,7 +433,7 @@
                     <div class="tb_input_wrap">
                       <label for="address03" class="hide">주소</label>
                       <div class="search_bar">
-                        <input type="text" name="count" class="txt_left" id="address03" placeholder="" value="" >
+                        <input type="text" name="count" class="txt_left address_sch" id="address03" placeholder="" value="" >
                         <button class="search_btn"></button>
                       </div>
                       
@@ -540,9 +571,9 @@
                 
                 </tr>
                 <tr>
-                  <td class="bd_r vtc_m">2022. 08. 10 - 01</td>
+                  <td class="bd_r vtc_m">2022. 08. 10 - 02</td>
                   <td>
-                    울진군 금강송면 광회리 산 1-10
+                    울진군 금강송면 쌍전리 산102-2
                   </td>
                   <td>
                     <div class="img_wrap">
@@ -558,9 +589,9 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="bd_r vtc_m">2022. 08. 10 - 01</td>
+                  <td class="bd_r vtc_m">2022. 08. 10 - 03</td>
                   <td>
-                    울진군 금강송면 광회리 산 1-10
+                    울진군 금강송면 쌍전리 산102-2
                   </td>
                   <td>
                     <div class="img_wrap">
