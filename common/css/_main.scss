@@ -237,7 +237,6 @@
           div{ width: 144px;
           height: 144px;
           }
-         
         }
       }
     }
@@ -261,10 +260,14 @@
       display: flex;
       .lnb_wrap{
         width: 10%;
-        .container{
+        min-width: 180px;
+        .container.main_lnb_container{
           .lnb{
-            padding: 20px;
-            grid-gap:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0;
+            grid-gap: unset;
             li{
               a{
                 div{
