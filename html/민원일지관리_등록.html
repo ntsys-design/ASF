@@ -17,19 +17,22 @@
           <h1 class="hd_logo"><img src="../common/images/hd_logo.png" alt="헤더 로고"> <span> 환경보전협회</span></h1>
         </a>
         <div class="nav_wrap">
-          <!-- <nav>
+          <nav>
             <ul class="gnb">
-              <li><a href="#" class="active">ASF 관리</a></li>
-              <li><a href="#">민원 관리</a></li>
-              <li><a href="#">통계 관리</a></li>
+              <li><a href="#" class="active">운영 관리</a></li>
+              <li><a href="#">ASF 관리</a></li>
             </ul>
-          </nav> -->
+          </nav>
+
           <div class="util">
             <a href="#">반갑습니다. 김길동님!
               <button>
                 <span class="hide">메뉴보기</span></button>
             </a>
-
+            <ul class="my_info">
+              <li><a href="#">PROFILE</a></li>
+              <li><a href="#">LOGOUT</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -80,12 +83,12 @@
           <li>
             <a href="./순찰일지통계.html">
               <div>
-                <img src="../common/images/ptr_st_ico.png" alt="순찰 일지 통계 아이콘">
+                <img src="../common/images/stat.png" alt="순찰 일지 통계 아이콘">
               </div>
               순찰 일지 통계
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="./유지보수작업통계.html">
               <div>
                 <img src="../common/images/mt_st_ico.png" alt="유지보수 작업 통계 아이콘">
@@ -100,152 +103,288 @@
               </div>
               민원 일지 통계
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
     <div class="contents">
       <div class="container">
         <h2>민원 일지 관리</h2>
-        <ul class="tab_menu">
-          <li class="on"><a href="#">민원 일지</a></li>
-          <li><a href="#">작업 일지</a></li>
-          <li><a href="#">작업 사진</a></li>
-        </ul>
+
       </div>
       <div class="tab_con_wrap">
-        <!-- 민원 일지 -->
+
         <div class="tab_con cp_log">
 
           <div class="container">
             <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
               <h3>접수 내용</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li class="wid_50">
-                    <label for="receipt_number">접수 번호 <span>*</span></label>
-                    <input type="text" name="receipt_number" id="receipt_number" placeholder="">
-                  </li>
 
-                  <li class="wid_50">
-                    <label for="date01">접수 일자 <span>*</span></label>
-                    <input type="date" name="date01" id="date01" value="2022-08-10">
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="receipt_name">접수자 명 <span>*</span></label>
-                    <input type="text" name="receipt_name" id="receipt_name" placeholder="">
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="cpl_name">민원 성명 <span>*</span></label>
-                    <input type="text" name="cpl_name" id="cpl_name" placeholder="">
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="tel">전화 번호 <span>*</span></label>
-                    <input type="text" name="tel" id="tel" placeholder="">
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="cpl_area">민원 지역 <span>*</span></label>
-                    <select name="cpl_area" id="cpl_area">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="cpl_type">민원 유형 <span>*</span></label>
-                    <select name="cpl_type" id="cpl_type">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </li>
-
-                  <li>
-                    <label for="cpl_title">민원 제목 <span>*</span></label>
-                    <input type="text" name="cpl_title" id="cpl_title" placeholder="">
-                  </li>
-
-                  <li class="text_area">
-                    <label for="cont02">민원 내용</label>
-                    <textarea id="cont02" name="cont" placeholder="내용을 입력하세요."></textarea>
-                  </li>
-                </ul>
-              </form>
-
-            </div>
-
-            <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
-              <h3>울타리 선택</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li>
-                    <label for="fence_num">관리 번호 <span>*</span></label>
-                    <div class="search_bar">
-                      <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요.
-                  ">
-                      <button class="search_btn fcnum_sch_btn"></button>
-                    </div>
-                  </li>
-                  <li>
-                    <label for="fence_name">시설물 그룹 명</label>
-                    <input type="text" name="fence_name" id="fence_name" placeholder="" readonly>
-                  </li>
-                  <li>
-                    <label for="area">권역</label>
-                    <input type="text" name="area" id="area" placeholder="" readonly>
-                  </li>
-                </ul>
-              </form>
-              <table>
+              <table class="cp_summary">
                 <colgroup>
-                  <col width="20%">
-                  <col width="20%">
-                  <col width="60%">
+                  <col width="11%">
+                  <col width="10%">
+                  <col width="12%">
+                  <col width="12%">
+                  <col width="21.5%">
+                  <col width="12%">
+                  <col width="21.5%">
                 </colgroup>
                 <thead>
-                  <tr>
-                    <th>시설물 관리 번호</th>
-                    <th>순찰 순서</th>
-                    <th>비고</th>
-                  </tr>
                 </thead>
                 <tbody>
                   <tr>
+                    <th><label for="receipt_number">접수 번호 <span>*</span></label></th>
+                    <td colspan="3"><input type="text" name="receipt_number" id="receipt_number" placeholder="">
+                    </td>
+                    <th><label for="fence_num">관리 번호 <span>*</span></label></th>
+                    <td colspan="2">
+                      <div class="search_bar">
+                        <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요.">
+                        <button class="search_btn fcnum_sch_btn"></button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      <label for="writer">작성자 <span>*</span></label>
+                    </th>
+                    <td colspan="2">
+                      <input type="text" name="writer" id="writer" placeholder="">
+                    </td>
+                    <th>
+                      <label for="receipt_way">접수 방법 <span>*</span></label>
+                    </th>
                     <td>
-                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num"
-                        id="fclt_num01" placeholder="" readonly>
+                      <div class="tb_input_wrap">
+                        <select name="receipt_way" id="receipt_way">
+                          <option value="" disabled selected>선택</option>
+                          <option value="">ARS</option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </td>
+                    <th>
+                      <label for="cpl_type">민원 유형 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="text" name="cpl_type" id="cpl_type" placeholder="" value="일반" readonly>
+                    </td>
+                  </tr>
+                  <th>
+                    <label for="receipt_type">접수유형 <span>*</span></label>
+                  </th>
+                  <td>
+                    <input type="text" name="receipt_type" id="receipt_type" placeholder="" value="불편" readonly>
+                  </td>
+                  <td>
+                    <div class="tb_input_wrap">
+                      <select name="ptr_log_select" id="ptr_log_select01">
+                        <option value="" disabled selected>선택</option>
+                        <option value="">해체</option>
+                        <option value="">이설</option>
+                        <option value="">출입문</option>
+                        <option value="">보수</option>
+                        <option value="">기타</option>
+                      </select>
+                    </div>
+                  </td>
+                  <th>
+                    <label for="date01">접수일 <span>*</span></label>
+                  </th>
+                  <td>
+                    <input type="date" name="date01" id="date01" value="">
+                  </td>
+                  <th>
+                    <label for="date02">처리일 <span>*</span></label>
+                  </th>
+                  <td>
+                    <input type="date" name="date02" id="date02" value="">
+                  </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
+              <h3>민원 개요</h3>
+              <table class="cp_summary">
+                <colgroup>
+                  <col width="11%">
+                  <col width="11%">
+                  <col width="11%">
+                  <col width="11%">
+                  <col width="11%">
+                  <col width="11%">
+                  <col width="11%">
+                  <col width="11%">
+                  <col width="11%">
+                </colgroup>
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span></th>
+                    <td colspan="8"><label for="address" class="hide">주소 </label>
+                      <div class="search_bar">
+                        <input type="text" name="address" id="address" placeholder="검색어를 입력하세요.">
+                        <button class="search_btn fcnum_sch_btn"></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
                     </td>
                     <td>
-                      <label for="ptr_order07" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order07" id="ptr_order07" placeholder="" readonly>
+
+                    </td>
+                    <th><label for="area">권역 <span>*</span></label></th>
+                    <td colspan="2">
+                      <div class="tb_input_wrap">
+                        <select name="area" id="area">
+                          <option value="" disabled selected>선택</option>
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </td>
+                    <th><label for="install">설치단계 <span>*</span></label></th>
+                    <td colspan="2">
+                      <div class="tb_input_wrap">
+                        <select name="install" id="install">
+                          <option value="" disabled selected>선택</option>
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="cpl_name">민원인 <span>*</span></label>
+                    </th>
+                    <td colspan="2">
+                      <input type="text" name="cpl_name" id="cpl_name" placeholder="" value="">
+                    </td>
+                    <th>
+                      <label for="tell">연락처 <span>*</span></label>
+                    </th>
+                    <td colspan="2">
+                      <input type="text" name="tell" id="tell" placeholder="" value="">
+                    </td>
+                    <th>
+                      <label for="institution">기관명 <span>*</span></label>
+                    </th>
+                    <td colspan="2">
+                      <input type="text" name="institution" id="institution" placeholder="" value="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="cont01">민원내용</label>
+                    </th>
+                    <td colspan="8">
+                      <div class="tb_input_wrap"><textarea id="cont01" name="cont01" placeholder=""></textarea></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" class="vtc_m"><label for="result">조치결과 <span>*</span></label></th>
+                    <td colspan="8">
+                      <input type="text" name="result" id="result" placeholder="" value="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="cost">공사비용</label></th>
+                    <td>
+                      <input type="text" name="cost" id="cost" placeholder="" value="">
+                    </td>
+                    <th><label for="unit">단위</label></th>
+                    <td>
+                      <input type="text" name="unit" id="unit" placeholder="" value="">
+                    </td>
+                    <th><label for="amount">수량</label></th>
+                    <td>
+                      <input type="text" name="amount" id="amount" placeholder="" value="">
+                    </td>
+                    <th><label for="period">처리기간</label></th>
+                    <td><input type="text" name="period" id="period" placeholder="" value=""></td>
+                  </tr>
+                  <tr>
+                    <th><label for="progress">추진경과</label></th>
+                    <td colspan="8"><input type="text" name="progress" id="progress" placeholder="" value=""></td>
+                  </tr>
+                  <tr>
+                    <th><label for="note">비고</label></th>
+                    <td colspan="8"><input type="text" name="note" id="note" placeholder="" value=""></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table>
+                <thead></thead>
+                <tbody>
+
+                  <tr>
+                    <th colspan="2" class="tit">
+                      <b>현장 사진</b>
+                    </th>
+
+
+                  </tr>
+                  <tr class="tb_tit">
+                    <td>조치 전</td>
+                    <td>조치 후</td>
+                  </tr>
+                  <tr>
+
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
                     </td>
                     <td>
-                      <label for="ptr_order_note07" class="hide">비고</label>
-                      <input type="text" name="ptr_order_note07" id="ptr_order_note07" placeholder="
-                      " readonly>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
                     </td>
 
                   </tr>
                   <tr>
+
                     <td>
-                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num02"
-                        id="fclt_num02" placeholder="" readonly>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
                     </td>
                     <td>
-                      <label for="ptr_order08" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order08" id="ptr_order08" placeholder="" readonly>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
                     </td>
                     <td>
-                      <label for="ptr_order_note08" class="hide">비고</label>
-                      <input type="text" name="ptr_order_note08" id="ptr_order_note08" placeholder="
-                      " readonly>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
                     </td>
 
                   </tr>
@@ -263,162 +402,15 @@
             </div>
           </div>
 
-
           <div class="tab_con_btn">
             <div class="container">
               <div class="btn_wrap btn_right">
                 <button class="cancel_btn" onclick="location.href='민원일지관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn tab2_btn" href='#tab2_content'><span>임시 저장</span></button>
+                <button class="register_btn"><span>글 등록</span></button>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- //민원 일지 -->
-
-        <!-- 작업 일지 -->
-        <div class="tab_con cp_log" id="tab2_content">
-          <div class="container">
-            <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
-              <h3>작업 내용</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li class="wid_50">
-                    <label for="progress">진행 여부 <span>*</span></label>
-                    <select name="progress" id="progress">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="completion_date">완료 일자 </label>
-                    <input type="date" name="completion_date" id="completion_date" value="2022-08-10">
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="name">담당자 명 <span>*</span></label>
-                    <input type="text" name="name" id="name" placeholder="">
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="tel02">전화 번호 <span>*</span></label>
-                    <input type="text" name="tel02" id="tel02" placeholder="">
-                  </li>
-
-                  <li class="text_area">
-                    <label for="cont100">검토 사항</label>
-                    <textarea id="cont100" name="cont100" placeholder="내용을 입력하세요."></textarea>
-                  </li>
-                  <li class="text_area">
-                    <label for="cont101">작업 계획</label>
-                    <textarea id="cont101" name="cont101" placeholder="내용을 입력하세요."></textarea>
-                  </li>
-                  <li class="text_area">
-                    <label for="cont102">작업 내용</label>
-                    <textarea id="cont102" name="cont102" placeholder="내용을 입력하세요."></textarea>
-                  </li>
-                </ul>
-              </form>
-
-            </div>
-
-
-          </div>
-          <div class="tab_con_btn">
-            <div class="container">
-              <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='민원일지관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn tab3_btn" href='#tab3_content'><span>임시 저장</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- //작업 일지 -->
-
-        <!-- 작업 사진 -->
-        <div class="tab_con cp_log photomount" id="tab3_content">
-          <div class="container">
-            <table>
-
-
-              <thead></thead>
-              <tbody>
-
-                <tr>
-                  <th colspan="2" class="tit">
-                    <b>작업 사진</b>
-                  </th>
-
-
-                </tr>
-                <tr class="tb_tit">
-                  <td>작업 전 사진</td>
-                  <td>작업 후 사진</td>
-                </tr>
-                <tr>
-
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                    </div>
-                  </td>
-
-                </tr>
-                <tr>
-
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                    </div>
-                  </td>
-
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="tab_con_btn">
-            <div class="container">
-              <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
-                <button class="modify_btn tab4_btn"><span>임시 저장</span></button>
-                <button class="register_btn" onclick="location.href='민원일지관리_목록.html'"><span>글 등록</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- //작업 사진 -->
 
 
       </div>
