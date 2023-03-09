@@ -2,9 +2,10 @@
   position: relative;
 
 }
-input[type="date"]{
-  &:read-only{
-    background:#f7f7f8 !important;
+
+input[type="date"] {
+  &:read-only {
+    background: #f7f7f8 !important;
   }
 }
 
@@ -143,7 +144,7 @@ textarea {
 
           &:focus {
             outline: 0;
-           //border: 2px solid #6DA2FF;
+            //border: 2px solid #6DA2FF;
           }
 
           option {
@@ -278,11 +279,12 @@ textarea {
           height: 56px;
           flex: 0 1 100%;
           margin-bottom: 24px;
-          
+
 
           &.wid_50 {
             flex: 0 1 49%;
           }
+
           &.wid_33 {
             flex: 0 1 32%;
           }
@@ -290,9 +292,12 @@ textarea {
           &.mr_50 {
             margin-right: 50px;
           }
-          &.input_2row{
+
+          &.input_2row {
             align-items: flex-start;
-            height: unset;ul{
+            height: unset;
+
+            ul {
               justify-content: space-between;
             }
           }
@@ -323,7 +328,7 @@ textarea {
             background: url(../images/search_down.png) no-repeat 95% center;
 
             &.readonly {
-              background:url(../images/search_down.png) no-repeat 95% center #f7f7f8 !important;
+              background: url(../images/search_down.png) no-repeat 95% center #f7f7f8 !important;
             }
           }
         }
@@ -364,7 +369,8 @@ textarea {
               &:read-only {
                 background: #F7F7F8;
               }
-              &:focus{
+
+              &:focus {
                 outline: none;
               }
             }
@@ -585,38 +591,9 @@ textarea {
 
       }
 
-      &.mt_list {
-        li {
-          ul {
-            li {
+     
 
-              flex: 0 1 12%;
-
-              &:nth-child(3),
-              &:nth-child(4) {
-                flex: 0 1 21%;
-
-              }
-
-              &:nth-child(4) {
-                color: #4661DC;
-
-              }
-            }
-
-            &.tb_hd {
-              height: 64px;
-
-              li {
-                color: #fff;
-
-              }
-            }
-          }
-        }
-      }
-
-      &.cp_log_list {
+      &.cp_mt_list,&.mt_list {
         li {
           ul {
             li {
@@ -631,15 +608,18 @@ textarea {
                 color: #4661DC;
 
               }
+
               &:nth-child(7) {
                 flex: 0 1 10%;
 
               }
+
               &:nth-child(8) {
                 flex: 0 1 15%;
 
               }
-              .progress_icon{
+
+              .progress_icon {
                 width: 30px;
                 height: 30px;
                 background: #55626F;
@@ -789,7 +769,8 @@ textarea {
       width: 100%;
       height: 658px;
       background: #6F8294;
-      b{
+
+      b {
         display: block;
         font-size: 10em;
         padding: 100px;
@@ -1065,7 +1046,7 @@ textarea {
 
 
 .tab_con,
-.ptr_pl_regi{
+.ptr_pl_regi {
   margin-top: 40px;
   display: none;
 
@@ -1107,6 +1088,7 @@ textarea {
             border-bottom: 1px solid #696E76;
 
           }
+
           &.vtc_m {
             vertical-align: middle;
 
@@ -1219,30 +1201,92 @@ textarea {
         }
       }
     }
-// 민원일지 관리 민원개요
-&.cp_summary{
-  tbody{
-    th{
-      text-align: left;
-      padding: 0;
-      span{
-        color: #FF155B;
+
+    // 민원일지 관리 민원개요
+    &.tb_summary {
+      tbody {
+        th {
+          text-align: left;
+          padding: 0;
+
+          span {
+            color: #FF155B;
+          }
+        }
+
+        tr {
+          border-bottom: none;
+
+          td {
+            textarea {
+              font-size: 1em;
+
+              &:read-only {
+                background: #F7F7F8;
+                border: 1px solid #C6CBD0;
+              }
+            }
+            .tb_input_wrap{
+              select{
+                font-size: 1em;
+              }
+            }
+          }
+        }
+
       }
+
+      
     }
-    tr{
-      border-bottom: none;
-    }
-  }
-}
+    &.cp_phm {
+        tbody {
+          tr {
+            th.tit{
+              padding: 30px;
+              font-size: 1.2em;
+            }
+            td {
+              padding: 24px 32px !important;
+              .img_wrap {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                justify-content: center;
+
+                figure {
+                  width: 75%;
+                  height: 100%;
+                  max-height: 225px;
+                  overflow: hidden;
+                  position: relative;
+
+                  button {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                  }
+                  img{
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+              
+            }
+          }
+        }
+      }
   }
 
-  &.mt_log,&.cp_log {
+  &.mt_log,
+  &.cp_mt {
     table {
       tbody {
         tr {
-          
+
           td {
             text-align: center;
+
             .tb_input_wrap {
               input {
                 width: 100%;
@@ -1259,7 +1303,7 @@ textarea {
     }
 
   }
- 
+
   // 사진 대지
   &.photomount {
     tbody {
@@ -1352,22 +1396,23 @@ textarea {
       }
     }
 
-    &.cp_log {
+    &.cp_mt {
       tbody {
         tr {
           td {
-            .img_wrap{
+            .img_wrap {
               justify-content: center;
-            figure {
-              width: 75%;
-              height: 100%;
 
-              img {
+              figure {
+                width: 75%;
                 height: 100%;
-              }
 
+                img {
+                  height: 100%;
+                }
+
+              }
             }
-          }
           }
         }
       }
@@ -1543,30 +1588,46 @@ textarea {
     }
   }
 }
-.form_wrap.com_wrap.cp_log_regi form.com_form ul li.text_area{
+
+.form_wrap.com_wrap.cp_mt_regi form.com_form ul li.text_area {
   margin-bottom: 24px;
 }
 
-.mt_log .container table tbody tr th.check_num b span{
+.mt_log .container table tbody tr th.check_num b span {
   color: #FC1F53;
 }
+
 .tb_input_wrap {
- 
-  select{
-  font-size: 0.9em;
-  &:focus{
-    outline: 0;
+
+  select {
+    font-size: 0.9em;
+
+    &:focus {
+      outline: 0;
+    }
   }
-}}
-.tab_con table .tb_input_wrap input.txt_left{
+}
+
+.tab_con table .tb_input_wrap input.txt_left {
   text-align: left;
 }
-.tab_con table .tb_input_wrap input.address_sch{
+
+.tab_con table .tb_input_wrap input.address_sch {
   padding: 0 50px 0 20px;
 }
-.form_wrap.com_wrap.ptr_pl_regi table tr td input.txt_ct{
+
+.form_wrap.com_wrap.ptr_pl_regi table tr td input.txt_ct {
   text-align: center;
 }
-.tab_con.mt_log table .tb_input_wrap input, .ptr_pl_regi table .tb_input_wrap input{
+
+.tab_con.mt_log table .tb_input_wrap input,
+.ptr_pl_regi table .tb_input_wrap input {
   margin-right: 0;
+}
+.ptr_pl_regi.bd_bck table tr{
+  border-bottom: 1px solid #b6b8b9;
+  
+}
+.ptr_pl_regi.bd_bck table tr td.bd_r{
+  border-right: 1px solid #b6b8b9;
 }

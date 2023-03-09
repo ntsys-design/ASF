@@ -590,6 +590,10 @@ input:focus {
   outline: 0;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
 .wrapper.main {
   display: flex;
   height: 100vh;
@@ -1269,61 +1273,48 @@ select.readonly {
 .name_list_tb.ptr_pl_list li ul.tb_hd li {
   color: #fff;
 }
-.fence_list.mt_list li ul li,
+.fence_list.cp_mt_list li ul li, .fence_list.mt_list li ul li,
+.name_list_tb.cp_mt_list li ul li,
 .name_list_tb.mt_list li ul li {
-  flex: 0 1 12%;
-}
-.fence_list.mt_list li ul li:nth-child(3), .fence_list.mt_list li ul li:nth-child(4),
-.name_list_tb.mt_list li ul li:nth-child(3),
-.name_list_tb.mt_list li ul li:nth-child(4) {
-  flex: 0 1 21%;
-}
-.fence_list.mt_list li ul li:nth-child(4),
-.name_list_tb.mt_list li ul li:nth-child(4) {
-  color: #4661DC;
-}
-.fence_list.mt_list li ul.tb_hd,
-.name_list_tb.mt_list li ul.tb_hd {
-  height: 64px;
-}
-.fence_list.mt_list li ul.tb_hd li,
-.name_list_tb.mt_list li ul.tb_hd li {
-  color: #fff;
-}
-.fence_list.cp_log_list li ul li,
-.name_list_tb.cp_log_list li ul li {
   flex: 0 1 12.5%;
   color: #55626F;
 }
-.fence_list.cp_log_list li ul li:nth-child(2),
-.name_list_tb.cp_log_list li ul li:nth-child(2) {
+.fence_list.cp_mt_list li ul li:nth-child(2), .fence_list.mt_list li ul li:nth-child(2),
+.name_list_tb.cp_mt_list li ul li:nth-child(2),
+.name_list_tb.mt_list li ul li:nth-child(2) {
   color: #17A400;
 }
-.fence_list.cp_log_list li ul li:nth-child(3),
-.name_list_tb.cp_log_list li ul li:nth-child(3) {
+.fence_list.cp_mt_list li ul li:nth-child(3), .fence_list.mt_list li ul li:nth-child(3),
+.name_list_tb.cp_mt_list li ul li:nth-child(3),
+.name_list_tb.mt_list li ul li:nth-child(3) {
   color: #4661DC;
 }
-.fence_list.cp_log_list li ul li:nth-child(7),
-.name_list_tb.cp_log_list li ul li:nth-child(7) {
+.fence_list.cp_mt_list li ul li:nth-child(7), .fence_list.mt_list li ul li:nth-child(7),
+.name_list_tb.cp_mt_list li ul li:nth-child(7),
+.name_list_tb.mt_list li ul li:nth-child(7) {
   flex: 0 1 10%;
 }
-.fence_list.cp_log_list li ul li:nth-child(8),
-.name_list_tb.cp_log_list li ul li:nth-child(8) {
+.fence_list.cp_mt_list li ul li:nth-child(8), .fence_list.mt_list li ul li:nth-child(8),
+.name_list_tb.cp_mt_list li ul li:nth-child(8),
+.name_list_tb.mt_list li ul li:nth-child(8) {
   flex: 0 1 15%;
 }
-.fence_list.cp_log_list li ul li .progress_icon,
-.name_list_tb.cp_log_list li ul li .progress_icon {
+.fence_list.cp_mt_list li ul li .progress_icon, .fence_list.mt_list li ul li .progress_icon,
+.name_list_tb.cp_mt_list li ul li .progress_icon,
+.name_list_tb.mt_list li ul li .progress_icon {
   width: 30px;
   height: 30px;
   background: #55626F;
   margin: auto;
 }
-.fence_list.cp_log_list li ul.tb_hd,
-.name_list_tb.cp_log_list li ul.tb_hd {
+.fence_list.cp_mt_list li ul.tb_hd, .fence_list.mt_list li ul.tb_hd,
+.name_list_tb.cp_mt_list li ul.tb_hd,
+.name_list_tb.mt_list li ul.tb_hd {
   height: 64px;
 }
-.fence_list.cp_log_list li ul.tb_hd li,
-.name_list_tb.cp_log_list li ul.tb_hd li {
+.fence_list.cp_mt_list li ul.tb_hd li, .fence_list.mt_list li ul.tb_hd li,
+.name_list_tb.cp_mt_list li ul.tb_hd li,
+.name_list_tb.mt_list li ul.tb_hd li {
   color: #fff;
 }
 
@@ -1741,32 +1732,84 @@ select.readonly {
   border: none;
   outline: none;
 }
-.tab_con table.cp_summary tbody th,
-.ptr_pl_regi table.cp_summary tbody th {
+.tab_con table.tb_summary tbody th,
+.ptr_pl_regi table.tb_summary tbody th {
   text-align: left;
   padding: 0;
 }
-.tab_con table.cp_summary tbody th span,
-.ptr_pl_regi table.cp_summary tbody th span {
+.tab_con table.tb_summary tbody th span,
+.ptr_pl_regi table.tb_summary tbody th span {
   color: #FF155B;
 }
-.tab_con table.cp_summary tbody tr,
-.ptr_pl_regi table.cp_summary tbody tr {
+.tab_con table.tb_summary tbody tr,
+.ptr_pl_regi table.tb_summary tbody tr {
   border-bottom: none;
 }
-.tab_con.mt_log table tbody tr td, .tab_con.cp_log table tbody tr td,
+.tab_con table.tb_summary tbody tr td textarea,
+.ptr_pl_regi table.tb_summary tbody tr td textarea {
+  font-size: 1em;
+}
+.tab_con table.tb_summary tbody tr td textarea:-moz-read-only, .ptr_pl_regi table.tb_summary tbody tr td textarea:-moz-read-only {
+  background: #F7F7F8;
+  border: 1px solid #C6CBD0;
+}
+.tab_con table.tb_summary tbody tr td textarea:read-only,
+.ptr_pl_regi table.tb_summary tbody tr td textarea:read-only {
+  background: #F7F7F8;
+  border: 1px solid #C6CBD0;
+}
+.tab_con table.tb_summary tbody tr td .tb_input_wrap select,
+.ptr_pl_regi table.tb_summary tbody tr td .tb_input_wrap select {
+  font-size: 1em;
+}
+.tab_con table.cp_phm tbody tr th.tit,
+.ptr_pl_regi table.cp_phm tbody tr th.tit {
+  padding: 30px;
+  font-size: 1.2em;
+}
+.tab_con table.cp_phm tbody tr td,
+.ptr_pl_regi table.cp_phm tbody tr td {
+  padding: 24px 32px !important;
+}
+.tab_con table.cp_phm tbody tr td .img_wrap,
+.ptr_pl_regi table.cp_phm tbody tr td .img_wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.tab_con table.cp_phm tbody tr td .img_wrap figure,
+.ptr_pl_regi table.cp_phm tbody tr td .img_wrap figure {
+  width: 75%;
+  height: 100%;
+  max-height: 225px;
+  overflow: hidden;
+  position: relative;
+}
+.tab_con table.cp_phm tbody tr td .img_wrap figure button,
+.ptr_pl_regi table.cp_phm tbody tr td .img_wrap figure button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.tab_con table.cp_phm tbody tr td .img_wrap figure img,
+.ptr_pl_regi table.cp_phm tbody tr td .img_wrap figure img {
+  width: 100%;
+  height: 100%;
+}
+.tab_con.mt_log table tbody tr td, .tab_con.cp_mt table tbody tr td,
 .ptr_pl_regi.mt_log table tbody tr td,
-.ptr_pl_regi.cp_log table tbody tr td {
+.ptr_pl_regi.cp_mt table tbody tr td {
   text-align: center;
 }
-.tab_con.mt_log table tbody tr td .tb_input_wrap input, .tab_con.cp_log table tbody tr td .tb_input_wrap input,
+.tab_con.mt_log table tbody tr td .tb_input_wrap input, .tab_con.cp_mt table tbody tr td .tb_input_wrap input,
 .ptr_pl_regi.mt_log table tbody tr td .tb_input_wrap input,
-.ptr_pl_regi.cp_log table tbody tr td .tb_input_wrap input {
+.ptr_pl_regi.cp_mt table tbody tr td .tb_input_wrap input {
   width: 100%;
 }
-.tab_con.mt_log table tbody tr td .tb_input_wrap input[type=date], .tab_con.cp_log table tbody tr td .tb_input_wrap input[type=date],
+.tab_con.mt_log table tbody tr td .tb_input_wrap input[type=date], .tab_con.cp_mt table tbody tr td .tb_input_wrap input[type=date],
 .ptr_pl_regi.mt_log table tbody tr td .tb_input_wrap input[type=date],
-.ptr_pl_regi.cp_log table tbody tr td .tb_input_wrap input[type=date] {
+.ptr_pl_regi.cp_mt table tbody tr td .tb_input_wrap input[type=date] {
   text-align: center;
 }
 .tab_con.photomount tbody tr th,
@@ -1848,17 +1891,17 @@ select.readonly {
 .ptr_pl_regi.photomount.mt_log tbody tr td figure img {
   height: 100%;
 }
-.tab_con.photomount.cp_log tbody tr td .img_wrap,
-.ptr_pl_regi.photomount.cp_log tbody tr td .img_wrap {
+.tab_con.photomount.cp_mt tbody tr td .img_wrap,
+.ptr_pl_regi.photomount.cp_mt tbody tr td .img_wrap {
   justify-content: center;
 }
-.tab_con.photomount.cp_log tbody tr td .img_wrap figure,
-.ptr_pl_regi.photomount.cp_log tbody tr td .img_wrap figure {
+.tab_con.photomount.cp_mt tbody tr td .img_wrap figure,
+.ptr_pl_regi.photomount.cp_mt tbody tr td .img_wrap figure {
   width: 75%;
   height: 100%;
 }
-.tab_con.photomount.cp_log tbody tr td .img_wrap figure img,
-.ptr_pl_regi.photomount.cp_log tbody tr td .img_wrap figure img {
+.tab_con.photomount.cp_mt tbody tr td .img_wrap figure img,
+.ptr_pl_regi.photomount.cp_mt tbody tr td .img_wrap figure img {
   height: 100%;
 }
 .tab_con.photomount.phm_dt tbody tr td .img_wrap figcaption,
@@ -2001,7 +2044,7 @@ select.readonly {
   width: 100%;
 }
 
-.form_wrap.com_wrap.cp_log_regi form.com_form ul li.text_area {
+.form_wrap.com_wrap.cp_mt_regi form.com_form ul li.text_area {
   margin-bottom: 24px;
 }
 
@@ -2028,6 +2071,15 @@ select.readonly {
   text-align: center;
 }
 
-.tab_con.mt_log table .tb_input_wrap input, .ptr_pl_regi table .tb_input_wrap input {
+.tab_con.mt_log table .tb_input_wrap input,
+.ptr_pl_regi table .tb_input_wrap input {
   margin-right: 0;
+}
+
+.ptr_pl_regi.bd_bck table tr {
+  border-bottom: 1px solid #b6b8b9;
+}
+
+.ptr_pl_regi.bd_bck table tr td.bd_r {
+  border-right: 1px solid #b6b8b9;
 }/*# sourceMappingURL=default.css.map */

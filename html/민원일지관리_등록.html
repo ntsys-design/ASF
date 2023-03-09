@@ -107,6 +107,7 @@
         </ul>
       </div>
     </div>
+
     <div class="contents">
       <div class="container">
         <h2>민원 일지 관리</h2>
@@ -114,13 +115,12 @@
       </div>
       <div class="tab_con_wrap">
 
-        <div class="tab_con cp_log">
-
+        <div class="cp_mt">
           <div class="container">
-            <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
+            <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
               <h3>접수 내용</h3>
 
-              <table class="cp_summary">
+              <table class="tb_summary">
                 <colgroup>
                   <col width="11%">
                   <col width="10%">
@@ -134,10 +134,15 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th><label for="receipt_number">접수 번호 <span>*</span></label></th>
-                    <td colspan="3"><input type="text" name="receipt_number" id="receipt_number" placeholder="">
+                    <th>
+                      <label for="receipt_number">접수 번호 <span>*</span></label>
+                    </th>
+                    <td colspan="3">
+                      <input type="text" name="receipt_number" id="receipt_number" placeholder="">
                     </td>
-                    <th><label for="fence_num">관리 번호 <span>*</span></label></th>
+                    <th>
+                      <label for="fence_num">관리 번호 <span>*</span></label>
+                    </th>
                     <td colspan="2">
                       <div class="search_bar">
                         <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요.">
@@ -170,64 +175,75 @@
                       <label for="cpl_type">민원 유형 <span>*</span></label>
                     </th>
                     <td>
-                      <input type="text" name="cpl_type" id="cpl_type" placeholder="" value="일반" readonly>
+                      <div class="tb_input_wrap">
+                        <select name="cpl_type" id="cpl_type" class="readonly"
+                          onfocus="this.initialSelect = this.selectedIndex;"
+                          onchange="this.selectedIndex = this.initialSelect;">
+                          <option value="" disabled>선택</option>
+                          <option value="" selected>개인</option>
+                          <option value="">기관</option>
+                        </select>
+                      </div>
+
                     </td>
                   </tr>
-                  <th>
-                    <label for="receipt_type">접수유형 <span>*</span></label>
-                  </th>
-                  <td>
-                    <input type="text" name="receipt_type" id="receipt_type" placeholder="" value="불편" readonly>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <select name="ptr_log_select" id="ptr_log_select01">
-                        <option value="" disabled selected>선택</option>
-                        <option value="">해체</option>
-                        <option value="">이설</option>
-                        <option value="">출입문</option>
-                        <option value="">보수</option>
-                        <option value="">기타</option>
-                      </select>
-                    </div>
-                  </td>
-                  <th>
-                    <label for="date01">접수일 <span>*</span></label>
-                  </th>
-                  <td>
-                    <input type="date" name="date01" id="date01" value="">
-                  </td>
-                  <th>
-                    <label for="date02">처리일 <span>*</span></label>
-                  </th>
-                  <td>
-                    <input type="date" name="date02" id="date02" value="">
-                  </td>
+                  <tr>
+                    <th>
+                      <label for="receipt_type">접수유형 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="text" name="receipt_type" id="receipt_type" placeholder="" value="불편" readonly>
+                    </td>
+                    <td>
+                      <div class="tb_input_wrap">
+                        <select name="ptr_log_select" id="ptr_log_select01">
+                          <option value="" disabled selected>선택</option>
+                          <option value="">해체</option>
+                          <option value="">이설</option>
+                          <option value="">출입문</option>
+                          <option value="">보수</option>
+                          <option value="">기타</option>
+                        </select>
+                      </div>
+                    </td>
+                    <th>
+                      <label for="date01">접수일 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="date" name="date01" id="date01" value="">
+                    </td>
+                    <th>
+                      <label for="date02">처리일 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="date" name="date02" id="date02" value="">
+                    </td>
                   </tr>
 
                 </tbody>
               </table>
             </div>
 
-            <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
+            <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
               <h3>민원 개요</h3>
-              <table class="cp_summary">
+              <table class="tb_summary">
                 <colgroup>
                   <col width="11%">
-                  <col width="11%">
-                  <col width="11%">
-                  <col width="11%">
-                  <col width="11%">
-                  <col width="11%">
-                  <col width="11%">
-                  <col width="11%">
-                  <col width="11%">
+                  <col width="10%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
                 </colgroup>
                 <thead>
                 </thead>
                 <tbody>
                   <tr>
-                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span></th>
+                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span>
+                    </th>
                     <td colspan="8"><label for="address" class="hide">주소 </label>
                       <div class="search_bar">
                         <input type="text" name="address" id="address" placeholder="검색어를 입력하세요.">
@@ -242,25 +258,27 @@
                     <td>
 
                     </td>
-                    <th><label for="area">권역 <span>*</span></label></th>
+                    <th><label for="area">권역</label></th>
                     <td colspan="2">
                       <div class="tb_input_wrap">
                         <select name="area" id="area">
                           <option value="" disabled selected>선택</option>
-                          <option value=""></option>
+                          <option value="">1</option>
                           <option value=""></option>
                           <option value=""></option>
                         </select>
                       </div>
                     </td>
-                    <th><label for="install">설치단계 <span>*</span></label></th>
+                    <th><label for="install">설치단계</label></th>
                     <td colspan="2">
                       <div class="tb_input_wrap">
                         <select name="install" id="install">
                           <option value="" disabled selected>선택</option>
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
+                          <option value="">1단계</option>
+                          <option value="">2단계</option>
+                          <option value="">3단계</option>
+                          <option value="">4단계</option>
+                          <option value="">5단계</option>
                         </select>
                       </div>
                     </td>
@@ -316,7 +334,7 @@
                     <td><input type="text" name="period" id="period" placeholder="" value=""></td>
                   </tr>
                   <tr>
-                    <th><label for="progress">추진경과</label></th>
+                    <th><label for="progress">추진경과 <span>*</span></label></th>
                     <td colspan="8"><input type="text" name="progress" id="progress" placeholder="" value=""></td>
                   </tr>
                   <tr>
@@ -326,7 +344,7 @@
                 </tbody>
               </table>
 
-              <table>
+              <table class="cp_phm">
                 <thead></thead>
                 <tbody>
 
@@ -338,12 +356,12 @@
 
                   </tr>
                   <tr class="tb_tit">
-                    <td>조치 전</td>
+                    <td class="bd_r">조치 전</td>
                     <td>조치 후</td>
                   </tr>
                   <tr>
 
-                    <td>
+                    <td class="bd_r">
                       <div class="img_wrap">
                         <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
 
@@ -359,7 +377,7 @@
                   </tr>
                   <tr>
 
-                    <td>
+                    <td class="bd_r">
                       <div class="img_wrap">
                         <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
 
@@ -374,7 +392,7 @@
                   </tr>
                   <tr>
 
-                    <td>
+                    <td class="bd_r">
                       <div class="img_wrap">
                         <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
 
@@ -406,19 +424,16 @@
             <div class="container">
               <div class="btn_wrap btn_right">
                 <button class="cancel_btn" onclick="location.href='민원일지관리_목록.html'"><span>취소</span></button>
-                <button class="register_btn"><span>글 등록</span></button>
+                <button class="register_btn" onclick="location.href='민원일지관리_목록.html'"><span>글 등록</span></button>
               </div>
             </div>
           </div>
+
+
+
         </div>
 
-
       </div>
-
-
-
-
-
     </div>
     <footer>
       <div class="container">

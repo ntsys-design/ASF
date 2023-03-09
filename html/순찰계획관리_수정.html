@@ -159,30 +159,7 @@
         </div>
 
         <div class="form_wrap com_wrap ptr_pl_regi">
-          <h3>순찰 울타리 구간 선택</h3>
-          <form action="" class="com_form">
-            <ul>
-
-              <li>
-                <label for="fence_num">관리 번호 <span>*</span></label>
-                <div class="search_bar">
-                  <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요." value="서울-10-59"  >
-                  <button class="search_btn fcnum_sch_btn"></button>
-                </div>
-              </li>
-              <li>
-                <label for="fence_name">시설물 그룹 명</label>
-                <input type="text" name="fence_name" id="fence_name" placeholder="" value="주식회사 삼성 울타리" readonly>
-              </li>
-              <li>
-                <label for="area">권역</label>
-                <input type="text" name="area" id="area" placeholder="" value="내 권역" readonly>
-              </li>
-
-
-            </ul>
-          </form>
-          
+       
             <table>
               <!-- 0224  colgroup 추가-->
               <colgroup>
@@ -242,8 +219,79 @@
       </div>
       <div class="regi_map">
           <div class="container">
+            <div class="form_wrap com_wrap ptr_pl_regi bd_bck">
+              <table>
+                <colgroup>
+                <col width="25%">
+                <col width="15%">
+                <col width="35%">
+                <col width="25%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th><label for="address">ASF 발생지점</label></th>
+                    <th><label for="km">길이(Km)</label></th>
+                    <th><label for="inspector">점검자</label></th>
+                    <th><label for="date01">순찰일</label></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="text" name="address" id="address" placeholder=""  value="양양군 손양면 동막골길 115-35" readonly></td>
+                    <td><input type="text" name="km" id="km" placeholder=""  value="95.7" readonly></td>
+                    <td><input type="text" name="inspector" id="inspector" placeholder=""  value="협회 2명, 원주청 2명 현장점검단 1인" readonly></td>
+                    <td><input type="date" name="date01" id="date01" placeholder="" value="2023-02-13" readonly></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div class="map">
               <b>map</b>
+            </div>
+            <div class="form_wrap com_wrap ptr_pl_regi bd_bck">
+              <table>
+                <thead></thead>
+                <tbody>
+                  <tr>
+                    <td class="bd_r">
+                      <label for="point" class="hide">시점</label>
+                      <input type="text" name="point" id="point" placeholder=""  value="시점 : 양양군 양양읍 연창리 61-2" readonly>
+                    </td>
+                    <td>
+                      <label for="via01" class="hide">경유1</label>
+                      <input type="text" name="via01" id="via01" placeholder=""  value=" 경유1 : 양양군 서면 범부리211-25" readonly>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bd_r">
+                      <label for="via02" class="hide">경유2</label>
+                      <input type="text" name="via02" id="via02" placeholder=""  value="경유2 : 양양군 서면 가라피리 산25-1" readonly>
+                    </td>
+                    <td>
+                      <label for="via03" class="hide">경유3</label>
+                      <input type="text" name="via03" id="via03" placeholder=""  value="경유3 : 양양군 서면 서림리 136 " readonly>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bd_r">
+                      <label for="via04" class="hide">경유4</label>
+                      <input type="text" name="via04" id="via04" placeholder=""  value="경유4 : 양양군 현북면 도리 89-7" readonly>
+                    </td>
+                    <td>
+                      <label for="via05" class="hide">경유5</label><input type="text" name="via05" id="via05" placeholder=""  value="경유5 : 양양군 손양면 삽존리 50-14" readonly>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bd_r">
+                      <label for="via06" class="hide">경유6</label><input type="text" name="via06" id="via06" placeholder=""  value="경유6 : 양양군 현북면 어성전리 532-19 " readonly>
+                    </td>
+                    <td>
+                      <label for="end" class="hide">종점</label>
+                      <input type="text" name="end" id="end" placeholder=""  value="종점 : 양양군 현북면 하광정리 67 " readonly>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="btn_container">
               

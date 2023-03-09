@@ -23,7 +23,7 @@
               <li><a href="#">ASF 관리</a></li>
             </ul>
           </nav>
-          
+
           <div class="util">
             <a href="#">반갑습니다. 김길동님!
               <button>
@@ -110,154 +110,317 @@
     <div class="contents">
       <div class="container">
         <h2>민원 일지 관리</h2>
-        <ul class="tab_menu">
-          <li class="on"><a href="#">민원 일지</a></li>
-          <li><a href="#">작업 일지</a></li>
-          <li><a href="#">작업 사진</a></li>
-        </ul>
+
       </div>
       <div class="tab_con_wrap">
         <!-- 민원 일지 -->
-        <div class="tab_con cp_log">
+        <div class="cp_mt">
 
           <div class="container">
-            <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
+            <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
               <h3>접수 내용</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li class="wid_50">
-                    <label for="receipt_number">접수 번호 <span>*</span></label>
-                      <input type="text" name="receipt_number" id="receipt_number" placeholder="" value="88-서울-98
-                      " readonly>  
-                  </li>
-                  
-                  <li class="wid_50">
-                    <label for="date01">접수 일자 <span>*</span></label>
-                    <input type="date" name="date01" id="date01" value="2022-08-10" readonly> 
-                  </li>
 
-                  <li class="wid_50">
-                    <label for="receipt_name">접수자 명 <span>*</span></label>
-                      <input type="text" name="receipt_name" id="receipt_name" placeholder="" value="고길동" readonly>
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="cpl_name">민원 성명 <span>*</span></label>
-                      <input type="text" name="cpl_name" id="cpl_name" placeholder="" value="홍길동" readonly>
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="tel">전화 번호 <span>*</span></label>
-                      <input type="text" name="tel" id="tel" placeholder="" value="010-****-7980" readonly>
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="cpl_area">민원 지역 <span>*</span></label>
-                    <select name="cpl_area" id="cpl_area"
-                    class="readonly" onfocus="this.initialSelect = this.selectedIndex;" onchange="this.selectedIndex = this.initialSelect;">
-                      <option value="" disabled >선택</option>
-                      <option value=""selected>서울</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="cpl_type">민원 유형 <span>*</span></label>
-                    <select name="cpl_type" id="cpl_type"
-                    class="readonly" onfocus="this.initialSelect = this.selectedIndex;" onchange="this.selectedIndex = this.initialSelect;">
-                      <option value="" disabled >선택</option>
-                      <option value="" selected>그물망 교체</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </li>
-
-                  <li>
-                    <label for="cpl_title">민원 제목 <span>*</span></label>
-                    <input type="text" name="cpl_title" id="cpl_title" placeholder="" value="ASF 울타리 민원 수정 요청
-                    " readonly>
-                  </li>
-
-                  <li class="text_area">
-                    <label for="cont02">민원 내용</label>
-                    <textarea id="cont02" name="cont" placeholder="" readonly>**** 울타리 그물망 일부분이 끊어져 있는 상태 입니다. 
-반려 견이 들어갈 수 있을 정도로 구멍이 나 위험한 상황입니다.
-                      </textarea>
-                  </li>
-                </ul>
-              </form>
-
-            </div>
-           
-            <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
-              <h3>울타리 선택</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li>
-                    <label for="fence_num">관리 번호 <span>*</span></label>
-                <div class="search_bar">
-                  <input type="text" name="fence_num" id="fence_num" placeholder="" value="서울-10-59" readonly>
-                  
-                </div>
-                  </li>
-                  <li>
-                    <label for="fence_name">시설물 그룹 명</label>
-                    <input type="text" name="fence_name" id="fence_name" placeholder="" value="*** 울타리" readonly>
-                  </li>
-                  <li>
-                    <label for="area">권역</label>
-                    <input type="text" name="area" id="area" placeholder="" value="*** 권역" readonly>
-                  </li>
-                </ul>
-              </form>
-              <table>
+              <table class="tb_summary">
                 <colgroup>
-                  <col width="20%">
-                  <col width="20%">
-                  <col width="60%">
+                  <col width="11%">
+                  <col width="10%">
+                  <col width="12%">
+                  <col width="12%">
+                  <col width="21.5%">
+                  <col width="12%">
+                  <col width="21.5%">
                 </colgroup>
                 <thead>
-                  <tr>
-                    <th>시설물 관리 번호</th>
-                    <th>순찰 순서</th>
-                    <th>비고</th>
-                  </tr>
                 </thead>
                 <tbody>
                   <tr>
+                    <th>
+                      <label for="receipt_number">접수 번호 <span>*</span></label>
+                    </th>
+                    <td colspan="3"><input type="text" name="receipt_number" id="receipt_number" placeholder="" value="88-서울-98
+                      " readonly>
+                    </td>
+                    <th><label for="fence_num">관리 번호 <span>*</span></label></th>
+                    <td colspan="2">
+                      <div class="search_bar">
+                        <input type="text" name="fence_num" id="fence_num" placeholder="" value="서울-10-59" readonly>
+
+                      </div>
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      <label for="writer">작성자 <span>*</span></label>
+                    </th>
+                    <td colspan="2">
+                      <input type="text" name="writer" id="writer" placeholder="" value="김지은" readonly>
+                    </td>
+                    <th>
+                      <label for="receipt_way">접수 방법 <span>*</span></label>
+                    </th>
                     <td>
-                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder="" value="A1001" readonly ></td>
+                      <div class="tb_input_wrap">
+                        <select name="receipt_way" id="receipt_way" class="readonly"
+                          onfocus="this.initialSelect = this.selectedIndex;"
+                          onchange="this.selectedIndex = this.initialSelect;">
+                          <option value="" disabled>선택</option>
+                          <option value="" selected>ARS</option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </td>
+                    <th>
+                      <label for="cpl_type">민원 유형 <span>*</span></label>
+                    </th>
                     <td>
-                      <label for="ptr_order07" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order07" id="ptr_order07" placeholder="" value="1" readonly >
+                      <div class="tb_input_wrap">
+                        <select name="cpl_type" id="cpl_type" class="readonly"
+                          onfocus="this.initialSelect = this.selectedIndex;"
+                          onchange="this.selectedIndex = this.initialSelect;">
+                          <option value="" disabled>선택</option>
+                          <option value="" selected>개인</option>
+                          <option value="">기관</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="receipt_type">접수유형 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="text" name="receipt_type" id="receipt_type" placeholder="" value="불편" readonly>
                     </td>
                     <td>
-                      <label for="ptr_order_note07" class="hide">비고</label>
-                      <input type="text" name="ptr_order_note07" id="ptr_order_note07" placeholder="
-                      " value="기둥 부분 밟지 않게 조심해 주세요." readonly>
+                      <div class="tb_input_wrap">
+                        <select name="ptr_log_select" id="ptr_log_select01" class="readonly"
+                          onfocus="this.initialSelect = this.selectedIndex;"
+                          onchange="this.selectedIndex = this.initialSelect;">
+                          <option value="" disabled>선택</option>
+                          <option value="" selected>해체</option>
+                          <option value="">이설</option>
+                          <option value="">출입문</option>
+                          <option value="">보수</option>
+                          <option value="">기타</option>
+                        </select>
+                      </div>
                     </td>
-                    
+                    <th>
+                      <label for="date01">접수일 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="date" name="date01" id="date01" value="2023-02-01" readonly>
+                    </td>
+                    <th>
+                      <label for="date02">처리일 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="date" name="date02" id="date02" value="2023-02-01" readonly>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
+              <h3>민원 개요</h3>
+              <table class="tb_summary">
+                <colgroup>
+                  <col width="11%">
+                  <col width="10%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                </colgroup>
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span></th>
+                    <td colspan="8"><label for="address" class="hide">주소 </label>
+                      <div class="search_bar">
+                        <input type="text" name="address" id="address" placeholder="" value="경기도 가평군 상면 임초리 59-2"
+                          readonly>
+
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>
-                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num02" id="fclt_num02" placeholder=""value="A1002"  readonly></td>
-                    <td>
-                      <label for="ptr_order08" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order08" id="ptr_order08" placeholder="" value="2" readonly>
+
                     </td>
                     <td>
-                      <label for="ptr_order_note08" class="hide">비고</label>
-                      <input type="text" name="ptr_order_note08" id="ptr_order_note08" placeholder="
-                      " value="철조망 체크 요망" readonly>
+
                     </td>
-                    
+                    <th><label for="area">권역</label></th>
+                    <td colspan="2">
+                      <div class="tb_input_wrap">
+                        <select name="area" id="area" class="readonly"
+                          onfocus="this.initialSelect = this.selectedIndex;"
+                          onchange="this.selectedIndex = this.initialSelect;">
+                          <option value="" disabled>선택</option>
+                          <option value="" selected>1</option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </td>
+                    <th><label for="install">설치단계</label></th>
+                    <td colspan="2">
+                      <div class="tb_input_wrap">
+                        <select name="install" id="install" class="readonly"
+                          onfocus="this.initialSelect = this.selectedIndex;"
+                          onchange="this.selectedIndex = this.initialSelect;">
+                          <option value="" disabled>선택</option>
+                          <option value="">1단계</option>
+                          <option value="">2단계</option>
+                          <option value="">3단계</option>
+                          <option value="" selected>4단계</option>
+                          <option value="">5단계</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="cpl_name">민원인 <span>*</span></label>
+                    </th>
+                    <td colspan="2">
+                      <input type="text" name="cpl_name" id="cpl_name" placeholder="" value="김재도" readonly>
+                    </td>
+                    <th>
+                      <label for="tell">연락처 <span>*</span></label>
+                    </th>
+                    <td colspan="2">
+                      <input type="text" name="tell" id="tell" placeholder="" value="010-6251-8500" readonly>
+                    </td>
+                    <th>
+                      <label for="institution">기관명 <span>*</span></label>
+                    </th>
+                    <td colspan="2">
+                      <input type="text" name="institution" id="institution" placeholder="" value="-" readonly>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="cont01">민원내용</label>
+                    </th>
+                    <td colspan="8">
+                      <div class="tb_input_wrap"><textarea id="cont01" name="cont01" placeholder=""
+                          readonly>공사 허가 받음. 공사진행 위해 3~4m 철거 요청</textarea></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" class="vtc_m"><label for="result">조치결과 <span>*</span></label></th>
+                    <td colspan="8">
+                      <input type="text" name="result" id="result" placeholder="" value="직접 철거, 객토작업, 주택건설 예정으로 복구계획 없음"
+                        readonly>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="cost">공사비용</label></th>
+                    <td>
+                      <input type="text" name="cost" id="cost" placeholder="" value="-" readonly>
+                    </td>
+                    <th><label for="unit">단위</label></th>
+                    <td>
+                      <input type="text" name="unit" id="unit" placeholder="" value="-" readonly>
+                    </td>
+                    <th><label for="amount">수량</label></th>
+                    <td>
+                      <input type="text" name="amount" id="amount" placeholder="" value="-" readonly>
+                    </td>
+                    <th><label for="period">처리기간</label></th>
+                    <td><input type="text" name="period" id="period" placeholder="" value="0일" readonly></td>
+                  </tr>
+                  <tr>
+                    <th><label for="progress">추진경과 <span>*</span></label></th>
+                    <td colspan="8"><input type="text" name="progress" id="progress" placeholder="" value="ASF 사업설명 드림"
+                        readonly></td>
+                  </tr>
+                  <tr>
+                    <th><label for="note">비고</label></th>
+                    <td colspan="8"><input type="text" name="note" id="note" placeholder="" value="0" readonly></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="cp_phm">
+                <thead></thead>
+                <tbody>
+
+                  <tr>
+                    <th colspan="2" class="tit">
+                      <b>현장 사진</b>
+                    </th>
+
+
+                  </tr>
+                  <tr class="tb_tit">
+                    <td class="bd_r">조치 전</td>
+                    <td>조치 후</td>
+                  </tr>
+                  <tr>
+
+                    <td class="bd_r">
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr>
+
+                    <td class="bd_r">
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td class="bd_r">
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+
                   </tr>
                 </tbody>
               </table>
 
             </div>
-            
+
+
           </div>
           <div class="regi_map">
             <div class="container">
@@ -273,7 +436,7 @@
               <button class="remove_btn"><span>삭제</span></button>
               <div class="btn_wrap">
                 <button class="list_btn" onclick="location.href='민원일지관리_목록.html'"><span>목록</span></button>
-                
+
                 <button class="modify_btn" onclick="location.href='민원일지관리_수정.html'"><span>글 수정</span></button>
               </div>
             </div>
@@ -282,169 +445,22 @@
 
         <!-- //민원 일지 -->
 
-        <!-- 작업 일지 -->
-        <div class="tab_con cp_log" id="tab2_content">
-          <div class="container">
-            <div class="form_wrap com_wrap ptr_pl_regi cp_log_regi">
-              <h3>작업 내용</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li class="wid_50">
-                    <label for="progress">진행 여부 <span>*</span></label>
-                    <select name="progress" id="progress"
-                    class="readonly" onfocus="this.initialSelect = this.selectedIndex;" onchange="this.selectedIndex = this.initialSelect;">
-                      <option value="" disabled>선택</option>
-                      <option value="" selected>작업대기</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </li>
-                  
-                  <li class="wid_50">
-                    <label for="completion_date">완료 일자 </label>
-                    <input type="date" name="completion_date" id="completion_date" value="2022-08-10" readonly> 
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="name">담당자 명 <span>*</span></label>
-                      <input type="text" name="name" id="name" placeholder="" value="홍길동" readonly>
-                  </li>
-
-                  <li class="wid_50">
-                    <label for="tel02">전화 번호 <span>*</span></label>
-                      <input type="text" name="tel02" id="tel02" placeholder="" value="070-5375-5586" readonly>
-                  </li>
-
-                  <li class="text_area">
-                    <label for="cont100">검토 사항</label>
-                    <textarea id="cont100" name="cont100" placeholder="" readonly>검토 사항 내용</textarea>
-                  </li>
-                  <li class="text_area">
-                    <label for="cont101">작업 계획</label>
-                    <textarea id="cont101" name="cont101" placeholder="" readonly> 작업 계획 내용</textarea>
-                  </li>
-                  <li class="text_area">
-                    <label for="cont102">작업 내용</label>
-                    <textarea id="cont102" name="cont102" placeholder="" readonly>작업 내용</textarea>
-                  </li>
-                </ul>
-              </form>
-
-            </div>
 
 
-          </div>
-          <div class="tab_con_btn">
-            <div class="container">
-              <button class="remove_btn"><span>삭제</span></button>
-              <div class="btn_wrap">
-                <button class="list_btn" onclick="location.href='민원일지관리_목록.html'"><span>목록</span></button>
-                
-                <button class="modify_btn" onclick="location.href='민원일지관리_수정.html'"><span>글 수정</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- //작업 일지 -->
-
-        <!-- 작업 사진 -->
-        <div class="tab_con cp_log photomount" id="tab3_content">
-          <div class="container">
-            <table>
-             
-            
-              <thead></thead>
-              <tbody>
-                
-                <tr>
-                  <th colspan="2" class="tit">
-                    <b>작업 사진</b>
-                  </th>
-                  
-                  
-                </tr>
-                <tr class="tb_tit">
-                  <td >작업 전 사진</td>
-                  <td>작업 후 사진</td>
-                </tr>
-                <tr>
-                  
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                
-                </tr>
-                <tr>
-                  
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                 
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="tab_con_btn">
-            <div class="container">
-              <button class="remove_btn"><span>삭제</span></button>
-              <div class="btn_wrap">
-                <button class="list_btn" onclick="location.href='민원일지관리_목록.html'"><span>목록</span></button>
-                
-                <button class="modify_btn" onclick="location.href='민원일지관리_수정.html'"><span>글 수정</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- //작업 사진 -->
-
-        
       </div>
 
     </div>
     <footer>
-        <div class="container">
-          <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
-          <p>Copyright © Environmental Preservation Association All rights reserved.</p>
-        </div>
-      </footer>
-    
-    </div>
+      <div class="container">
+        <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
+        <p>Copyright © Environmental Preservation Association All rights reserved.</p>
+      </div>
+    </footer>
 
-    <script src="../common/js/jquery-3.6.2.min.js"></script>
-    <script src="../common/js/publish.js"></script>
+  </div>
+
+  <script src="../common/js/jquery-3.6.2.min.js"></script>
+  <script src="../common/js/publish.js"></script>
 </body>
 
 </html>

@@ -23,7 +23,7 @@
               <li><a href="#">ASF 관리</a></li>
             </ul>
           </nav>
-      
+
           <div class="util">
             <a href="#">반갑습니다. 김길동님!
               <button>
@@ -109,153 +109,225 @@
     </div>
     <div class="contents">
       <div class="container">
-        <h2>유지보수 작업 관리</h2>
-        <ul class="tab_menu">
-          <li class="on"><a href="#">유지보수 일지</a></li>
-          <li><a href="#">유지보수 작업내용</a></li>
-          <li><a href="#">작업 사진</a></li>
-        </ul>
+        <h2>유지보수 작업 카드</h2>
+        
       </div>
       <div class="tab_con_wrap">
-        <!-- 유지보수 일지 -->
-        <div class="tab_con mt_log">
 
+        <div class="cp_mt">
           <div class="container">
-            <div class="form_wrap com_wrap mt_log_regi">
-              <h3>유지보수 일시</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li>
-                    <label for="ptr_nt_sch02">유지보수 명 <span>*</span></label>
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch02" placeholder="유지보수 명 입력">
-                  </li>
-                  <li >
-                    
-                    <label for="ptr_area02" >유지보수 지역 <span>*</span></label>
-                    <div class="search_bar">
-                      <input type="text" name="search" id="ptr_area02" placeholder="검색어를 입력하세요.">
-                      <button class="search_btn"></button>
-                    </div>
-                  </li>
-                  <li class="wid_50">
-                    <label for="date27">유지보수 일자 <span>*</span></label>
-                    <input type="date" name="date27" id="date27" value="2022-08-10" > <span>~</span>
-                    <label for="date28" class="hide">날짜</label>
-                    <input type="date" name="date28" id="date28" value="2022-08-10" >
+            <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
 
-                  </li>
-                  <li class="text_area">
-                    <label for="cont02">유지보수 내용 <span>*</span></label>
-                    <textarea id="cont02" name="cont" placeholder="내용을 입력하세요."></textarea>
-                  </li>
-                </ul>
-              </form>
 
-            </div>
-            <div class="form_wrap com_wrap mt_log_regi">
-              <h3>순찰 일시</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li>
-                    <label for="ptr_nt_sch">순찰 일지 명 <span>*</span></label>
-                    <div class="search_bar">
-                      <input type="text" name="ptr_nt_sch" id="ptr_nt_sch" placeholder="순찰 일지 명 입력">
-                      <button class="search_btn ptr_log_sch_btn"></button>
-                      
-                    </div>
-
-                  </li>
-                  <li class="wid_50 mr_50">
-                    <label for="ptr_area">순찰 지역 </label>
-                    <select name="ptr_area" id="ptr_area" class="readonly"
-                      onFocus="this.initialSelect = this.selectedIndex;"
-                      onChange="this.selectedIndex = this.initialSelect;">
-                      <option value="" disabled selected>선택</option>
-                      <option value="" >서울</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </li>
-                  <li class="wid_50">
-                    <label for="date25">순찰 일자 </label>
-                    <input type="date" name="date25" id="date25" value="2022-08-10" readonly> <span>~</span>
-                    <label for="date26" class="hide">날짜</label >
-                    <input type="date" name="date26" id="date26" value="2022-08-10" readonly>
-
-                  </li>
-                  <li class="text_area">
-                    <label for="cont">순찰 내용 </label>
-                    <textarea id="cont" name="cont" placeholder="" readonly></textarea>
-                  </li>
-                </ul>
-              </form>
-
-            </div>
-            <div class="form_wrap com_wrap ptr_pl_regi mt_log_regi">
-              <h3>순찰 울타리 구간</h3>
-              <form action="" class="com_form">
-                <ul>
-                  <li>
-                    <label for="fence_num">관리 번호</label>
-                    <input type="text" name="fence_num" id="fence_num" placeholder=""  readonly>
-                  </li>
-                  <li>
-                    <label for="fence_name">시설물 그룹 명</label>
-                    <input type="text" name="fence_name" id="fence_name" placeholder=""  readonly>
-                  </li>
-                  <li>
-                    <label for="area">권역</label>
-                    <input type="text" name="area" id="area" placeholder=""  readonly>
-                  </li>
-                </ul>
-              </form>
-              <table>
-                <colgroup>
-                                <col width="20%">
-                                <col width="20%">
-                                <col width="60%">
-                              </colgroup>
+              <table class="tb_summary">
+                 <colgroup>
+                  <col width="12%">
+                  <col width="38%">
+                  <col width="12%">
+                  <col width="38%">
+                 
+                </colgroup> 
                 <thead>
-                  <tr>
-                    <th>시설물 관리 번호</th>
-                    <th>순찰 순서</th>
-                    <th>비고</th>
-                  </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
-                      <label for="fclt_num01" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num" id="fclt_num01" placeholder="" readonly ></td>
-                    <td>
-                      <label for="ptr_order07" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order07" id="ptr_order07" placeholder="" readonly >
+                    <th><label for="mt_number">유지보수 번호 <span>*</span></label></th>
+                    <td><input type="text" name="mt_number" id="mt_number" placeholder="">
                     </td>
+                    <th><label for="fence_num">관리 번호 <span>*</span></label></th>
                     <td>
-                      <label for="ptr_order_note07" class="hide">비고</label>
-                      <input type="text" name="ptr_order_note07" id="ptr_order_note07" placeholder="
-                      "  readonly>
+                      <div class="search_bar">
+                        <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요.
+                        ">
+                        <button class="search_btn fcnum_sch_btn"></button>
+                      </div>
                     </td>
-                    
+                  </tr>
+
+                  <tr>
+                    <th>
+                      <label for="date01">접수일 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="date" name="date01" id="date01" placeholder=""  value="2023-02-02">
+                    </td>
+                    <th>
+                      <label for="date02">처리일 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="date" name="date02" id="date02" value="2023-02-02">
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
+              <h3>작업 개요</h3>
+              <table class="tb_summary">
+                <colgroup>
+                  <col width="12%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                </colgroup>
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span>
+                    </th>
+                    <td colspan="8"><label for="address" class="hide">주소 </label>
+                      <div class="search_bar">
+                        <input type="text" name="address" id="address" placeholder="검색어를 입력하세요.">
+                        <button class="search_btn fcnum_sch_btn"></button>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>
-                      <label for="fclt_num02" class="hide">시설물 관리 번호</label><input type="text" name="fclt_num02" id="fclt_num02" placeholder=""  readonly></td>
-                    <td>
-                      <label for="ptr_order08" class="hide">순찰 순서 번호 입력</label>
-                      <input type="text" name="ptr_order08" id="ptr_order08" placeholder="" readonly>
+
                     </td>
                     <td>
-                      <label for="ptr_order_note08" class="hide">비고</label>
-                      <input type="text" name="ptr_order_note08" id="ptr_order_note08" placeholder="
-                      "  readonly>
+
                     </td>
-                    
+                    <th><label for="area">권역</label></th>
+                    <td colspan="2">
+                      <div class="tb_input_wrap">
+                        <select name="area" id="area">
+                          <option value="" disabled selected>선택</option>
+                          <option value="">1</option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </td>
+                    <th><label for="install">설치단계</label></th>
+                    <td colspan="2">
+                      <div class="tb_input_wrap">
+                        <select name="install" id="install">
+                          <option value="" disabled selected>선택</option>
+                          <option value="">1단계</option>
+                          <option value="">2단계</option>
+                          <option value="">3단계</option>
+                          <option value="">4단계</option>
+                          <option value="">5단계</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>
+                      <label for="cont01">내용</label>
+                    </th>
+                    <td colspan="8">
+                      <div class="tb_input_wrap"><textarea id="cont01" name="cont01" placeholder=""></textarea></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" class="vtc_m"><label for="result">조치결과 <span>*</span></label></th>
+                    <td colspan="8">
+                      <input type="text" name="result" id="result" placeholder="" value="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="cost">공사비용</label></th>
+                    <td>
+                      <input type="text" name="cost" id="cost" placeholder="" value="">
+                    </td>
+                    <th><label for="unit">단위</label></th>
+                    <td>
+                      <input type="text" name="unit" id="unit" placeholder="" value="">
+                    </td>
+                    <th><label for="amount">수량</label></th>
+                    <td>
+                      <input type="text" name="amount" id="amount" placeholder="" value="">
+                    </td>
+                    <th><label for="period">처리기간</label></th>
+                    <td><input type="text" name="period" id="period" placeholder="" value=""></td>
+                  </tr>
+                  
+                  <tr>
+                    <th><label for="note">비고</label></th>
+                    <td colspan="8"><input type="text" name="note" id="note" placeholder="" value=""></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="cp_phm">
+                <thead></thead>
+                <tbody>
+
+                  <tr>
+                    <th colspan="2" class="tit">
+                      <b>현장 사진</b>
+                    </th>
+
+
+                  </tr>
+                  <tr class="tb_tit">
+                    <td class="bd_r">조치 전</td>
+                    <td>조치 후</td>
+                  </tr>
+                  <tr>
+
+                    <td class="bd_r">
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr>
+
+                    <td class="bd_r">
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td class="bd_r">
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+
                   </tr>
                 </tbody>
               </table>
 
             </div>
-            
+
           </div>
           <div class="regi_map">
             <div class="container">
@@ -265,497 +337,157 @@
             </div>
           </div>
 
-
           <div class="tab_con_btn">
             <div class="container">
               <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn tab2_btn" href='#tab2_content'><span>임시 저장</span></button>
+                <button class="cancel_btn" onclick="location.href='민원일지관리_목록.html'"><span>취소</span></button>
+                <button class="register_btn" onclick="location.href='민원일지관리_목록.html'"><span>글 등록</span></button>
               </div>
             </div>
           </div>
+
+
+
         </div>
 
-        <!-- 유지보수 일지 -->
-
-        <!-- 유지보수 작업내용 -->
-        <div class="tab_con mt_log" id="tab2_content">
-          <div class="container">
-            <table border="0">
-              <colgroup>
-                <col width="23%;">
-                <col width="33%">
-                <col width="35.5%">
-                <col width="8.5%">
-              </colgroup>
-              <thead>
-
-                <tr>
-                  <th>구분</th>
-                  <th>인원수/주소</th>
-                  <th colspan="2">비고/작업내용</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th colspan="4" class="check_num"><b>작업 인원 <span>*</span></b></th>
-                </tr>
-                <tr>
-                  <td>
-                    관리자
-                  </td>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="count" class="hide">수</label>
-                      <input type="text" name="count" id="count" placeholder="" value="0">
-                    </div>
-                  </td>
-                  <td colspan="2" >
-                    <div class="tb_input_wrap">
-                      <label for="count02" class="hide">비고</label>
-                    <input type="text" name="count" class="txt_left" id="count02" placeholder="" value="">
-                  </div>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    팀장
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count03" class="hide">수</label>
-                      <input type="text" name="count" id="count03" placeholder="" value="0">
-                    </div>
-                  </td>
-                  <td colspan="2">
-                    <div class="tb_input_wrap">
-                      <label for="count04" class="hide">비고</label>
-                    <input type="text" name="count" class="txt_left" id="count04" placeholder="" value="">
-                  </div>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    팀원
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count05" class="hide">수</label>
-                      <input type="text" name="count" id="count05" placeholder="" value="0">
-                    </div>
-                  </td>
-                  <td colspan="2">
-                    <div class="tb_input_wrap">
-                      <label for="count06" class="hide">비고</label>
-                    <input type="text" name="count" class="txt_left" id="count06" placeholder="" value="">
-                  </div>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    합계
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count07" class="hide">수</label>
-                      <input type="text" name="count" id="count07" placeholder="" value="0" readonly>
-                    </div>
-                  </td>
-                  <td colspan="2">
-                    <div class="tb_input_wrap">
-                      <label for="count08" class="hide">비고</label>
-                    <input type="text" name="count" class="txt_left" id="count08" placeholder="" value="">
-                  </div>
-                </td>
-                </tr>
-                <tr>
-                  <th colspan="4" class="check_num">
-                    <div class="b_wrap"><b>작업 사항 <span>*</span></b><button class="add_row_btn"><span>행 추가</span></button></div></th>
-                </tr>
-                <tr>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="date29" class="hide">날짜</label>
-                      <input type="date" name="date29" id="date29" value="2022-08-10" >-01
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="address" class="hide">주소</label>
-                      <div class="search_bar">
-                        <input type="text" name="count" id="address" class="txt_left address_sch" placeholder="" value="" >
-                        <button class="search_btn"></button>
-                      </div>
-                    </div>
-                  </td>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="count10" class="hide">작업내용</label>
-                    <input type="text" name="count" id="count10" class="txt_left" placeholder="" value="">
-                  </div>
-                </td>
-                <td>
-                  <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="date200" class="hide">날짜</label>
-                      <input type="date" name="date27" id="date200" value="2022-08-10" >-02
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="address02" class="hide">주소</label>
-                      <div class="search_bar">
-                        <input type="text" name="count" class="txt_left address_sch" id="address02" placeholder="" value="" >
-                        <button class="search_btn"></button>
-                      </div>
-                      
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count12" class="hide">작업내용</label>
-                    <input type="text" name="count" class="txt_left" id="count12" placeholder="" value="">
-                  </div>
-                </td>
-                <td>
-                  <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
-                </td>
-                </tr>
-                <tr>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="date280" class="hide">날짜</label>
-                      <input type="date" name="date28" id="date280" value="2022-08-10" >-03
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="address03" class="hide">주소</label>
-                      <div class="search_bar">
-                        <input type="text" name="count" class="txt_left address_sch" id="address03" placeholder="" value="" >
-                        <button class="search_btn"></button>
-                      </div>
-                      
-                    </div>
-                  </td>
-                  <td >
-                    <div class="tb_input_wrap">
-                      <label for="count14" class="hide">작업내용</label>
-                    <input type="text" name="count" class="txt_left" id="count14" placeholder="" value="">
-                  </div>
-                </td>
-                <td>
-                  <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
-                </td>
-                </tr>
-              
-              </tbody>
-            </table>
-            <table>
-              <colgroup>
-                <col width="6%">
-                <col width="23%">
-                <col width="20%">
-                <col width="20%">
-                <col width="21%">
-                <col width="10%">
-                </colgroup>
-              <thead></thead>
-              <tbody>
-                <tr>
-                  <th colspan="6"  class="check_num">
-                    <div class="b_wrap"><b>작업 현황</b><button class="add_row_btn"><span>행 추가</span></button></div>
-                  </th>
-                </tr>
-                <tr>
-                  <td>No</td>
-                  <td>구분</td>
-                  <td>전일</td>
-                  <td>금일</td>
-                  <td>누계</td>
-                  <td>삭제여부</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="ptr_log_select01" class="hide">구분</label>
-                      <select name="ptr_log_select" id="ptr_log_select01">
-                      <option value="" disabled selected>선택</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                                        </select>
-                    </div>
-                </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count15" class="hide">수</label>
-                      <input type="text" name="count" id="count15" placeholder="" value="0">
-                    </div>
-                  </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count16" class="hide">수</label>
-                    <input type="text" name="count" id="count16" placeholder="" value="0">
-                  </div>
-                </td>
-                  <td>
-                    <div class="tb_input_wrap">
-                      <label for="count17" class="hide">수</label>
-                    <input type="text" name="count" id="count17" placeholder="" value="0">
-                  </div>
-                </td>
-                  <td>
-                    <button><span><img src="../common/images/remove_ico.png" alt="삭제 아이콘"></span></button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      </div>
+    </div>
 
 
-          </div>
-          <div class="tab_con_btn">
-            <div class="container">
-              <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
-                <button class="save_btn tab3_btn" href='#tab3_content'><span>임시 저장</span></button>
+
+    <footer>
+      <div class="container">
+        <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
+        <p>Copyright © Environmental Preservation Association All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 모달박스 -->
+
+    <!-- 관리번호 검색 -->
+    <div class="modal_box fcnum_modal_box" >
+      <div class="modal_contents">
+        <div class="modal_top">
+          <h3>울타리 검색</h3><button class="close"><img src="../common/images/md_close_btn.png" alt="팝업 끄기 버튼"></button>
+        </div>
+        
+        <div class="form_wrap">
+          <form action="" class="search_form">
+            <ul>
+              <li>
+                <!-- 0223 label class 수정 -->
+                <label for="fc_select02" class="hide">울타리선택</label>
+                <select name="fc_select02" id="fc_select02">
+                  <option value="" disabled selected>전체</option>
+                  <option value="">관리번호</option>
+                  <option value="">권역</option>
+                  <option value="">타입</option>
+                  <option value="">시설물 그룹 명</option>
+                </select>
+              </li>
+
+              <li>
+                <div class="search_bar">
+                  <label for="ptr_search02" class="hide">담당자 검색</label>
+                  <input type="text" name="search" id="ptr_search02" placeholder="검색어를 입력하세요.">
+                  <button class="search_btn"></button>
+                </div>
+              </li>
+
+            </ul>
+          </form>
+        </div>
+          <div class="modal_tb">
+            <p>※ 울타리를 선택 하실 수 있습니다.</p>
+
+            <ul class="fence_list">
+              <li>
+                <ul class="tb_hd">
+                  <li>관리 번호</li>
+                  <li>권역</li>
+                  <li>타입</li>
+                  <li>시설물 그룹 명</li>
+                  <li>등록일</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+             
+            </ul>
+            <div class="pagination_wrap">
+              <div class="pagination">
+                <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
+                <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
+                <ul>
+                  <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
+                  <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
+                  <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
+                  <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
+                  <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
+                </ul>
+                <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
+                <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
+    
               </div>
+             
             </div>
+            <div class="btn_wrap"><button class="cancel_btn md_cancel_btn"><span>닫기</span></button></div>
           </div>
-        </div>
-        <!-- 유지보수 작업내용 -->
-
-        <!-- 작업 사진 -->
-        <div class="tab_con mt_log photomount" id="tab3_content">
-          <div class="container">
-            <table>
-              <colgroup>
-              <col width="15%">
-              <col width="25%">
-              <col width="30%">
-              <col width="30%">
-            </colgroup>
-              <thead></thead>
-              <tbody>
-                
-                <tr>
-                  <th colspan="4" class="tit">
-                    <b>작업 사진</b>
-                  </th>
-                  
-                  
-                </tr>
-                <tr class="tb_tit">
-                  <td class="bd_r">No</td>
-                  <td colspan="3">작업 위치 및 사진</td>
-                </tr>
-                <tr>
-                  <td class="bd_r vtc_m">2022. 08. 10 - 01</td>
-                  <td>
-                    울진군 금강송면 광회리 산 1-10
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                
-                </tr>
-                <tr>
-                  <td class="bd_r vtc_m">2022. 08. 10 - 02</td>
-                  <td>
-                    울진군 금강송면 쌍전리 산102-2
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bd_r vtc_m">2022. 08. 10 - 03</td>
-                  <td>
-                    울진군 금강송면 쌍전리 산102-2
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                  <td>
-                    <div class="img_wrap">
-                      <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-                      
-                    </div>
-                  </td>
-                 
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="tab_con_btn">
-            <div class="container">
-              <div class="btn_wrap btn_right">
-                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
-                <button class="modify_btn tab4_btn" ><span>임시 저장</span></button>
-                <button class="register_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>글 등록</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 작업 사진 -->
 
         
       </div>
-      </div>
-
-
-
-      <footer>
-        <div class="container">
-          <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
-          <p>Copyright © Environmental Preservation Association All rights reserved.</p>
-        </div>
-      </footer>
-
-<!-- 모달박스 -->
-      
-      <!-- 순찰 일지 명 검색 -->
-      <div class="modal_box ptr_log_modal_box">
-        <div class="modal_contents">
-          <div class="modal_top">
-            <h3>순찰 일지 검색</h3><button class="close"><img src="../common/images/md_close_btn.png" alt="팝업 끄기 버튼"></button>
-          </div>
-          
-          <div class="form_wrap">
-            <form action="" class="search_form">
-              <ul>
-                <li>
-                  <label for="ptr_log_select02" class="hide">구분</label>
-                  <select name="ptr_log_select" id="ptr_log_select02">
-                    <option value="" disabled selected>전체</option>
-                    <option value="">시설물 그룹 명</option>
-                    <option value="">순찰 일지 명</option>
-                    <option value="">등록자</option>
-                  </select>
-                </li>
-
-                <li>
-                  <div class="search_bar">
-                    <label for="ptr_search20" class="hide">검색</label>
-                    <input type="text" name="search" id="ptr_search20" placeholder="검색어를 입력하세요.">
-                    <button class="search_btn"></button>
-                  </div>
-                </li>
-
-              </ul>
-            </form>
-          </div>
-            <div class="modal_tb">
-              <p>※ 관련 순찰 일지를 선택 하실 수 있습니다.</p>
-
-              <ul class="fence_list">
-                <li>
-                  <ul class="tb_hd">
-                    <li>시설물 그룹 명</li>
-                    <li>순찰 일지 명</li>
-                    <li>등록자</li>
-                    <li>등록일</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>ABC울타리</li>
-                    <li>ABC울타리 순찰</li>
-                    <li>홍길동팀</li>
-                    <li>2022. 08. 01</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>ABC울타리</li>
-                    <li>ABC울타리 순찰</li>
-                    <li>홍길동팀</li>
-                    <li>2022. 08. 01</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>ABC울타리</li>
-                    <li>ABC울타리 순찰</li>
-                    <li>홍길동팀</li>
-                    <li>2022. 08. 01</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>ABC울타리</li>
-                    <li>ABC울타리 순찰</li>
-                    <li>홍길동팀</li>
-                    <li>2022. 08. 01</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>ABC울타리</li>
-                    <li>ABC울타리 순찰</li>
-                    <li>홍길동팀</li>
-                    <li>2022. 08. 01</li>
-                  </ul>
-                </li>
-               
-              </ul>
-              <div class="pagination_wrap">
-                <div class="pagination">
-                  <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
-                  <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
-                  <ul>
-                    <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
-                    <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
-                    <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
-                    <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
-                    <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
-                  </ul>
-                  <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
-                  <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
-      
-                </div>
-               
-              </div>
-              <div class="btn_wrap"><button class="cancel_btn md_cancel_btn"><span>닫기</span></button></div>
-            </div>
-
-          
-        </div>
-      </div>
-     <div class="dim"></div> 
-
     </div>
-    
-    
+    <div class="dim"></div>
 
-    <script src="../common/js/jquery-3.6.2.min.js"></script>
-    <script src="../common/js/publish.js"></script>
+  </div>
+
+
+
+  <script src="../common/js/jquery-3.6.2.min.js"></script>
+  <script src="../common/js/publish.js"></script>
 </body>
 
 </html>
