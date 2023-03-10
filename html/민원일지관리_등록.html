@@ -114,7 +114,6 @@
 
       </div>
       <div class="tab_con_wrap">
-
         <div class="cp_mt">
           <div class="container">
             <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
@@ -137,18 +136,20 @@
                     <th>
                       <label for="receipt_number">접수 번호 <span>*</span></label>
                     </th>
-                    <td colspan="3">
+                    <td colspan="2">
                       <input type="text" name="receipt_number" id="receipt_number" placeholder="">
                     </td>
                     <th>
                       <label for="fence_num">관리 번호 <span>*</span></label>
                     </th>
-                    <td colspan="2">
+                    <td >
                       <div class="search_bar">
                         <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요.">
                         <button class="search_btn fcnum_sch_btn"></button>
                       </div>
                     </td>
+                    <th></th>
+                    <td></td>
                   </tr>
 
                   <tr>
@@ -196,7 +197,8 @@
                     </td>
                     <td>
                       <div class="tb_input_wrap">
-                        <select name="ptr_log_select" id="ptr_log_select01">
+                        <label for="receipt_type_select" class="hide">접수유형</label>
+                        <select name="receipt_type_select" id="receipt_type_select">
                           <option value="" disabled selected>선택</option>
                           <option value="">해체</option>
                           <option value="">이설</option>
@@ -242,12 +244,12 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span>
+                    <th rowspan="2">대상지현황 <span>*</span>
                     </th>
                     <td colspan="8"><label for="address" class="hide">주소 </label>
                       <div class="search_bar">
                         <input type="text" name="address" id="address" placeholder="검색어를 입력하세요.">
-                        <button class="search_btn fcnum_sch_btn"></button>
+                        <button class="search_btn"></button>
                       </div>
                     </td>
                   </tr>
@@ -312,7 +314,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th rowspan="2" class="vtc_m"><label for="result">조치결과 <span>*</span></label></th>
+                    <th rowspan="2"><label for="result">조치결과 <span>*</span></label></th>
                     <td colspan="8">
                       <input type="text" name="result" id="result" placeholder="" value="">
                     </td>
@@ -345,12 +347,19 @@
               </table>
 
               <table class="cp_phm">
+                <caption>
+                  현장 사진
+                </caption>
                 <thead></thead>
                 <tbody>
 
                   <tr>
-                    <th colspan="2" class="tit">
+                    <th class="tit txt_al_left">
                       <b>현장 사진</b>
+                      
+                    </th>
+                    <th class="txt_al_right vtc_m">
+                      <button class="add_row_btn"><span>행 추가</span></button>
                     </th>
 
 
@@ -359,37 +368,8 @@
                     <td class="bd_r">조치 전</td>
                     <td>조치 후</td>
                   </tr>
-                  <tr>
-
-                    <td class="bd_r">
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                      </div>
-                    </td>
-
-                  </tr>
-                  <tr>
-
-                    <td class="bd_r">
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                      </div>
-                    </td>
-                  </tr>
+                 
+                 
                   <tr>
 
                     <td class="bd_r">

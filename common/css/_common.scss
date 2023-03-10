@@ -335,13 +335,3 @@ footer {
 input:focus{
   outline: 0;
 }
-// input:-webkit-autofill,
-// input:-webkit-autofill:hover,
-// input:-webkit-autofill:focus,
-// input:-webkit-autofill:active {
-//    -webkit-transition-delay: 9999s;
-//    transition-delay: 9999s;
-// }
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px white inset;
-}

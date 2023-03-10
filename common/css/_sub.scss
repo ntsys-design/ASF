@@ -1205,13 +1205,13 @@ textarea {
     // 민원일지 관리 민원개요
     &.tb_summary {
       tbody {
-        th {
-          text-align: left;
+        th { text-align: left;
           padding: 0;
 
           span {
             color: #FF155B;
           }
+          
         }
 
         tr {
@@ -1242,8 +1242,15 @@ textarea {
         tbody {
           tr {
             th.tit{
-              padding: 30px;
+              padding: 30px 0;
               font-size: 1.2em;
+             
+            }
+            .txt_al_left{
+              text-align: left;
+            }
+            .txt_al_right{
+              text-align: right;
             }
             td {
               padding: 24px 32px !important;
@@ -1272,6 +1279,11 @@ textarea {
                 }
               }
               
+            }
+            .add_row_btn{
+              span{
+                font-size: 0.9em;
+              }
             }
           }
         }
@@ -1630,4 +1642,30 @@ textarea {
 }
 .ptr_pl_regi.bd_bck table tr td.bd_r{
   border-right: 1px solid #b6b8b9;
+}
+.ptr_pl_regi.bd_bck table caption{
+  width: 100%;
+  height: 50px;font-weight: 500;
+}
+.ptr_pl_regi.bd_bck table tr th.vtc_m{
+  vertical-align: middle;
+}
+.ptr_pl_regi.bd_bck table tr th.bd_r{
+  border-right: 1px solid #b6b8b9;
+}
+.ptr_pl_regi.bd_bck table.spc_ptr{
+  tbody{
+    td{
+      input{
+        height: 40px;
+        padding: 0 10px;
+        font-size: 0.8em;
+        &[type="date"]{
+          &::after{
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -119,13 +119,16 @@
 
 
               <table class="tb_summary">
-                 <colgroup>
-                  <col width="12%">
-                  <col width="38%">
-                  <col width="12%">
-                  <col width="38%">
+                <colgroup>
+                  <col width="11.5%">
+                  <col width="21.5%">
+                  <col width="9%">
+                  <col width="21%">
+                  <col width="13%">
+                  <col width="22%">
                  
                 </colgroup> 
+                
                 <thead>
                 </thead>
                 <tbody>
@@ -139,11 +142,28 @@
                         <input type="text" name="fence_num" id="fence_num" value="서울-10-59" readonly>
                       </div>
                     </td>
+                    <th></th>
+                    <td></td>
                   </tr>
 
                   <tr>
                     <th>
-                      <label for="date01">접수일 <span>*</span></label>
+                      <label for="mt_type">유지보수 유형 <span>*</span></label>
+                    </th>
+                    <td >
+                      <div class="tb_input_wrap">
+                        <select name="mt_type" id="mt_type">
+                          <option value="" disabled >선택</option>
+                          <option value=""selected>해체</option>
+                          <option value="">이설</option>
+                          <option value="">출입문</option>
+                          <option value="">보수</option>
+                          <option value="">기타</option>
+                        </select>
+                      </div>
+                    </td>
+                    <th>
+                      <label for="date01">점검일 <span>*</span></label>
                     </th>
                     <td>
                       <input type="date" name="date01" id="date01"placeholder=""  value="2023-02-02" >
@@ -178,7 +198,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span>
+                    <th rowspan="2" >대상지현황 <span>*</span>
                     </th>
                     <td colspan="8"><label for="address" class="hide">주소 </label>
                       <div class="search_bar">
@@ -232,7 +252,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th rowspan="2" class="vtc_m"><label for="result">조치결과 <span>*</span></label></th>
+                    <th rowspan="2"><label for="result">조치결과 <span>*</span></label></th>
                     <td colspan="8">
                       <input type="text" name="result" id="result" placeholder="" value="울타리 설치 2m" >
                     </td>
@@ -262,15 +282,20 @@
               </table>
 
               <table class="cp_phm">
+                <caption>
+                  현장 사진
+                </caption>
                 <thead></thead>
                 <tbody>
 
                   <tr>
-                    <th colspan="2" class="tit">
+                    <th class="tit txt_al_left">
                       <b>현장 사진</b>
+                      
                     </th>
-
-
+                    <th class="txt_al_right vtc_m">
+                      <button class="add_row_btn"><span>행 추가</span></button>
+                    </th>
                   </tr>
                   <tr class="tb_tit">
                     <td class="bd_r">조치 전</td>
@@ -294,41 +319,7 @@
                     </td>
 
                   </tr>
-                  <tr>
-
-                    <td class="bd_r">
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음">
-                          <button><img src="../common/images/rem_btn.png" alt="삭제 버튼"></button></figure>
-
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음">
-                          <button><img src="../common/images/rem_btn.png" alt="삭제 버튼"></button></figure>
-
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-
-                    <td class="bd_r">
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음">
-                          <button><img src="../common/images/rem_btn.png" alt="삭제 버튼"></button></figure>
-
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음">
-                          <button><img src="../common/images/rem_btn.png" alt="삭제 버튼"></button></figure>
-
-                      </div>
-                    </td>
-
-                  </tr>
+                  
                 </tbody>
               </table>
 
@@ -347,7 +338,7 @@
             <div class="container">
               <div class="btn_wrap btn_right">
                 <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
-                <button class="modify_btn" onclick="location.href='유지보수작업관리_수정.html'"><span>글 수정</span></button>
+                <button class="modify_btn" onclick="location.href='유지보수작업관리_상세.html'"><span>글 수정</span></button>
               </div>
             </div>
           </div>

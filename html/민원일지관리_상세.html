@@ -135,30 +135,32 @@
                 <tbody>
                   <tr>
                     <th>
-                      <label for="receipt_number">접수 번호 <span>*</span></label>
+                      <label for="receipt_number">접수 번호 </label>
                     </th>
-                    <td colspan="3"><input type="text" name="receipt_number" id="receipt_number" placeholder="" value="88-서울-98
+                    <td colspan="2"><input type="text" name="receipt_number" id="receipt_number" placeholder="" value="88-서울-98
                       " readonly>
                     </td>
-                    <th><label for="fence_num">관리 번호 <span>*</span></label></th>
-                    <td colspan="2">
+                    <th><label for="fence_num">관리 번호 </label></th>
+                    <td >
                       <div class="search_bar">
                         <input type="text" name="fence_num" id="fence_num" placeholder="" value="서울-10-59" readonly>
 
                       </div>
 
                     </td>
+                    <th></th>
+                    <td></td>
                   </tr>
 
                   <tr>
                     <th>
-                      <label for="writer">작성자 <span>*</span></label>
+                      <label for="writer">작성자</label>
                     </th>
                     <td colspan="2">
                       <input type="text" name="writer" id="writer" placeholder="" value="김지은" readonly>
                     </td>
                     <th>
-                      <label for="receipt_way">접수 방법 <span>*</span></label>
+                      <label for="receipt_way">접수 방법</label>
                     </th>
                     <td>
                       <div class="tb_input_wrap">
@@ -173,7 +175,7 @@
                       </div>
                     </td>
                     <th>
-                      <label for="cpl_type">민원 유형 <span>*</span></label>
+                      <label for="cpl_type">민원 유형</label>
                     </th>
                     <td>
                       <div class="tb_input_wrap">
@@ -189,14 +191,15 @@
                   </tr>
                   <tr>
                     <th>
-                      <label for="receipt_type">접수유형 <span>*</span></label>
+                      <label for="receipt_type">접수유형</label>
                     </th>
                     <td>
                       <input type="text" name="receipt_type" id="receipt_type" placeholder="" value="불편" readonly>
                     </td>
                     <td>
                       <div class="tb_input_wrap">
-                        <select name="ptr_log_select" id="ptr_log_select01" class="readonly"
+                        <label for="receipt_type_select" class="hide">접수유형</label>
+                        <select name="receipt_type_select" id="receipt_type_select" class="readonly"
                           onfocus="this.initialSelect = this.selectedIndex;"
                           onchange="this.selectedIndex = this.initialSelect;">
                           <option value="" disabled>선택</option>
@@ -209,13 +212,13 @@
                       </div>
                     </td>
                     <th>
-                      <label for="date01">접수일 <span>*</span></label>
+                      <label for="date01">접수일</label>
                     </th>
                     <td>
                       <input type="date" name="date01" id="date01" value="2023-02-01" readonly>
                     </td>
                     <th>
-                      <label for="date02">처리일 <span>*</span></label>
+                      <label for="date02">처리일 </label>
                     </th>
                     <td>
                       <input type="date" name="date02" id="date02" value="2023-02-01" readonly>
@@ -244,7 +247,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span></th>
+                    <th rowspan="2">대상지현황</th>
                     <td colspan="8"><label for="address" class="hide">주소 </label>
                       <div class="search_bar">
                         <input type="text" name="address" id="address" placeholder="" value="경기도 가평군 상면 임초리 59-2"
@@ -291,19 +294,19 @@
                   </tr>
                   <tr>
                     <th>
-                      <label for="cpl_name">민원인 <span>*</span></label>
+                      <label for="cpl_name">민원인</label>
                     </th>
                     <td colspan="2">
                       <input type="text" name="cpl_name" id="cpl_name" placeholder="" value="김재도" readonly>
                     </td>
                     <th>
-                      <label for="tell">연락처 <span>*</span></label>
+                      <label for="tell">연락처</label>
                     </th>
                     <td colspan="2">
                       <input type="text" name="tell" id="tell" placeholder="" value="010-6251-8500" readonly>
                     </td>
                     <th>
-                      <label for="institution">기관명 <span>*</span></label>
+                      <label for="institution">기관명</label>
                     </th>
                     <td colspan="2">
                       <input type="text" name="institution" id="institution" placeholder="" value="-" readonly>
@@ -319,7 +322,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th rowspan="2" class="vtc_m"><label for="result">조치결과 <span>*</span></label></th>
+                    <th rowspan="2" ><label for="result">조치결과 </label></th>
                     <td colspan="8">
                       <input type="text" name="result" id="result" placeholder="" value="직접 철거, 객토작업, 주택건설 예정으로 복구계획 없음"
                         readonly>
@@ -342,7 +345,7 @@
                     <td><input type="text" name="period" id="period" placeholder="" value="0일" readonly></td>
                   </tr>
                   <tr>
-                    <th><label for="progress">추진경과 <span>*</span></label></th>
+                    <th><label for="progress">추진경과</label></th>
                     <td colspan="8"><input type="text" name="progress" id="progress" placeholder="" value="ASF 사업설명 드림"
                         readonly></td>
                   </tr>
@@ -354,13 +357,18 @@
               </table>
 
               <table class="cp_phm">
+                <caption>
+                  현장 사진
+                </caption>
                 <thead></thead>
                 <tbody>
 
                   <tr>
-                    <th colspan="2" class="tit">
+                    <th colspan="2" class="tit txt_al_left">
                       <b>현장 사진</b>
+                      
                     </th>
+                   
 
 
                   </tr>
@@ -368,37 +376,8 @@
                     <td class="bd_r">조치 전</td>
                     <td>조치 후</td>
                   </tr>
-                  <tr>
-
-                    <td class="bd_r">
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                      </div>
-                    </td>
-
-                  </tr>
-                  <tr>
-
-                    <td class="bd_r">
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
-
-                      </div>
-                    </td>
-                  </tr>
+                 
+                 
                   <tr>
 
                     <td class="bd_r">

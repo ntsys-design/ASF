@@ -85,7 +85,8 @@
           <li>
             <a href="./순찰일지통계.html">
               <div>
-                <img src="../common/images/stat.png" alt="순찰 일지 통계 아이콘">
+                <img src="../common/images/stat.png"
+                 alt="순찰 일지 통계 아이콘">
               </div>
               순찰 일지 통계
             </a>
@@ -117,8 +118,23 @@
           <h3>순찰 계획 및 순찰 담당자</h3>
           <form action="" class="com_form">
             <ul>
+              <!-- 0310 순찰 유형 추가 -->
+              <li class="wid_50">
+                <label for="ptr_type">순찰 유형</label>
+                  <select name="ptr_type" id="ptr_type"
+                  class="readonly"
+                          onfocus="this.initialSelect = this.selectedIndex;"
+                          onchange="this.selectedIndex = this.initialSelect;">
+                    <option value="" disabled >선택</option>
+                    <option value=""selected>일반 점검</option>
+                    <option value="">특별 점검</option>
+                    
+                  </select>
+                
+              </li>
+              <!-- //0310 순찰 유형 추가 -->
               <li>
-                <label for="patrol_plan">순찰 계획 명 <span>*</span></label>
+                <label for="patrol_plan">순찰 계획 명</label>
                 <input type="text" name="patrol_plan" id="patrol_plan" placeholder="순찰 계획을 입력해 주세요." value="삐리리 ASF 울타리 순찰 계획" readonly>
               </li>
               <li class="wid_50">
@@ -215,6 +231,7 @@
       </div>
       <div class="regi_map">
           <div class="container">
+             <!-- 0310 표추가 -->
             <div class="form_wrap com_wrap ptr_pl_regi bd_bck">
               <table>
                 <colgroup>
@@ -225,16 +242,16 @@
                 </colgroup>
                 <thead>
                   <tr>
-                    <th><label for="address">ASF 발생지점</label></th>
-                    <th><label for="km">길이(Km)</label></th>
+                    <th>ASF 발생지점</th>
+                    <th>길이(Km)</th>
                     <th><label for="inspector">점검자</label></th>
                     <th><label for="date01">순찰일</label></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><input type="text" name="address" id="address" placeholder=""  value="양양군 손양면 동막골길 115-35" readonly></td>
-                    <td><input type="text" name="km" id="km" placeholder=""  value="95.7" readonly></td>
+                    <td>양양군 손양면 동막골길 115-35</td>
+                    <td>95.7</td>
                     <td><input type="text" name="inspector" id="inspector" placeholder=""  value="협회 2명, 원주청 2명 현장점검단 1인" readonly></td>
                     <td><input type="date" name="date01" id="date01" placeholder="" value="2023-02-13" readonly></td>
                   </tr>
@@ -250,45 +267,239 @@
                 <tbody>
                   <tr>
                     <td class="bd_r">
-                      <label for="point" class="hide">시점</label>
-                      <input type="text" name="point" id="point" placeholder=""  value="시점 : 양양군 양양읍 연창리 61-2" readonly>
+                      시점 : 양양군 양양읍 연창리 61-2
                     </td>
                     <td>
-                      <label for="via01" class="hide">경유1</label>
-                      <input type="text" name="via01" id="via01" placeholder=""  value=" 경유1 : 양양군 서면 범부리211-25" readonly>
+                       경유1 : 양양군 서면 범부리211-25
                     </td>
                   </tr>
                   <tr>
                     <td class="bd_r">
-                      <label for="via02" class="hide">경유2</label>
-                      <input type="text" name="via02" id="via02" placeholder=""  value="경유2 : 양양군 서면 가라피리 산25-1" readonly>
+                      경유2 : 양양군 서면 가라피리 산25-1
                     </td>
                     <td>
-                      <label for="via03" class="hide">경유3</label>
-                      <input type="text" name="via03" id="via03" placeholder=""  value="경유3 : 양양군 서면 서림리 136 " readonly>
+                      경유3 : 양양군 서면 서림리 136
                     </td>
                   </tr>
                   <tr>
                     <td class="bd_r">
-                      <label for="via04" class="hide">경유4</label>
-                      <input type="text" name="via04" id="via04" placeholder=""  value="경유4 : 양양군 현북면 도리 89-7" readonly>
+                       경유4 : 양양군 현북면 도리 89-7
                     </td>
                     <td>
-                      <label for="via05" class="hide">경유5</label><input type="text" name="via05" id="via05" placeholder=""  value="경유5 : 양양군 손양면 삽존리 50-14" readonly>
+                       경유5 : 양양군 손양면 삽존리 50-14
                     </td>
                   </tr>
                   <tr>
                     <td class="bd_r">
-                      <label for="via06" class="hide">경유6</label><input type="text" name="via06" id="via06" placeholder=""  value="경유6 : 양양군 현북면 어성전리 532-19 " readonly>
+                       경유6 : 양양군 현북면 어성전리 532-19
                     </td>
                     <td>
-                      <label for="end" class="hide">종점</label>
-                      <input type="text" name="end" id="end" placeholder=""  value="종점 : 양양군 현북면 하광정리 67 " readonly>
+                       종점 : 양양군 현북면 하광정리 67
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="form_wrap com_wrap ptr_pl_regi bd_bck">
+              <table class="spc_ptr">
+                <caption>특별순찰자료 (통계:월별점검일수 및 점검결과, 발생주체별현황, 권역별발생현황) </caption>
+                <thead>
+                  <tr>
+                    <th rowspan="3" class="vtc_m">순번</th>
+                    <th rowspan="3" class="vtc_m">발생 <br>지점</th>
+                    <th rowspan="3" class="vtc_m">발생 <br>권역</th>
+                    <th rowspan="3" class="vtc_m">발생 <br>주체</th>
+                    <th rowspan="3" class="vtc_m">발생 <br>일</th>
+                    <th rowspan="3" class="vtc_m">점검일</th>
+                    <th rowspan="3" class="vtc_m">점검 <br> 일수</th>
+                    <th rowspan="3" class="vtc_m">인원</th>
+                    <th rowspan="3" class="vtc_m bd_r">점검 <br> 길이</th>
+                    <th colspan="5" class="vtc_m ">점검결과</th>
+  
+                  </tr>
+                  <tr>
+                    <th colspan="2" class="bd_r">훼손</th>
+                    <th colspan="3">취약구간</th>
+                  </tr>
+                  <tr>
+                    <th class="bd_r">출입문</th>
+                    <th class="bd_r">울타리</th>
+                    <th class="bd_r">경관등</th>
+                    <th class="bd_r">기피제</th>
+                    <th>문닫음</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>총계</th>
+                    <td>
+                      <label for="total01" class="hide">총계</label><input type="text" name="total01" id="total01"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total02" class="hide">총계</label><input type="text" name="total02" id="total02"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total03" class="hide">총계</label><input type="text" name="total03" id="total03"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total04" class="hide">총계</label><input type="text" name="total04" id="total04"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total05" class="hide">총계</label><input type="text" name="total05" id="total05"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total06" class="hide">총계</label><input type="text" name="total06" id="total06"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total07" class="hide">총계</label><input type="text" name="total07" id="total07"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total08" class="hide">총계</label><input type="text" name="total08" id="total08"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total09" class="hide">총계</label><input type="text" name="total09" id="total09"
+                        placeholder="" readonly>
+                    </td>
+                    
+                    <td>
+                      <label for="total10" class="hide">총계</label><input type="text" name="total10" id="total10"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total11" class="hide">총계</label><input type="text" name="total11" id="total11"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total12" class="hide">총계</label><input type="text" name="total12" id="total12"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="total13" class="hide">총계</label><input type="text" name="total13" id="total13"
+                        placeholder="" readonly>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>
+                      <label for="cont01" class="hide">주소</label><input type="text" name="cont01" id="cont01"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont02" class="hide">발생권역</label><input type="text" name="cont02" id="cont02"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont03" class="hide">발생주체</label><input type="text" name="cont03" id="cont03"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont04" class="hide">발생일</label><input type="date" name="cont04" id="cont04"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont05" class="hide">점검일</label><input type="date" name="cont05" id="cont05"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont06" class="hide">점검일수</label><input type="text" name="cont06" id="cont06"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont07" class="hide">인원</label><input type="text" name="cont07" id="cont07"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont08" class="hide">점검길이</label><input type="text" name="cont08" id="cont08"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont09" class="hide">출입문</label><input type="text" name="cont09" id="cont09"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont10" class="hide">울타리</label><input type="text" name="cont10" id="cont10"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont11" class="hide">경관등</label><input type="text" name="cont11" id="cont11"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont12" class="hide">기피제</label><input type="text" name="cont12" id="cont12"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont13" class="hide">문닫음</label><input type="text" name="cont13" id="cont13"
+                        placeholder="" readonly>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>
+                      <label for="cont14" class="hide">주소</label><input type="text" name="cont14" id="cont14"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont15" class="hide">발생권역</label><input type="text" name="cont15" id="cont15"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont16" class="hide">발생주체</label><input type="text" name="cont16" id="cont16"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont17" class="hide">발생일</label><input type="date" name="cont17" id="cont17"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont18" class="hide">점검일</label><input type="date" name="cont18" id="cont18"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont19" class="hide">점검일수</label><input type="text" name="cont19" id="cont19"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont20" class="hide">인원</label><input type="text" name="cont20" id="cont20"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont21" class="hide">점검길이</label><input type="text" name="cont21" id="cont21"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont22" class="hide">출입문</label><input type="text" name="cont22" id="cont22"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont23" class="hide">울타리</label><input type="text" name="cont23" id="cont23"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont24" class="hide">경관등</label><input type="text" name="cont24" id="cont24"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont25" class="hide">기피제</label><input type="text" name="cont25" id="cont25"
+                        placeholder="" readonly>
+                    </td>
+                    <td>
+                      <label for="cont26" class="hide">문닫음</label><input type="text" name="cont26" id="cont26"
+                        placeholder="" readonly>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+            <!-- //0310 표추가 -->
+
             <div class="btn_wrap">
               <button class="list_btn" onclick="location.href='순찰계획관리_목록.html'"><span>목록</span></button>
               <button class="modify_btn" onclick="location.href='순찰계획관리_수정.html'"><span>글 수정</span></button>

@@ -135,17 +135,19 @@
                 <tbody>
                   <tr>
                     <th><label for="receipt_number">접수 번호 <span>*</span></label></th>
-                    <td colspan="3"><input type="text" name="receipt_number" id="receipt_number" placeholder="" value="88-서울-98
+                    <td colspan="2"><input type="text" name="receipt_number" id="receipt_number" placeholder="" value="88-서울-98
                       " readonly>
                     </td>
                     <th><label for="fence_num">관리 번호 <span>*</span></label></th>
-                    <td colspan="2">
+                    <td >
                       <div class="search_bar">
                         <input type="text" name="fence_num" id="fence_num" placeholder="" value="서울-10-59" readonly>
 
                       </div>
 
                     </td>
+                    <th></th>
+                    <td></td>
                   </tr>
 
                   <tr>
@@ -194,7 +196,8 @@
                     </td>
                     <td>
                       <div class="tb_input_wrap">
-                        <select name="ptr_log_select" id="ptr_log_select01" class="readonly"
+                        <label for="receipt_type_select" class="hide">접수유형</label>
+                        <select name="receipt_type_select" id="receipt_type_select" class="readonly"
                           onfocus="this.initialSelect = this.selectedIndex;"
                           onchange="this.selectedIndex = this.initialSelect;">
                           <option value="" disabled>선택</option>
@@ -241,7 +244,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th rowspan="2" class="vtc_m">대상지현황 <span>*</span></th>
+                    <th rowspan="2" >대상지현황 <span>*</span></th>
                     <td colspan="8"><label for="address" class="hide">주소 </label>
                       <div class="search_bar">
                         <input type="text" name="address" id="address" placeholder="" value="경기도 가평군 상면 임초리 59-2"
@@ -316,7 +319,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th rowspan="2" class="vtc_m"><label for="result">조치결과 <span>*</span></label></th>
+                    <th rowspan="2"><label for="result">조치결과 <span>*</span></label></th>
                     <td colspan="8">
                       <input type="text" name="result" id="result" placeholder=""
                         value="직접 철거, 객토작업, 주택건설 예정으로 복구계획 없음">
@@ -351,15 +354,20 @@
               </table>
 
               <table class="cp_phm">
+                <caption>
+                  현장사진
+                </caption>
                 <thead></thead>
                 <tbody>
 
                   <tr>
-                    <th colspan="2" class="tit">
+                    <th class="tit txt_al_left">
                       <b>현장 사진</b>
+                      
                     </th>
-
-
+                    <th class="txt_al_right vtc_m">
+                      <button class="add_row_btn"><span>행 추가</span></button>
+                    </th>
                   </tr>
                   <tr class="tb_tit">
                     <td class="bd_r">조치 전</td>
@@ -385,44 +393,8 @@
                     </td>
 
                   </tr>
-                  <tr>
-
-                    <td class="bd_r">
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/photomount_2.png" alt="이미지 없음"><button><img
-                              src="../common/images/rem_btn.png" alt="삭제 버튼"></button>
-                        </figure>
-
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/photomount_2.png" alt="이미지 없음"><button><img
-                              src="../common/images/rem_btn.png" alt="삭제 버튼"></button>
-                        </figure>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-
-                    <td class="bd_r">
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/photomount_3.png" alt="이미지 없음">
-                          <button><img src="../common/images/rem_btn.png" alt="삭제 버튼"></button>
-                        </figure>
-
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img_wrap">
-                        <figure><img src="../common/images/photomount_3.png" alt="이미지 없음">
-                          <button><img src="../common/images/rem_btn.png" alt="삭제 버튼"></button>
-                        </figure>
-
-                      </div>
-                    </td>
-
-                  </tr>
+                  
+                 
                 </tbody>
               </table>
 

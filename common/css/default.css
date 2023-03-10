@@ -590,10 +590,6 @@ input:focus {
   outline: 0;
 }
 
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px white inset;
-}
-
 .wrapper.main {
   display: flex;
   height: 100vh;
@@ -1764,8 +1760,16 @@ select.readonly {
 }
 .tab_con table.cp_phm tbody tr th.tit,
 .ptr_pl_regi table.cp_phm tbody tr th.tit {
-  padding: 30px;
+  padding: 30px 0;
   font-size: 1.2em;
+}
+.tab_con table.cp_phm tbody tr .txt_al_left,
+.ptr_pl_regi table.cp_phm tbody tr .txt_al_left {
+  text-align: left;
+}
+.tab_con table.cp_phm tbody tr .txt_al_right,
+.ptr_pl_regi table.cp_phm tbody tr .txt_al_right {
+  text-align: right;
 }
 .tab_con table.cp_phm tbody tr td,
 .ptr_pl_regi table.cp_phm tbody tr td {
@@ -1796,6 +1800,10 @@ select.readonly {
 .ptr_pl_regi table.cp_phm tbody tr td .img_wrap figure img {
   width: 100%;
   height: 100%;
+}
+.tab_con table.cp_phm tbody tr .add_row_btn span,
+.ptr_pl_regi table.cp_phm tbody tr .add_row_btn span {
+  font-size: 0.9em;
 }
 .tab_con.mt_log table tbody tr td, .tab_con.cp_mt table tbody tr td,
 .ptr_pl_regi.mt_log table tbody tr td,
@@ -2082,4 +2090,27 @@ select.readonly {
 
 .ptr_pl_regi.bd_bck table tr td.bd_r {
   border-right: 1px solid #b6b8b9;
+}
+
+.ptr_pl_regi.bd_bck table caption {
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+}
+
+.ptr_pl_regi.bd_bck table tr th.vtc_m {
+  vertical-align: middle;
+}
+
+.ptr_pl_regi.bd_bck table tr th.bd_r {
+  border-right: 1px solid #b6b8b9;
+}
+
+.ptr_pl_regi.bd_bck table.spc_ptr tbody td input {
+  height: 40px;
+  padding: 0 10px;
+  font-size: 0.8em;
+}
+.ptr_pl_regi.bd_bck table.spc_ptr tbody td input[type=date]::after {
+  right: 5px;
 }/*# sourceMappingURL=default.css.map */
