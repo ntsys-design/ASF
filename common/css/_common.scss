@@ -24,6 +24,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0 5%;
 
     h1 {
       font-size: 0.875em;
@@ -45,6 +46,7 @@ header {
       display: flex;
       align-items: center;
       height: 100%;
+      gap: 0 40px;
 
       nav {
         padding: 0 40px;
@@ -96,7 +98,6 @@ header {
       }
 
       .util {
-        margin-left: 40px;
         position: relative;
         >a {
           display: flex;
@@ -107,12 +108,17 @@ header {
           background-size: 32px 32px;
           padding-left: 48px;
           height: 32px;
-
+          .needbr {
+            @include maxWidth(600px) {
+              display: block;
+            }
+          }
           button {
             margin-left: 16px;
             width: 12px;
             height: 7px;
             background: url(../images/down.png);
+            flex-shrink: 0;
             &.up_arrow{
               background: url(../images/up.png);
             }
@@ -314,18 +320,29 @@ footer {
 }
 
 @include maxWidth(1080px) {
+  .container{
+    padding: 0 25px;
+  }
   header{
     .container{
       .nav_wrap{
         nav{
-          ul{
-            display: none;
-            
-          }
-          &:after
-            {
-              display: none;
-            }
+          display: none;
+        }
+      }
+    }
+  }
+}
+@include maxWidth(720px) {
+  .container {
+    padding: 0 20px;
+  }
+  header {
+    .container {
+      padding: 0 20px;
+      h1 {
+        img {
+          margin-right: 15px;
         }
       }
     }
@@ -334,4 +351,9 @@ footer {
 
 input:focus{
   outline: 0;
+}
+
+
+.needbr {
+  display: none;
 }

@@ -342,6 +342,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0 5%;
 }
 header .container h1 {
   font-size: 0.875em;
@@ -359,6 +360,7 @@ header .container .nav_wrap {
   display: flex;
   align-items: center;
   height: 100%;
+  gap: 0 40px;
 }
 header .container .nav_wrap nav {
   padding: 0 40px;
@@ -401,7 +403,6 @@ header .container .nav_wrap nav ul li a.active:after {
   bottom: 7px;
 }
 header .container .nav_wrap .util {
-  margin-left: 40px;
   position: relative;
 }
 header .container .nav_wrap .util > a {
@@ -414,11 +415,17 @@ header .container .nav_wrap .util > a {
   padding-left: 48px;
   height: 32px;
 }
+@media screen and (max-width: 600px) {
+  header .container .nav_wrap .util > a .needbr {
+    display: block;
+  }
+}
 header .container .nav_wrap .util > a button {
   margin-left: 16px;
   width: 12px;
   height: 7px;
   background: url(../images/down.png);
+  flex-shrink: 0;
 }
 header .container .nav_wrap .util > a button.up_arrow {
   background: url(../images/up.png);
@@ -579,15 +586,30 @@ footer .container p {
   }
 }
 @media screen and (max-width: 1080px) {
-  header .container .nav_wrap nav ul {
+  .container {
+    padding: 0 25px;
+  }
+  header .container .nav_wrap nav {
     display: none;
   }
-  header .container .nav_wrap nav:after {
-    display: none;
+}
+@media screen and (max-width: 720px) {
+  .container {
+    padding: 0 20px;
+  }
+  header .container {
+    padding: 0 20px;
+  }
+  header .container h1 img {
+    margin-right: 15px;
   }
 }
 input:focus {
   outline: 0;
+}
+
+.needbr {
+  display: none;
 }
 
 .wrapper.main {
