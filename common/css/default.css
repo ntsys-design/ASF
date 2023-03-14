@@ -927,12 +927,19 @@ textarea {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 56px;
+  gap: 10px 0;
 }
 .form_wrap form > ul li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 32%;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 720px) {
+  .form_wrap form > ul li {
+    flex-grow: 1;
+  }
 }
 .form_wrap form > ul li span {
   padding: 0 16px;
