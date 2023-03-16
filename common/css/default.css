@@ -1213,6 +1213,49 @@ select.readonly {
 .modal_tb .container {
   position: relative;
 }
+.fence_list_wrap .container .cardwrap,
+.name_list .container .cardwrap,
+.modal_tb .container .cardwrap {
+  border: 1px solid #999;
+}
+.fence_list_wrap .container .cardwrap .card_top,
+.name_list .container .cardwrap .card_top,
+.modal_tb .container .cardwrap .card_top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #999;
+}
+.fence_list_wrap .container .cardwrap .card_top .list_num,
+.name_list .container .cardwrap .card_top .list_num,
+.modal_tb .container .cardwrap .card_top .list_num {
+  width: 15%;
+}
+.fence_list_wrap .container .cardwrap .card_top .list_titinfo,
+.name_list .container .cardwrap .card_top .list_titinfo,
+.modal_tb .container .cardwrap .card_top .list_titinfo {
+  padding: 5px 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+.fence_list_wrap .container .cardwrap .card_btm ul,
+.name_list .container .cardwrap .card_btm ul,
+.modal_tb .container .cardwrap .card_btm ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fence_list_wrap .container .cardwrap .card_btm ul li,
+.name_list .container .cardwrap .card_btm ul li,
+.modal_tb .container .cardwrap .card_btm ul li {
+  flex: 0 0 50%;
+  display: flex;
+  padding-left: 20px;
+  gap: 0 10px;
+}
+.fence_list_wrap .container .cardwrap .card_btm ul li span,
+.name_list .container .cardwrap .card_btm ul li span,
+.modal_tb .container .cardwrap .card_btm ul li span {
+  flex-shrink: 0;
+}
 .fence_list,
 .name_list_tb {
   text-align: center;
@@ -1227,6 +1270,12 @@ select.readonly {
   border-radius: 4px;
   margin-bottom: 16px;
   border: 2px solid transparent;
+}
+@media screen and (max-width: 720px) {
+  .fence_list > li,
+  .name_list_tb > li {
+    height: unset;
+  }
 }
 .fence_list > li:first-child,
 .name_list_tb > li:first-child {
@@ -1246,6 +1295,12 @@ select.readonly {
   align-items: center;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 720px) {
+  .fence_list > li > ul,
+  .name_list_tb > li > ul {
+    display: none;
+  }
 }
 .fence_list > li > ul li,
 .name_list_tb > li > ul li {
