@@ -649,7 +649,7 @@ input:focus {
   margin-bottom: 24.8%;
   margin-right: 11.7%;
 }
-.wrapper .info_wrap > div span {
+.wrapper .info_wrap > div > span {
   display: inline-block;
   color: #a7cfff;
   padding: 4px 20px;
@@ -681,6 +681,14 @@ input:focus {
   line-height: 17px;
   opacity: 0.5;
   font-weight: 400;
+}
+.wrapper .input_wrap .main_footer .onmob {
+  font-size: 14px;
+  line-height: 150%;
+  word-break: keep-all;
+  opacity: 0.5;
+  font-weight: 400;
+  display: none;
 }
 .wrapper .input_wrap {
   width: 50%;
@@ -2253,4 +2261,83 @@ select.readonly {
 }
 .ptr_pl_regi.bd_bck table.spc_ptr tbody td input[type=date]::after {
   right: 5px;
-}/*# sourceMappingURL=default.css.map */
+}
+
+.wrapper .input_wrap .main_footer .cp {
+  color: #000;
+}
+.wrapper .onmob {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper.main {
+    flex-direction: column;
+    padding: 32px;
+    height: auto;
+  }
+  .wrapper .info_wrap {
+    background: unset;
+    width: 100%;
+    padding-right: unset;
+    padding-left: unset;
+    flex-flow: column-reverse;
+    padding-top: 32px;
+    margin-bottom: 48px;
+  }
+  .wrapper .info_wrap > div {
+    max-width: unset;
+    margin-bottom: unset;
+    margin-right: unset;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .wrapper .info_wrap > div h1 {
+    margin-top: unset;
+    text-align: unset;
+    margin-bottom: 24px;
+  }
+  .wrapper .info_wrap > div h1 img {
+    width: 80px;
+  }
+  .wrapper .info_wrap > div h2 {
+    color: #000;
+  }
+  .wrapper .info_wrap > div > span {
+    display: none;
+  }
+  .wrapper .info_wrap > div h2.onmob {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .wrapper .onpc {
+    display: none;
+  }
+  .wrapper .onmob {
+    display: inline-block !important;
+  }
+  .wrapper .info_wrap > div > div p {
+    color: #696e76;
+  }
+  .wrapper .input_wrap {
+    width: 100%;
+    min-width: unset;
+    padding-left: unset;
+    padding-right: unset;
+    justify-content: center;
+  }
+  .wrapper .input_wrap .login {
+    max-width: unset;
+  }
+  .wrapper .input_wrap .login .loginform_wrap form input {
+    max-width: unset;
+  }.wrapper .input_wrap .login .loginform_wrap form input[type=button] {
+    
+    margin-bottom: 56px;
+  }
+}
+
+
+
+
+/*# sourceMappingURL=default.css.map */
