@@ -1426,14 +1426,6 @@ select.readonly {
 .name_list_tb.mt_list li ul li:nth-child(8) {
   flex: 0 1 15%;
 }
-.fence_list.cp_mt_list li ul li .progress_icon, .fence_list.mt_list li ul li .progress_icon,
-.name_list_tb.cp_mt_list li ul li .progress_icon,
-.name_list_tb.mt_list li ul li .progress_icon {
-  width: 30px;
-  height: 30px;
-  background: #55626F;
-  margin: auto;
-}
 .fence_list.cp_mt_list li ul.tb_hd, .fence_list.mt_list li ul.tb_hd,
 .name_list_tb.cp_mt_list li ul.tb_hd,
 .name_list_tb.mt_list li ul.tb_hd {
@@ -2337,7 +2329,44 @@ select.readonly {
   }
 }
 
-
+.progress_icon span {
+  font-size: 14px;
+  width: 48px;
+  height: 24px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 4px 12px;
+}
+.progress_icon span.type01 {
+  border-color: #F9E7EB;
+  background: #FFEFF2;
+  color: #FF0C46;
+}
+.progress_icon span.type02 {
+  border-color: #DAE7FA;
+  background: #E8F1FF;
+  color: #4661DC;
+}
+.progress_icon span.type03 {
+  border-color: #F8E3D2;
+  background: #FFF0E4;
+  color: #DE5600;
+}
+.progress_icon span.type04 {
+  border-color: #F3E7F9;
+  background: #FAF0FF;
+  color: #A100ED;
+}
+.progress_icon span.type05 {
+  border-color: #D2F1EA;
+  background: #E0FAF4;
+  color: #019D95;
+}
+.progress_icon span.type06 {
+  border-color: #F5F1D6;
+  background: #FFFADC;
+  color: #937B00;
+}
 
 
 /*# sourceMappingURL=default.css.map */
