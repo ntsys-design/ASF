@@ -1307,7 +1307,7 @@ select.readonly {
   background: #fff;
   height: 80px;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 4px;
   margin-bottom: 16px;
   border: 2px solid transparent;
@@ -1412,11 +1412,13 @@ select.readonly {
 .name_list_tb.cp_mt_list li ul li:nth-child(2),
 .name_list_tb.mt_list li ul li:nth-child(2) {
   color: #17A400;
+  font-weight: 500;
 }
 .fence_list.cp_mt_list li ul li:nth-child(3), .fence_list.mt_list li ul li:nth-child(3),
 .name_list_tb.cp_mt_list li ul li:nth-child(3),
 .name_list_tb.mt_list li ul li:nth-child(3) {
   color: #4661DC;
+  font-weight: 500;
 }
 .fence_list.cp_mt_list li ul li:nth-child(7), .fence_list.mt_list li ul li:nth-child(7),
 .name_list_tb.cp_mt_list li ul li:nth-child(7),
@@ -1432,6 +1434,7 @@ select.readonly {
 .name_list_tb.cp_mt_list li ul.tb_hd,
 .name_list_tb.mt_list li ul.tb_hd {
   height: 64px;
+  font-weight: 600;
 }
 .fence_list.cp_mt_list li ul.tb_hd li, .fence_list.mt_list li ul.tb_hd li,
 .name_list_tb.cp_mt_list li ul.tb_hd li,
@@ -2337,9 +2340,9 @@ select.readonly {
   height: 24px;
   border: 1px solid transparent;
   border-radius: 2px;
-  padding: 4px;
   font-weight: 500;
-  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
 }
 .progress_icon span.type01 {
   border-color: #F9E7EB;
