@@ -951,7 +951,7 @@ textarea {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 56px;
-  gap: 10px 0;
+  gap: 10px;
 }
 .form_wrap form > ul li {
   display: flex;
@@ -969,13 +969,12 @@ textarea {
   padding: 0 16px;
 }
 .form_wrap form > ul li.ml24 {
-  margin-left: 24px;
+  /* margin-left: 24px; */
   width: 66%;
 }
 .form_wrap form > ul li label {
   min-width: 35px;
-  font-size: 1.25em;
-  margin-right: 24px;
+  font-size: 1.1em;
 }
 .form_wrap form > ul li label span {
   color: #FF155B;
@@ -988,7 +987,7 @@ textarea {
   border-radius: 4px;
   height: 56px;
   background: url(../images/search_down.png) no-repeat 91% center;
-  font-size: 1.125em;
+  font-size: 1.1em;
 }
 .form_wrap form > ul li select:focus {
   outline: 0;
@@ -1067,6 +1066,9 @@ input[type=date]::after {
 
 .form_wrap form.list_dt_form ul li {
   width: unset;
+}
+.form_wrap form.list_dt_form ul li:first-child {
+  gap: 0 24px;
 }
 .form_wrap form.list_dt_form ul li select {
   min-width: 200px;
