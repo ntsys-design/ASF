@@ -1140,21 +1140,19 @@ select.readonly {
 }
 .form_wrap.com_wrap.ptr_pl_regi table th {
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 10px;
-  vertical-align: middle;
-  word-break: keep-all;
 }
 .form_wrap.com_wrap.ptr_pl_regi table tr td {
   padding: 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .form_wrap.com_wrap.ptr_pl_regi table tr td input {
   height: 56px;
   background: #fff;
   border: 1px solid #C6CBD0;
   border-radius: 4px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .form_wrap.com_wrap.ptr_pl_regi table tr td input:-moz-read-only {
   background: #F7F7F8;
