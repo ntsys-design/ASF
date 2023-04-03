@@ -2384,4 +2384,29 @@ select.readonly {
 }
 
 
+
+/* 230403 */
+
+.fence_list.files > li > ul > li {
+  flex: 0 0 15%;
+  padding: 0 10px;
+}
+.fence_list.files > li > .tb_hd > li {
+  text-align: center;
+}
+.fence_list.files > li > ul > li:nth-child(2) {
+  flex-grow: 1;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.fence_list.files > li > ul > li:nth-child(3) {
+  margin-left: auto;
+  min-width: 65px;
+}
+.fence_list.files > li > ul > li:last-child {
+  min-width: 100px;
+}
+
 /*# sourceMappingURL=default.css.map */
