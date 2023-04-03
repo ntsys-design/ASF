@@ -592,13 +592,6 @@ textarea {
             flex: 1;
             color: #55626F;
 
-            &:first-child {
-              color: #4661DC;
-            }
-
-            &:nth-child(3) {
-              color: #17A400;
-            }
           }
         }
 
@@ -627,15 +620,6 @@ textarea {
                 color: #55626F;
               }
 
-              &:nth-child(2) {
-                flex: 0 1 20%;
-                color: #17A400;
-              }
-
-              &:nth-child(3) {
-                flex: 0 1 20%;
-                color: #4661DC;
-              }
 
 
             }
@@ -665,14 +649,6 @@ textarea {
               flex: 0 1 12.5%;
               color: #55626F;
 
-              &:nth-child(2) {
-                color: #17A400;
-              }
-
-              &:nth-child(3) {
-                color: #4661DC;
-
-              }
 
               &:nth-child(7) {
                 flex: 0 1 10%;
