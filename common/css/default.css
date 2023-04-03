@@ -2409,4 +2409,35 @@ select.readonly {
   min-width: 100px;
 }
 
+
+.fence_list_wrap.stt_page {
+  padding-top: 4
+  0px;
+}
+.fence_list_wrap.stt_page .fence_list {
+  padding: 30px 0 25px;
+}
+.contents .container h3.stt_tit {
+  padding-bottom: unset;
+}
+
+.fence_list.f_auto > li > ul > li {
+  flex: auto;
+}
+.fence_list.f_auto > li > ul > li.ml_auto {
+  margin-left: auto;
+}
+.fence_list > li > ul li .spl_ver {
+  display: flex;
+}
+.fence_list > li > ul li ul.spl_ver li {
+  flex: auto;
+}
+.fence_list > li > ul li.sp6 {
+  flex: 0 0 58.25%;
+}
+.fence_list > li > ul li.sp3 {
+  flex: 0 0 29.25%;
+}
+
 /*# sourceMappingURL=default.css.map */
