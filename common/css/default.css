@@ -1509,9 +1509,6 @@ select.readonly {
 .fence_list_wrap .container button.register_btn,
 .name_list .container button.register_btn,
 .modal_tb .container button.register_btn {
-  position: absolute;
-  right: 0;
-  bottom: -10px;
   width: 136px;
   height: 58px;
   background: #4661DC;
@@ -2435,5 +2432,26 @@ select.readonly {
 }
 .fw500 {
   font-weight: 500 !important;
+}
+
+
+.fence_list_wrap .container .btnwrap, 
+.name_list .container .btnwrap,
+.modal_tb .container .btnwrap {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  display: flex;
+  gap: 0 16px;
+}
+.fence_list_wrap .container button.ex_down_btn,
+.name_list .container button.rex_down_btn,
+.modal_tb .container button.ex_down_btn {
+  width: 136px;
+  height: 58px;
+  background: #00C29E;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=default.css.map */
