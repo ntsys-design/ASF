@@ -1359,14 +1359,7 @@ select.readonly {
   flex: 1;
   color: #55626F;
 }
-.fence_list > li > ul li:first-child,
-.name_list_tb > li > ul li:first-child {
-  color: #4661DC;
-}
-.fence_list > li > ul li:nth-child(3),
-.name_list_tb > li > ul li:nth-child(3) {
-  color: #17A400;
-}
+
 .fence_list > li:first-child,
 .name_list_tb > li:first-child {
   background: #6F8294;
@@ -1390,12 +1383,10 @@ select.readonly {
 .fence_list.ptr_pl_list li ul li:nth-child(2),
 .name_list_tb.ptr_pl_list li ul li:nth-child(2) {
   flex: 0 1 20%;
-  color: #17A400;
 }
 .fence_list.ptr_pl_list li ul li:nth-child(3),
 .name_list_tb.ptr_pl_list li ul li:nth-child(3) {
   flex: 0 1 20%;
-  color: #4661DC;
 }
 .fence_list.ptr_pl_list li ul.tb_hd,
 .name_list_tb.ptr_pl_list li ul.tb_hd {
@@ -1414,14 +1405,10 @@ select.readonly {
 .fence_list.cp_mt_list li ul li:nth-child(2), .fence_list.mt_list li ul li:nth-child(2),
 .name_list_tb.cp_mt_list li ul li:nth-child(2),
 .name_list_tb.mt_list li ul li:nth-child(2) {
-  color: #17A400;
-  font-weight: 500;
 }
 .fence_list.cp_mt_list li ul li:nth-child(3), .fence_list.mt_list li ul li:nth-child(3),
 .name_list_tb.cp_mt_list li ul li:nth-child(3),
 .name_list_tb.mt_list li ul li:nth-child(3) {
-  color: #4661DC;
-  font-weight: 500;
 }
 .fence_list.cp_mt_list li ul li:nth-child(7), .fence_list.mt_list li ul li:nth-child(7),
 .name_list_tb.cp_mt_list li ul li:nth-child(7),
@@ -2440,4 +2427,13 @@ select.readonly {
   flex: 0 0 29.25%;
 }
 
+.blue_clr {
+  color: #4661DC !important;
+}
+.grn_clr {
+  color: #17A400 !important;
+}
+.fw500 {
+  font-weight: 500 !important;
+}
 /*# sourceMappingURL=default.css.map */
