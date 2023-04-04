@@ -959,7 +959,6 @@ textarea {
   justify-content: flex-start;
   width: 32%;
   box-sizing: border-box;
-  gap: 0 24px;
 }
 @media screen and (max-width: 720px) {
   .form_wrap form > ul li {
@@ -1359,7 +1358,14 @@ select.readonly {
   flex: 1;
   color: #55626F;
 }
-
+.fence_list > li > ul li:first-child,
+.name_list_tb > li > ul li:first-child {
+  color: #4661DC;
+}
+.fence_list > li > ul li:nth-child(3),
+.name_list_tb > li > ul li:nth-child(3) {
+  color: #17A400;
+}
 .fence_list > li:first-child,
 .name_list_tb > li:first-child {
   background: #6F8294;
@@ -1383,10 +1389,12 @@ select.readonly {
 .fence_list.ptr_pl_list li ul li:nth-child(2),
 .name_list_tb.ptr_pl_list li ul li:nth-child(2) {
   flex: 0 1 20%;
+  color: #17A400;
 }
 .fence_list.ptr_pl_list li ul li:nth-child(3),
 .name_list_tb.ptr_pl_list li ul li:nth-child(3) {
   flex: 0 1 20%;
+  color: #4661DC;
 }
 .fence_list.ptr_pl_list li ul.tb_hd,
 .name_list_tb.ptr_pl_list li ul.tb_hd {
@@ -1405,10 +1413,14 @@ select.readonly {
 .fence_list.cp_mt_list li ul li:nth-child(2), .fence_list.mt_list li ul li:nth-child(2),
 .name_list_tb.cp_mt_list li ul li:nth-child(2),
 .name_list_tb.mt_list li ul li:nth-child(2) {
+  color: #17A400;
+  font-weight: 500;
 }
 .fence_list.cp_mt_list li ul li:nth-child(3), .fence_list.mt_list li ul li:nth-child(3),
 .name_list_tb.cp_mt_list li ul li:nth-child(3),
 .name_list_tb.mt_list li ul li:nth-child(3) {
+  color: #4661DC;
+  font-weight: 500;
 }
 .fence_list.cp_mt_list li ul li:nth-child(7), .fence_list.mt_list li ul li:nth-child(7),
 .name_list_tb.cp_mt_list li ul li:nth-child(7),
@@ -2316,7 +2328,7 @@ select.readonly {
   .wrapper .input_wrap .login .loginform_wrap form input {
     max-width: unset;
   }.wrapper .input_wrap .login .loginform_wrap form input[type=button] {
-    
+
     margin-bottom: 56px;
   }
 }
@@ -2368,14 +2380,13 @@ select.readonly {
 }
 
 
-
 /* 230403 */
 
 .fence_list.files > li > ul > li {
   flex: 0 0 15%;
   padding: 0 10px;
 }
-.fence_list.files > li > .tb_hd > li {
+.fence_list.files > li > .tb_hd > li:nth-child(2) {
   text-align: center;
 }
 .fence_list.files > li > ul > li:nth-child(2) {
@@ -2434,8 +2445,7 @@ select.readonly {
   font-weight: 500 !important;
 }
 
-
-.fence_list_wrap .container .btnwrap, 
+.fence_list_wrap .container .btnwrap,
 .name_list .container .btnwrap,
 .modal_tb .container .btnwrap {
   position: absolute;
@@ -2453,24 +2463,4 @@ select.readonly {
   color: #fff;
   border-radius: 4px;
   font-weight: 500;
-}
-
-
-/* 230404 */
-.wrapper .input_wrap .login .loginform_wrap form input[type=text]::placeholder {
-  font-size: 16px;
-  font-weight: 500;
-}
-.wrapper .input_wrap .login .loginform_wrap form input[type=password]::placeholder {
-  font-size: 16px;
-  font-weight: 500;
-}
-.wrapper .input_wrap .login .loginform_wrap form input#login_btn {
-  font-size: 16px;
-  font-weight: 500;
-}
-.wrapper .info_wrap p {
-  font-size: 14px;
-  font-weight: 400;
-}
 /*# sourceMappingURL=default.css.map */
