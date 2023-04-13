@@ -2460,7 +2460,7 @@ select.readonly {
 .wrapper .input_wrap .login .loginform_wrap form input[type=text]::placeholder {
   font-size: 16px;
   font-weight: 500;
-}
+}ㅇㅀ
 .wrapper .input_wrap .login .loginform_wrap form input[type=password]::placeholder {
   font-size: 16px;
   font-weight: 500;
@@ -2474,3 +2474,17 @@ select.readonly {
   font-weight: 400;
 }
 /*# sourceMappingURL=default.css.map */
+
+/* 0413 통계 페이지 서치폼 수정 */
+
+.form_wrap form ul.stat_sch li:last-child {
+  gap: 0;
+}
+
+.form_wrap form ul.stat_sch li {
+  min-width: 210px;
+}
+
+.form_wrap form ul.stat_sch li select {
+  min-width: 210px;
+}
