@@ -10,6 +10,12 @@
 </head>
 
 <body>
+  <div class="cur">
+    <span>시간&nbsp;:&nbsp;</span>
+    <span>위도&nbsp;:&nbsp;</span>
+    <span>경도&nbsp;:&nbsp;</span>
+    <span>주소&nbsp;:&nbsp;</span>
+  </div>
   <div class="wrapper">
     <header>
       <div class="container">
@@ -440,6 +446,26 @@
 
   <script src="../common/js/jquery-3.6.2.min.js"></script>
   <script src="../common/js/publish.js"></script>
+  <script>
+    $('body').mousemove(function(e){
+  var offset = $(this).offset();
+  var x = e.pageX - (offset.left);
+  var y = e.pageY - (offset.top);
+  $('.cur').css({'left': e.pageX+16, 'top': e.pageY+16});
+}) 
+
+   $(".img_wrap figure img").on("mouseover", function() {
+ $('.cur').css({
+  
+  "display": "block"
+ });
+}); // Hover
+ $(".img_wrap figure img").on("mouseout", function() {
+  $('.cur').css({
+    "display": "none"
+  });
+ });
+  </script>
 </body>
 
 </html>

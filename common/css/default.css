@@ -2488,3 +2488,21 @@ select.readonly {
 .form_wrap form ul.stat_sch li select {
   min-width: 210px;
 }
+/* 0414 이미지 호버- 이미지 정보 */
+body{
+  position: relative;
+}
+.cur {
+  position:absolute;
+  top:50%;
+  left:40%;
+  z-index:999;
+  text-align:left;
+  display: none;
+  background: #fff;
+  padding: 10px;
+  }
+.cur span{
+  display: block;
+}
+ 
